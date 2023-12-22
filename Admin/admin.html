@@ -462,7 +462,7 @@
             <!-- LOGO -->
             <div class="navbar-brand-box">
                 <!-- Dark Logo-->
-                <a href="employees.html" class="logo logo-dark">
+                <a href="admin.html" class="logo logo-dark">
                     <span class="logo-sm">
                         <img src="assets/images/logo-sm.png" alt="" height="22">
                     </span>
@@ -471,7 +471,7 @@
                     </span>
                 </a>
                 <!-- Light Logo-->
-                <a href="employees.html" class="logo logo-light">
+                <a href="admin.html" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="assets/images/logo-sm.png" alt="" height="22">
                     </span>
@@ -492,50 +492,131 @@
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link active" href="employees.html">
+                            <a class="nav-link menu-link active" href="admin.html">
                                 <i class="bx bx-home"></i> <span>Home</span>
                             </a>
                             
                         </li> <!-- end Dashboard Menu -->
+                       
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="list-etudients.html">
-                                <i class="bx bx-list-ul"></i> <span>Mes etudients</span>
+                            <a class="nav-link menu-link" href="#sidebaretudients" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaretudients">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">etudients</span>
                             </a>
-                            
-                        </li> <!-- end Dashboard Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="bx bx-file"></i> <span data-key="t-apps">Mes Dossiers</span>
-                            </a>
-                            <div class="collapse menu-dropdown" id="sidebarApps">
+                            <div class="collapse menu-dropdown" id="sidebaretudients">
                                 <ul class="nav nav-sm flex-column">
                                     
                                     <li class="nav-item">
-                                        <a href="dossiers-terminé.html" class="nav-link" data-key="t-chat"> Dossiers Terminé </a>
+                                        <a href="list-etudient.html" class="nav-link" data-key="t-chat"> Liste des etudients </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dossiers-a-envoyé.html" class="nav-link" data-key="t-chat"> Dossiers à Envoyé </a>
+                                        <a href="add-etudient.html" class="nav-link" data-key="t-chat">Ajouter un etudient</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dossiers-en-attendent.html" class="nav-link" data-key="t-chat"> Dossiers En Attendent </a>
+                                        <a href="edit-etudient.html" class="nav-link" data-key="t-chat">Modifier un etudient</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="dossiers-annulé.html" class="nav-link" data-key="t-chat"> Dossiers Annulé </a>
-                                    </li>
-                                    
-                                    
-                                    
-                                    
-                                    
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="employees.html">
-                                <i class="bx bx-task-x"></i> <span>Mes Taskes</span>
+                            <a class="nav-link menu-link" href="#sidebaremployees" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaremployees">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Employées</span>
                             </a>
-                            
-                        </li> <!-- end Dashboard Menu -->
+                            <div class="collapse menu-dropdown" id="sidebaremployees">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-employees.html" class="nav-link" data-key="t-chat">Liste des employées</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-employees.html" class="nav-link" data-key="t-chat">ajouter un employer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="edit-employees.html" class="nav-link" data-key="t-chat">modifier un employée</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sidebartask" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebartask">
+                                            Task
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebartask">
+                                            <ul class="nav nav-sm flex-column">
+                                                
+                                                <li class="nav-item">
+                                                    <a href="list-task.html" class="nav-link" data-key="t-chat"> Liste des tasks </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="add-task.html" class="nav-link" data-key="t-chat">Ajouter un task</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="edit-task.html" class="nav-link" data-key="t-chat">Modifier un task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarecoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarecoles">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Ecoles</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarecoles">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-ecole.html" class="nav-link" data-key="t-chat"> Liste des écoles </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-ecole.html" class="nav-link" data-key="t-chat">Ajouter une école</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="edit-ecole.html" class="nav-link" data-key="t-chat">Modifier une école</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebardossiers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebardossiers">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Dossiers</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebardossiers">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sidebardossiersetat" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebardossiersetat">
+                                            Dossiers
+                                        </a>
+                                        <div class="collapse menu-dropdown" id="sidebardossiersetat">
+                                            <ul class="nav nav-sm flex-column">
+                                                
+                                                <li class="nav-item">
+                                                    <a href="list-dossiers.html" class="nav-link" data-key="t-chat"> Liste les dossiers </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="list-dossiers-valide.html" class="nav-link" data-key="t-chat"> Dossiers validé</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="list-dossiers-non-valide.html" class="nav-link" data-key="t-chat">Dossiers non validé</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="list-dossiers-en-attendent.html" class="nav-link" data-key="t-chat">Dossiers en attend</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="list-dossiers-annulé  .html" class="nav-link" data-key="t-chat">Dossiers annulé</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-dossiers.html" class="nav-link" data-key="t-chat">Ajouter un dossier</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="edit-dossiers.html" class="nav-link" data-key="t-chat">Modifier un dossier</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -564,7 +645,7 @@
                                         <div class="d-flex align-items-lg-center flex-lg-row flex-column">
                                             <div class="flex-grow-1">
                                                 <h4 class="fs-16 mb-1">Salut, Anna!</h4>
-                                                <p class="text-muted mb-0">Voici votre task d'Aujourd'hui.</p>
+                                                <p class="text-muted mb-0">Voici les statistique d'Aujourd'hui.</p>
                                             </div>
                                             <div class="mt-3 mt-lg-0">
                                                 <form action="javascript:void(0);">
@@ -594,7 +675,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Dossiers Terminé</p>
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Etudients</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
@@ -603,8 +684,8 @@
                                                         <a href="" class="text-decoration-underline">Voir toute la liste</a>
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-success rounded fs-3">
-                                                            <i class="bx bx-check"></i>
+                                                        <span class="avatar-title bg-info rounded fs-3">
+                                                            <i class="bx bx-list-ul"></i>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -618,7 +699,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Dossiers à envoyé</p>
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Employées</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
@@ -628,7 +709,7 @@
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
                                                         <span class="avatar-title bg-info rounded fs-3">
-                                                            <i class="bx bx-windows"></i>
+                                                            <i class="bx bx-list-ul"></i>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -642,7 +723,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Dossiers en attendent</p>
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Ecoles</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
@@ -651,8 +732,8 @@
                                                         <a href="" class="text-decoration-underline">Voir toute la liste</a>
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-warning rounded fs-3">
-                                                            <i class="bx bx-window-close"></i>
+                                                        <span class="avatar-title bg-info rounded fs-3">
+                                                            <i class="bx bx-list-ul"></i>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -666,7 +747,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Dossiers Annulé</p>
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Dossiers </p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
@@ -675,8 +756,8 @@
                                                         <a href="" class="text-decoration-underline">Voir toute la liste</a>
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-danger rounded fs-3">
-                                                            <i class="bx bx-wallet"></i>
+                                                        <span class="avatar-title bg-info rounded fs-3">
+                                                            <i class="bx bx-list-ul"></i>
                                                         </span>
                                                     </div>
                                                 </div>
