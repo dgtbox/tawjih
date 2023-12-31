@@ -499,14 +499,14 @@
                         </li> <!-- end Dashboard Menu -->
                        
                         <li class="nav-item">
-                            <a class="nav-link menu-link  active" href="#sidebaretudients" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaretudients">
+                            <a class="nav-link menu-link " href="#sidebaretudients" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaretudients">
                                 <i class="bx bx-file"></i> <span data-key="t-apps">etudients</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebaretudients">
                                 <ul class="nav nav-sm flex-column">
                                     
                                     <li class="nav-item">
-                                        <a href="list-etudient.html" class="nav-link  active" data-key="t-chat"> Liste des etudients </a>
+                                        <a href="list-etudient.html" class="nav-link" data-key="t-chat"> Liste des etudients </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="add-etudient.html" class="nav-link" data-key="t-chat">Ajouter un etudient</a>
@@ -518,7 +518,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebaremployees" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaremployees">
+                            <a class="nav-link menu-lin active" href="#sidebaremployees" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaremployees">
                                 <i class="bx bx-file"></i> <span data-key="t-apps">Employées</span>
                             </a>
                             <div class="collapse menu-dropdown" id="sidebaremployees">
@@ -531,7 +531,7 @@
                                         <a href="add-employees.html" class="nav-link" data-key="t-chat">ajouter un employer</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="edit-employees.html" class="nav-link" data-key="t-chat">modifier un employée</a>
+                                        <a href="edit-employees.html active" class="nav-link" data-key="t-chat">modifier un employée</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#sidebartask" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebartask">
@@ -636,187 +636,147 @@
             <div class="page-content">
                 <div class="container-fluid">
 
+                    <!-- start page title -->
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Modifier des employés</h4>
 
-                            <div class="h-100">
-                                <div class="row mb-3 pb-1">
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
-                                            <div class="flex-grow-1">
-                                                <h4 class="fs-20 mb-1">Liste des étudients</h4>
-                                            </div>
-                                            
-                                        </div><!-- end card header -->
-                                    </div>
-                                    <!--end col-->
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="list-employees.html">Employés</a></li>
+                                        <li class="breadcrumb-item active">Modifier un employé</li>
+                                    </ol>
                                 </div>
-                                
 
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="card">
-                                            <div class="card-header border-0 align-items-center d-flex">
-                                                <h4 class="card-title mb-0  col-4">Liste</h4>
-                                                <div class="col-6">
-                                                    <div class="d-flex">
-                                                        <form class="app-search d-none d-md-block">
-                                                            <div class="position-relative">
-                                                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                                                    id="search-options" value="">
-                                                                <span class="mdi mdi-magnify search-widget-icon"></span>
-                                                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
-                                                                    id="search-close-options"></span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Modifier les informations de l'employé</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <form action="javascript:void(0);">
+                                            <div class="row">
+                                                <div class="col-md-4    ">
+                                                    <div class="mb-3">
+                                                        <label for="firstNameinput" class="form-label">Nom</label>
+                                                        <input type="text" class="form-control" id="firstNameinput" value="nom" >
                                                     </div>
                                                 </div>
-                                                <a href="add-etudient.html">
-                                                    <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-primary rounded fs-3">
-                                                            <i class="bx bx-plus"></i>
-                                                        </span>
-                                                    </div></a>
-                                            </div><!-- end card header -->
+                                                <!--end col-->
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="lastNameinput" class="form-label">Prénom</label>
+                                                        <input type="text" class="form-control" value="prénom" id="lastNameinput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="compnayNameinput" class="form-label">CIN</label>
+                                                        <input type="text" class="form-control" value="y888888" id="compnayNameinput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="phonenumberInput" class="form-label">Téléphone</label>
+                                                        <input type="tel" class="form-control" value="+(212) 451 45123" id="phonenumberInput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="emailidInput" class="form-label">Email Address</label>
+                                                        <input type="email" class="form-control" value="example@gamil.com" id="emailidInput">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="citynameInput" class="form-label">Genre</label>
+                                                        <select type="Genre" class="form-select" value="Male" id="citynameInput">
+                                                            <option>Male</option>
+                                                            <option>Femalle</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="emailidInput" class="form-label">Date de naissance</label>
+                                                        <input type="date" class="form-control" value="05/01/2000" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="emailidInput" class="form-label">Date d'inscription</label>
+                                                        <input type="date" class="form-control" value="12/04/2020" id="">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="address1ControlTextarea" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" value="Address" id="address1ControlTextarea">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="card-header" ></div><!-- end card header -->
 
-                                            <div class="card-body">
-                                                <div class="table-responsive table-card mb-4">
-                                                    <table class="table align-middle table-nowrap mb-0" id="tasksTable">
-                                                        <thead class="table-light text-muted">
-                                                            <tr>
-                                                                <th scope="col" style="width: 40px;">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" id="checkAll" value="option">
+                                                <!--end col-->
+                                                <div class="card-body">
+                                                    <div class="live-preview">
+                                                        <form action="javascript:void(0);">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="" class="form-label">Nom d'utilisateur</label>
+                                                                        <input type="text" class="form-control" value="username" id="address1ControlTextarea">
                                                                     </div>
-                                                                </th>
-                                                                <th class="sort" >ID</th>
-                                                                <th class="sort" >Nom d'etudient</th>
-
-                                                                <th class="sort">Etat de dossier</th>
-                                                                <th class="sort" >Date d'inscription</th>
-                                                                <th class="sort" >Nom de son employée</th>
-                                                                <th class="col-2 " >Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody class="list form-check-all">
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="" class="form-label">Mot de passe</label>
+                                                                        <div class="position-relative auth-pass-inputgroup mb-3">
+                                                                            <input type="password" class="form-control pe-5 password-input" value="password" id="password-input">
+                                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                                        </div>
                                                                     </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1">Terminé</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td class="assignedto">Robert Mcmahon    </td>
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <li class="list-inline-item">
-                                                                                    
-                                                                            <a href="edit-etudient.html">
-                                                                                <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                            </a>
-                                                                        
-                                                                        </li>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1 ">en attendent</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td class="assignedto">Robert Mcmahon    </td>
-
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <ul class="list-inline tasks-list-menu mb-0">
-                                                                            
-                                                                                <li class="list-inline-item">
-                                                                                    
-                                                                                    <a href="edit-etudient.html">
-                                                                                        <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                                    </a>
-                                                                                
-                                                                                </li>
-                                                                            
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <!--end table-->
-                                                    <div class="noresult" style="display: none">
-                                                        <div class="text-center">
-                                                            <lord-icon src="../../../msoeawqm.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px"></lord-icon>
-                                                            <h5 class="mt-2">Sorry! No Result Found</h5>
-                                                            <p class="text-muted mb-0">We've searched more than 200k+ tasks We did not find any tasks for you search.</p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-end mt-2">
-                                                    <div class="pagination-wrap hstack gap-2">
-                                                        <a class="page-item pagination-prev disabled" href="#">
-                                                            Previous
-                                                        </a>
-                                                        <ul class="pagination listjs-pagination mb-0"></ul>
-                                                        <a class="page-item pagination-next" href="#">
-                                                            Next
-                                                        </a>
+
+                                                <!--end col-->
+                                                
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <button type="submit" class="btn btn-primary">Valider</button>
                                                     </div>
                                                 </div>
+                                                <!--end col-->
                                             </div>
-                                        </div><!-- end card -->
-                                    </div><!-- end col -->
-
-
-                                </div>      
-
-                            </div> <!-- end .h-100-->
-
+                                            <!--end row-->
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div> <!-- end col -->
-
                     </div>
 
-                </div>
-                <!-- container-fluid -->
+                </div> <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
+
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -839,11 +799,6 @@
     <!-- END layout-wrapper -->
 
 
-
-    <!--start back-to-top-->
-    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
-        <i class="ri-arrow-up-line"></i>
-    </button>
     <!--end back-to-top-->
 
     <!--preloader-->
@@ -1621,6 +1576,8 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/pages/password-addon.init.js"></script>
+
 </body>
 
 </html>
