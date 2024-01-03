@@ -105,46 +105,52 @@
 
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <form action="javascript:void(0);">
+                                        <form action="add-employees-exec.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-4    ">
                                                     <div class="mb-3">
                                                         <label for="firstNameinput" class="form-label">Nom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" id="firstNameinput">
+                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="lastNameinput" class="form-label">Prénom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" id="lastNameinput">
+                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" name="prenom" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="compnayNameinput" class="form-label">CIN</label>
-                                                        <input type="text" class="form-control" placeholder="CIN" id="compnayNameinput">
+                                                        <input type="text" class="form-control" placeholder="CIN" name="cin" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="phonenumberInput" class="form-label">Téléphone</label>
-                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" id="phonenumberInput">
+                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="phonenumberInput" class="form-label">Ville</label>
+                                                        <input type="tel" class="form-control" placeholder="Ville" name="ville" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="emailidInput" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" placeholder="example@gamil.com" id="emailidInput">
+                                                        <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="citynameInput" class="form-label">Genre</label>
-                                                        <select type="Genre" class="form-select" placeholder="Selectioner le sexe" id="citynameInput">
+                                                        <select type="Genre" class="form-select" name="sexe" required>
                                                             <option>Male</option>
                                                             <option>Femalle</option>
                                                         </select>
@@ -153,20 +159,20 @@
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="emailidInput" class="form-label">Date de naissance</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" id="">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datenais" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="emailidInput" class="form-label">Date d'inscription</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" id="">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="dateinsc" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-12">
                                                     <div class="mb-3">
                                                         <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" id="address1ControlTextarea">
+                                                        <input type="text" class="form-control" placeholder="Address" name="address" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
@@ -180,14 +186,14 @@
                                                                 <div class="col-md-6">
                                                                     <div class="mb-3">
                                                                         <label for="" class="form-label">Nom d'utilisateur</label>
-                                                                        <input type="password" class="form-control" placeholder="Address 1" id="address1ControlTextarea">
+                                                                        <input type="password" class="form-control" placeholder="Address 1" name="nomutili" required>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="mb-3">
                                                                         <label for="" class="form-label">Mot de passe</label>
                                                                         <div class="position-relative auth-pass-inputgroup mb-3">
-                                                                            <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input">
+                                                                            <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" name="motpasse" required>
                                                                             <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                                                                         </div>
                                                                     </div>
