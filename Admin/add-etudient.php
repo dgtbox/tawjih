@@ -105,68 +105,93 @@
 
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <form action="javascript:void(0);">
+                                        <form action="add-etudiant-exec.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-4    ">
                                                     <div class="mb-3">
-                                                        <label for="firstNameinput" class="form-label">Nom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" id="firstNameinput">
+                                                        <label for="" class="form-label">Nom</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="lastNameinput" class="form-label">Prénom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" id="lastNameinput">
+                                                        <label for="" class="form-label">Prénom</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" name="prenom" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Niveau</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez le niveau" name="niveau" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Filiere</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez la filiere" name="filiere" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Ecole</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez l'ecole" name="ecole" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="compnayNameinput" class="form-label">CIN</label>
-                                                        <input type="text" class="form-control" placeholder="CIN" id="compnayNameinput">
+                                                        <label for="" class="form-label">CIN</label>
+                                                        <input type="text" class="form-control" placeholder="CIN" name="cin" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="phonenumberInput" class="form-label">Téléphone</label>
-                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" id="phonenumberInput">
+                                                        <label for="" class="form-label">Ville</label>
+                                                        <input type="tel" class="form-control" placeholder="ville" name="ville" required>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" placeholder="example@gamil.com" id="emailidInput">
+                                                        <label for="" class="form-label">Téléphone</label>
+                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="citynameInput" class="form-label">Genre</label>
-                                                        <select type="Genre" class="form-select" placeholder="Selectioner le sexe" id="citynameInput">
+                                                        <label for="" class="form-label">Genre</label>
+                                                        <select type="Genre" class="form-select" placeholder="Selectioner le sexe" name="sexe" required>
                                                             <option>Male</option>
                                                             <option>Femalle</option>
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Email Address</label>
+                                                        <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
+                                                    </div>
+                                                </div>
+                                               
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="emailidInput" class="form-label">Date de naissance</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" id="">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datenaiss" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="emailidInput" class="form-label">Date d'inscription</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" id="">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="dateinscr" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-12">
                                                     <div class="mb-3">
                                                         <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" id="address1ControlTextarea">
+                                                        <input type="text" class="form-control" placeholder="Address" name="adress" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->

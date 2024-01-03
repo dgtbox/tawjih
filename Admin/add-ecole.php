@@ -86,7 +86,7 @@
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="list-employees.html">Ecoles</a></li>
+                                        <li class="breadcrumb-item"><a href="list-ecole.html">Ecoles</a></li>
                                         <li class="breadcrumb-item active">Ajoute un école</li>
                                     </ol>
                                 </div>
@@ -105,12 +105,12 @@
 
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <form action="javascript:void(0);">
+                                        <form action="add-ecole-exec.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-4    ">
                                                     <div class="mb-3">
-                                                        <label for="firstNameinput" class="form-label">Nom de l'école</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" id="firstNameinput">
+                                                        <label for="" class="form-label">Nom de l'école</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
                                                     </div>
                                                 </div>
                                               

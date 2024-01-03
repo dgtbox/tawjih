@@ -105,25 +105,25 @@
 
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <form action="javascript:void(0);">
+                                        <form action="add-dossiers-exec.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-4    ">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Nom de l'etudiant</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" id="">
+                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom1" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Nom de l'employé</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" id="">
+                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom2" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Etat du dossier</label>
-                                                        <select type="Genre" class="form-select" placeholder="Selectioner l'etat de dossier" id="">
+                                                        <select type="Genre" class="form-select" placeholder="Selectioner l'etat de dossier" name="etat" required>
                                                             <option selected>Selectioner l'etat de dossier</option>
                                                             <option>Dossier non validé</option>
                                                             <option>Dossier validé</option>
@@ -135,7 +135,7 @@
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Date du dossier</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" id="">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="date" required>
                                                     </div>
                                                 </div>
 
