@@ -143,14 +143,14 @@
                                                         </thead>
                                                         <tbody class="list form-check-all">
                                                         <?php
-                                                        $top = 20;
-                                                        $start = 0;
-                                                        $sql = "SELECT * FROM etudiant limit $top , $start";
+                                                        $top = 0;
                                                         if(isset($_GET['top']))
                                                         {
-                                                            $start = $_GET['top'];
-                                                            $top = $_GET['top']+20;
+                                                            $top = $_GET['top'];
                                                         }
+                                                        $sql = "SELECT * FROM etudiant limit $top , 20";
+
+                                                        $top = $top + 20;
                                                         include('conn.php');
                                                         $result = mysqli_query($coni, $sql);
                                                         while ($row=mysqli_fetch_assoc($result))
@@ -225,11 +225,26 @@
                                                 </div>
                                                 <div class="d-flex justify-content-end mt-2">
                                                     <div class="pagination-wrap hstack gap-2">
-                                                        <a class="page-item pagination-prev disabled" href="#">
+                                                        <a class="page-item pagination-prev disabled" href="list-etudient.php?top=<?php
+                                                        $prev = $top - 40;
+                                                        if($prev < 0)
+                                                        {
+                                                            $prev = 0;
+                                                        }
+                                                        echo $prev?>">
                                                             Previous
                                                         </a>
                                                         <ul class="pagination listjs-pagination mb-0"></ul>
-                                                        <a class="page-item pagination-next" href="list-etudient.php?top=<?php echo $top?>">
+                                                        <a class="page-item pagination-next" href="list-etudient.php?top=<?php
+                                                        $sql_qry = "select count(*) as total from etudiant";
+                                                        $result = mysqli_query($coni, $sql_qry);
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $total = $row['total'];
+                                                        if($top > $total)
+                                                        {
+                                                            $top = $total-10;
+                                                        }
+                                                        echo $top?>">
                                                             Next
                                                         </a>
                                                     </div>
