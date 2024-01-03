@@ -64,7 +64,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
-        <?php include('Admin/compoments/sidebar.php') ?>
+        <?php include('compoments/sidebar.php') ?>
 
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
