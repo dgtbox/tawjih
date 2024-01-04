@@ -36,7 +36,7 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        <?php include('employées/compoments/header.php') ?>
+        <?php include('compoments/header.php') ?>
 
 
 <!-- removeNotificationModal -->
@@ -64,7 +64,7 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
-        <?php include('employées/compoments/sidebar.php') ?>
+        <?php include('compoments/sidebar.php') ?>
 
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->

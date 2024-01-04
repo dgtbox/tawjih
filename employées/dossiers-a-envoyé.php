@@ -37,7 +37,7 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        <?php include('employées/compoments/header.php') ?>
+        <?php include('compoments/header.php') ?>
 
         <!-- removeNotificationModal -->
         <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
@@ -67,7 +67,7 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
-        <?php include('employées/compoments/sidebar.php') ?>
+        <?php include('compoments/sidebar.php') ?>
 
         <!-- Left Sidebar End -->
         <!-- Vertical Overlay-->
