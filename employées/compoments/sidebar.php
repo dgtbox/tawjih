@@ -2,7 +2,7 @@
             <!-- LOGO -->
             <div class="navbar-brand-box">
                 <!-- Dark Logo-->
-                <a href="employees.html" class="logo logo-dark">
+                <a href="employees.php" class="logo logo-dark">
                     <span class="logo-sm">
                         <img src="assets/images/logo-sm.png" alt="" height="22">
                     </span>
@@ -11,7 +11,7 @@
                     </span>
                 </a>
                 <!-- Light Logo-->
-                <a href="employees.html" class="logo logo-light">
+                <a href="employees.php" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="assets/images/logo-sm.png" alt="" height="22">
                     </span>
@@ -32,13 +32,13 @@
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="employees.html">
+                            <a class="nav-link menu-link" href="employees.php">
                                 <i class="bx bx-home"></i> <span>Home</span>
                             </a>
                             
                         </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="list-etudients.html">
+                            <a class="nav-link menu-link " href="list-etudients.php">
                                 <i class="bx bx-list-ul"></i> <span>Mes etudients</span>
                             </a>
                             
@@ -51,16 +51,16 @@
                                 <ul class="nav nav-sm flex-column">
                                     
                                     <li class="nav-item">
-                                        <a href="dossiers-terminé.html" class="nav-link" data-key="t-chat"> Dossiers Terminé </a>
+                                        <a href="dossiers-terminé.php" class="nav-link" data-key="t-chat"> Dossiers Terminé </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dossiers-a-envoyé.html" class="nav-link" data-key="t-chat"> Dossiers à Envoyé </a>
+                                        <a href="dossiers-a-envoyé.php" class="nav-link" data-key="t-chat"> Dossiers à Envoyé </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dossiers-en-attendent.html" class="nav-link" data-key="t-chat"> Dossiers En Attendent </a>
+                                        <a href="dossiers-en-attendent.php" class="nav-link" data-key="t-chat"> Dossiers En Attendent </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="dossiers-annulé.html" class="nav-link" data-key="t-chat"> Dossiers Annulé </a>
+                                        <a href="dossiers-annulé.php" class="nav-link" data-key="t-chat"> Dossiers Annulé </a>
                                     </li>
                                     
                                     
@@ -71,7 +71,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="tasks.html">
+                            <a class="nav-link menu-link " href="tasks.php">
                                 <i class="bx bx-task-x"></i> <span>Mes Taskes</span>
                             </a>
                             

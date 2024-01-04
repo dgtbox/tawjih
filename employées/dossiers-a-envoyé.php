@@ -122,47 +122,68 @@
 
                                             <div class="card-body">
                                                 <div class="table-responsive table-card mb-4">
-                                                    <table class="table align-middle table-nowrap mb-0" id="tasksTable">
+                                                    <table class="table align-middle table-striped table-nowrap mb-0" id="tasksTable">
                                                         <thead class="table-light text-muted">
                                                             <tr>
-                                                                <th scope="col" style="width: 40px;">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" id="checkAll" value="option">
-                                                                    </div>
-                                                                </th>
-                                                                <th class="sort" >ID</th>
-                                                                <th class="sort" >Nom d'etudient</th>
-
-                                                                <th class="sort">Etat de dossier</th>
+                                                                <th class="sort" >Etudiant</th>
+                                                                <th class="sort" >Ecole</th>
+                                                                <th class="sort" >Date depot de dossier</th>
+                                                                <th class="sort" >statut_interne</th>
                                                                 <th class="sort" >Date d'inscription</th>
-                                                                <th class="col-2 " >Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="list form-check-all">
+                                                        <?php
+                                                        include('conn.php');
+                                                            $sql = "SELECT * FROM dossier ";
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
+
+
+                                                        ?>
                                                             <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
+                                                                <td>
+                                                                    <?php
+                                                                        $sql1 = "SELECT * FROM etudiant WHERE id = ".$row['id_etudiant'];
+                                                                        $result1 = mysqli_query($coni, $sql1);
+                                                                        while ($row1 = mysqli_fetch_assoc($result1)) {
+                                                                            echo $row1['nom']." ".$row1['prenom'];
+                                                                        }
+                                                                    ?>
                                                                 </td>
                                                                 <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1">Pas encore terminé</div>
-                                                                        
-                                                                    </div>
+                                                                    <?php
+                                                                        $sql2 = "SELECT * FROM ecole WHERE id = ".$row['id_ecole'];
+                                                                        $result2 = mysqli_query($coni, $sql2);
+                                                                        while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                                            echo $row2['nom'];
+                                                                        }
+                                                                    ?>
                                                                 </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
                                                                 <td>
+                                                                    <?php
+                                                                        echo $row['date_depot'];
+                                                                    ?>
+                                                                </td>
+                                                                <td>
+                                                                    <?php
+                                                                       if($row['statut_interne'] == 0) {
+                                                                           echo "<span class='bg-danger'> Jamais traité </span>";
+                                                                       }
+                                                                          if($row['statut_interne'] == 1) {
+                                                                             echo "<span class='bg-warning'> En cours de traitement </span>";
+                                                                            }
+                                                                            if($row['statut_interne'] == 2) {
+                                                                             echo "<span class='bg-warning'> Probleme de dossier </span>";
+                                                                            }
+                                                                            if($row['statut_interne'] == 3) {
+                                                                             echo "<span class='bg-success'>Dossier traité </span>";
+                                                                            }
+
+                                                                    ?>
+                                                                </td>
+                                                                  <td>
+
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <ul class="list-inline tasks-list-menu mb-0">
                                                                             <button class="btn btn-success">
@@ -172,39 +193,9 @@
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1 ">Pas encore terminé</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <ul class="list-inline tasks-list-menu mb-0">
-                                                                            <button class="btn btn-success">
-                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
-                                                                            </button>
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
+                                                        <?php
+                                                            }
+                                                        ?>
                                                         </tbody>
                                                     </table>
                                                     <!--end table-->
@@ -275,8 +266,8 @@
 
     <!--preloader-->
     <div id="preloader">
-        <div id="status">
-            <div class="spinner-border text-primary avatar-sm" role="status">
+        <div id="statut_interne">
+            <div class="spinner-border text-primary avatar-sm" role="statut_interne">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
@@ -1040,8 +1031,8 @@
                                             </span>
                                         </span>
                                         <!-- <div id="preloader"> -->
-                                        <div id="status" class="d-flex align-items-center justify-content-center">
-                                            <div class="spinner-border text-primary avatar-xxs m-auto" role="status">
+                                        <div id="statut_interne" class="d-flex align-items-center justify-content-center">
+                                            <div class="spinner-border text-primary avatar-xxs m-auto" role="statut_interne">
                                                 <span class="visually-hidden">Loading...</span>
                                             </div>
                                         </div>
