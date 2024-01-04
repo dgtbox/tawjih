@@ -115,7 +115,7 @@
                                                         </form>
                                                     </div>
                                                 </div>
-                                                <a href="add-etudient.html">
+                                                <a href="add-etudient.php">
                                                     <div class="avatar-sm flex-shrink-0">
                                                         <span class="avatar-title bg-primary rounded fs-3">
                                                             <i class="bx bx-plus"></i>
@@ -203,7 +203,7 @@
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <li class="list-inline-item">
                                                                                     
-                                                                            <a href="edit-etudient.html">
+                                                                            <a href="edit-etudient.php">
                                                                                 <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
                                                                             </a>
                                                                         

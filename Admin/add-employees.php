@@ -123,7 +123,7 @@
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="compnayNameinput" class="form-label">CIN</label>
+                                                        <label for="" class="form-label">CIN</label>
                                                         <input type="text" class="form-control" placeholder="CIN" name="cin" required>
                                                     </div>
                                                 </div>
@@ -151,7 +151,7 @@
                                                 <div class="col-md-12">
                                                     <div class="mb-3">
                                                         <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" name="address" required>
+                                                        <input type="text" class="form-control" placeholder="Address" name="adress" required>
                                                     </div>
                                                 </div>
                                                 <!--

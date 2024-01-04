@@ -100,7 +100,7 @@
                                         <div class="card">
                                             <div class="card-header border-0 align-items-center d-flex">
                                                 <h4 class="card-title mb-0  col-4">Liste</h4>
-                                                <div class="col-4">
+                                                <div class="col-6">
                                                     <div class="d-flex">
                                                         <form class="app-search d-none d-md-block">
                                                             <div class="position-relative">
@@ -115,6 +115,12 @@
                                                         </form>
                                                     </div>
                                                 </div>
+                                                <a href="add-ecole.php">
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-primary rounded fs-3">
+                                                            <i class="bx bx-plus"></i>
+                                                        </span>
+                                                    </div></a>
                                             </div><!-- end card header -->
 
                                             <div class="card-body">
@@ -122,98 +128,53 @@
                                                     <table class="table align-middle table-nowrap mb-0" id="tasksTable">
                                                         <thead class="table-light text-muted">
                                                             <tr>
-                                                                <th scope="col" style="width: 40px;">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" id="checkAll" value="option">
-                                                                    </div>
-                                                                </th>
-                                                                <th class="sort" >ID</th>
                                                                 <th class="sort" >Nom d'école</th>
 
-                                                                <th class="sort">Nom de l'employée</th>
-                                                                <th class="sort" >Date de task</th>
-                                                                <th class="sort" >Nom de son employée</th>
+                                                                <th class="sort">Adresse de l'école</th>
                                                                 <th class="col-2 " >Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="list form-check-all">
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1">Terminé</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td class="assignedto">Robert Mcmahon    </td>
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <li class="list-inline-item">
-                                                                                    
-                                                                            <a href="edit-employees.html">
-                                                                                <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                            </a>
-                                                                        
-                                                                        </li>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1 ">en attendent</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td class="assignedto">Robert Mcmahon    </td>
+                                                            <?php
+                                                            $top = 0;
+                                                            if(isset($_GET['top']))
+                                                            {
+                                                                $top = $_GET['top'];
+                                                            }
+                                                            $sql = "SELECT * FROM ecole limit $top , 20";
 
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <ul class="list-inline tasks-list-menu mb-0">
+                                                            $top = $top + 20;
+                                                            include('conn.php');
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row=mysqli_fetch_assoc($result))
+                                                            {?>
+                                                                <tr>
+                                                                    <td class="assignedto">
+                                                                            <?php echo $row['nom'] ?>
                                                                             
-                                                                                <li class="list-inline-item">
-                                                                                    
-                                                                                    <a href="edit-employees.html">
-                                                                                        <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                                    </a>
-                                                                                
-                                                                                </li>
                                                                             
-                                                                        </ul>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-grow-1">
+                                                                                <?php echo $row['adresse'] ?>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex-shrink-0 ms-0">
+                                                                            <li class="list-inline-item">
+                                                                                        
+                                                                                <a href="edit-etudient.php">
+                                                                                    <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
+                                                                                </a>
+                                                                            
+                                                                            </li>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php } ?>
                                                         </tbody>
                                                     </table>
                                                     <!--end table-->

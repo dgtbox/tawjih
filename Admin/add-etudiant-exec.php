@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ville = $_POST["ville"];
     include("conn.php");
 
-    $sql = "INSERT INTO etudiant(nom, prenom, email, tel, adresse, ville)
+    $sql = "INSERT INTO etudiant(nom, prenom,niveau, filiere, ecole, email, tel, adresse, ville)
     VALUES ('$nom','$prenom','$niveau','$filiere','$ecole','$email','$tel','$adresse','$ville')";
     if (mysqli_query($coni, $sql)) {
 //echo("<script>window.location.replace('index.php/')</script>");
