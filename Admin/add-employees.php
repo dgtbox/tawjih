@@ -147,27 +147,6 @@
                                                         <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="citynameInput" class="form-label">Genre</label>
-                                                        <select type="Genre" class="form-select" name="sexe" required>
-                                                            <option>Male</option>
-                                                            <option>Femalle</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Date de naissance</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datenais" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Date d'inscription</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="dateinsc" required>
-                                                    </div>
-                                                </div>
                                                 <!--end col-->
                                                 <div class="col-md-12">
                                                     <div class="mb-3">
@@ -175,33 +154,33 @@
                                                         <input type="text" class="form-control" placeholder="Address" name="address" required>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
-                                                <div class="card-header" ></div><!-- end card header -->
+                                                <!--
+                                                    <div class="card-header" ></div><!-- end card header -->
 
-                                                <!--end col-->
-                                                <div class="card-body">
-                                                    <div class="live-preview">
-                                                        <form action="javascript:void(0);">
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Nom d'utilisateur</label>
-                                                                        <input type="password" class="form-control" placeholder="Address 1" name="nomutili" required>
+                                                    -->
+                                                    <!--<div class="card-body">
+                                                        <div class="live-preview">
+                                                            <form action="javascript:void(0);">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="" class="form-label">Nom d'utilisateur</label>
+                                                                            <input type="password" class="form-control" placeholder="Address 1" name="nomutili" required>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Mot de passe</label>
-                                                                        <div class="position-relative auth-pass-inputgroup mb-3">
-                                                                            <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" name="motpasse" required>
-                                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="" class="form-label">Mot de passe</label>
+                                                                            <div class="position-relative auth-pass-inputgroup mb-3">
+                                                                                <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" name="motpasse" required>
+                                                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div>-->
 
                                                 <!--end col-->
                                                 

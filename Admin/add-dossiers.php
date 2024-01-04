@@ -36,7 +36,7 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        <?php include('Admin/compoments/Header.php') ?>
+        <?php include('/compoments/Header.php') ?>
 
 
 <!-- removeNotificationModal -->

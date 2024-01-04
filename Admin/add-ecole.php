@@ -113,6 +113,12 @@
                                                         <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4    ">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Adresse</label>
+                                                        <input type="text" class="form-control" placeholder="Entrez l'adresse" name="adresse" required>
+                                                    </div>
+                                                </div>
                                               
 
                                                 <!--end col-->

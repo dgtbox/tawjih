@@ -139,12 +139,6 @@
                                                     </div>
                                                 </div>
                                                 <!--end col-->
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">CIN</label>
-                                                        <input type="text" class="form-control" placeholder="CIN" name="cin" required>
-                                                    </div>
-                                                </div>
                                                 <!--end col-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
@@ -158,33 +152,11 @@
                                                         <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Genre</label>
-                                                        <select type="Genre" class="form-select" placeholder="Selectioner le sexe" name="sexe" required>
-                                                            <option>Male</option>
-                                                            <option>Femalle</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
                                                 <!--end col-->
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Email Address</label>
                                                         <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
-                                                    </div>
-                                                </div>
-                                               
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Date de naissance</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datenaiss" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Date d'inscription</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="dateinscr" required>
                                                     </div>
                                                 </div>
                                                 <!--end col-->
@@ -194,10 +166,10 @@
                                                         <input type="text" class="form-control" placeholder="Address" name="adress" required>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
-                                                <div class="card-header" ></div><!-- end card header -->
+                                                <!--
+                                                <div class="card-header" ></div>-->
 
-                                                <!--end col-->
+                                                <!--
                                                 <div class="card-body">
                                                     <div class="live-preview">
                                                         <form action="javascript:void(0);">
@@ -222,7 +194,7 @@
                                                     </div>
                                                 </div>
 
-                                                <!--end col-->
+                                                -->
                                                 
                                                 <div class="col-lg-12">
                                                     <div class="text-center">
