@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 05 jan. 2024 à 00:44
+-- Généré le : dim. 07 jan. 2024 à 22:33
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -108,6 +108,8 @@ CREATE TABLE `etudiant` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) DEFAULT NULL,
   `prenom` varchar(255) DEFAULT NULL,
+  `cin` varchar(50) NOT NULL,
+  `massar` varchar(15) NOT NULL,
   `niveau` varchar(255) DEFAULT NULL,
   `filiere` varchar(255) DEFAULT NULL,
   `ecole` varchar(255) DEFAULT NULL,
@@ -116,50 +118,6 @@ CREATE TABLE `etudiant` (
   `adresse` varchar(255) DEFAULT NULL,
   `ville` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `etudiant`
---
-
-INSERT INTO `etudiant` (`id`, `nom`, `prenom`, `niveau`, `filiere`, `ecole`, `email`, `tel`, `adresse`, `ville`) VALUES
-(1, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(2, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(3, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(4, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(5, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(6, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(7, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(8, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(9, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(10, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(11, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(12, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(13, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(14, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(15, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(16, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(17, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(18, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(19, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(20, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(21, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(22, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(23, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(24, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(25, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(26, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(27, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(28, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(29, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(30, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(31, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(32, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(33, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(34, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(35, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(36, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(37, 'azizi', '3bass', '1', '1', '1', 'azizi@a.a', '0645125374', 'Avenue Bir Anzarane, Dcheira El Jihadia 80000', 'agadir'),
-(38, 'kaab', 'khalil', '1', '1', 'qalam', 'khalilkaab12@outlook.fr', '+212637462651', '92 op ferdaous gh23', 'aga');
 
 -- --------------------------------------------------------
 
