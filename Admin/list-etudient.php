@@ -131,13 +131,8 @@
 
                                                                 <th class="sort" >Nom d'etudient</th>
                                                                 <th class="sort" >Prenom d'etudient</th>
-                                                                <th class="sort">Niveau Scolaire</th>
-                                                                <th class="sort" >Filere</th>
-                                                                <th class="sort" >Ecole</th>
-                                                                <th class="sort" >E-mail</th>
-                                                                <th class="sort" >Telephone</th>
-                                                                <th class="sort" >Adresse</th>
-                                                                <th class="sort" >Ville</th>
+                                                                <th class="sort">CIN</th>
+                                                                <th class="sort" >Code massar</th>
                                                                 <th class="col-2 " >Action</th>
                                                             </tr>
                                                         </thead>
@@ -175,30 +170,14 @@
                                                                     </div>
                                                                 </td>
                                                                 
-                                                                <td class="due_date">
-                                                                    <?php echo $row['niveau'] ?>
-                                                                </td>
                                                                 <td class="assignedto">
-                                                                <?php echo $row['filiere'] ?>
+                                                                <?php echo $row['cin'] ?>
 
 
                                                                 </td>
                                                                 <td class="assignedto">
-                                                                <?php echo $row['ecole'] ?>
+                                                                <?php echo $row['massar'] ?>
                                                                 </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['email'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['tel'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['adresse'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['ville'] ?>
-                                                                </td>
-
                                                                 <td>
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <li class="list-inline-item">

@@ -78,142 +78,151 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
                     <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Ajouter des etudiants</h4>
+                        <div class="col">
 
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="list-etudient.html">Etudiants</a></li>
-                                        <li class="breadcrumb-item active">Ajoute un etudiant</li>
-                                    </ol>
+                            <div class="h-100">
+                                <div class="row mb-3 pb-1">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                            <div class="flex-grow-1">
+                                                <h4 class="fs-20 mb-1">Liste des périodes des écoles</h4>
+                                            </div>
+                                            
+                                        </div><!-- end card header -->
+                                    </div>
+                                    <!--end col-->
                                 </div>
+                                
 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end page title -->
-
-                    <div class="row">
-                        <div class="col-xxl-6">
-                            <div class="card">
-                                <div class="card-header align-items-center d-flex">
-                                    <h4 class="card-title mb-0 flex-grow-1">Entrer les informations de l'etudiant</h4>
-                                </div><!-- end card header -->
-
-                                <div class="card-body">
-                                    <div class="live-preview">
-                                        <form action="add-etudiant-exec.php" method="POST">
-                                            <div class="row">
-                                                <div class="col-md-4    ">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Nom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
-                                                    </div>
-                                                </div>
-                                                <!--end col-->
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Prénom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" name="prenom" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">CIN</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le niveau" name="cin" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Code massar</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez la filiere" name="massar" required>
-                                                    </div>
-                                                </div>
-                                                <!--
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Ecole</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez l'ecole" name="ecole" required>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Ville</label>
-                                                        <input type="tel" class="form-control" placeholder="ville" name="ville" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Téléphone</label>
-                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="mb-3">
-                                                        <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" name="adress" required>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="card-header" ></div>-->
-
-                                                <!--
-                                                <div class="card-body">
-                                                    <div class="live-preview">
-                                                        <form action="javascript:void(0);">
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Nom d'utilisateur</label>
-                                                                        <input type="password" class="form-control" placeholder="Address 1" id="address1ControlTextarea">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Mot de passe</label>
-                                                                        <div class="position-relative auth-pass-inputgroup mb-3">
-                                                                            <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input">
-                                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card">
+                                            <div class="card-header border-0 align-items-center d-flex">
+                                                <h4 class="card-title mb-0  col-4">Liste</h4>
+                                                <div class="col-6">
+                                                    <div class="d-flex">
+                                                        <form class="app-search d-none d-md-block">
+                                                            <div class="position-relative">
+                                                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                                                    id="search-options" value="">
+                                                                <span class="mdi mdi-magnify search-widget-icon"></span>
+                                                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                                                                    id="search-close-options"></span>
                                                             </div>
+                                                            
+                                                            
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <a href="add-ecole-periode.php">
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-primary rounded fs-3">
+                                                            <i class="bx bx-plus"></i>
+                                                        </span>
+                                                    </div></a>
+                                            </div><!-- end card header -->
+
+                                            <div class="card-body">
+                                                <div class="table-responsive table-card mb-4">
+                                                    <table class="table align-middle table-nowrap mb-0" id="tasksTable">
+                                                        <thead class="table-light text-muted">
+                                                            <tr>
+                                                                <th class="sort" >Nom d'école</th>
+
+                                                                <th class="sort">date de debut</th>
+                                                                <th class="sort">date de fin</th>
+                                                                <th class="col-2 " >Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="list form-check-all">
+                                                            <?php
+                                                            $top = 0;
+                                                            if(isset($_GET['top']))
+                                                            {
+                                                                $top = $_GET['top'];
+                                                            }
+                                                            $sql = "SELECT * FROM ecole_cand_preiod limit $top , 20";
+
+                                                            $top = $top + 20;
+                                                            include('conn.php');
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row=mysqli_fetch_assoc($result))
+                                                            {?>
+                                                                <tr>
+                                                                    <td class="assignedto">
+                                                                            <?php echo $row['tite'] ?>
+                                                                            
+                                                                            
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-grow-1">
+                                                                                <?php echo $row['date_debut'] ?>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-grow-1">
+                                                                                <?php echo $row['date_fin'] ?>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex-shrink-0 ms-0">
+                                                                            <li class="list-inline-item">
+                                                                                        
+                                                                                <a href="edit-ecole-periode.php">
+                                                                                    <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
+                                                                                </a>
+                                                                            
+                                                                            </li>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php } ?>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--end table-->
+                                                    <div class="noresult" style="display: none">
+                                                        <div class="text-center">
+                                                            <lord-icon src="../../../msoeawqm.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px"></lord-icon>
+                                                            <h5 class="mt-2">Sorry! No Result Found</h5>
+                                                            <p class="text-muted mb-0">We've searched more than 200k+ tasks We did not find any tasks for you search.</p>
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                -->
-                                                
-                                                <div class="col-lg-12">
-                                                    <div class="text-center">
-                                                        <button type="submit" class="btn btn-primary">Valider</button>
+                                                <div class="d-flex justify-content-end mt-2">
+                                                    <div class="pagination-wrap hstack gap-2">
+                                                        <a class="page-item pagination-prev disabled" href="#">
+                                                            Previous
+                                                        </a>
+                                                        <ul class="pagination listjs-pagination mb-0"></ul>
+                                                        <a class="page-item pagination-next" href="#">
+                                                            Next
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
                                             </div>
-                                            <!--end row-->
-                                            
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                                        </div><!-- end card -->
+                                    </div><!-- end col -->
+
+
+                                </div>      
+
+                            </div> <!-- end .h-100-->
+
                         </div> <!-- end col -->
+
                     </div>
 
-                </div> <!-- container-fluid -->
+                </div>
+                <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-
 
             <footer class="footer">
                 <div class="container-fluid">
@@ -236,6 +245,11 @@
     <!-- END layout-wrapper -->
 
 
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
     <!--end back-to-top-->
 
     <!--preloader-->
@@ -1013,8 +1027,6 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/pages/password-addon.init.js"></script>
-
 </body>
 
 </html>
