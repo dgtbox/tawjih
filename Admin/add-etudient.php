@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Dashboard | TWJIH - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -219,11 +219,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by Themesbrand
+                                Design & Develop by B-Wise
                             </div>
                         </div>
                     </div>
@@ -984,7 +984,7 @@
                     <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
                 </div>
                 <div class="col-6">
-                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary w-100">Buy Now</a>
+                    <a href="https://1.envato.market/TWJIH-admin" target="_blank" class="btn btn-primary w-100">Buy Now</a>
                 </div>
             </div>
         </div>
