@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    <title>Dashboard | TWJIH - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -187,7 +187,7 @@
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <ul class="list-inline tasks-list-menu mb-0">
                                                                             <button class="btn btn-success">
-                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
+                                                                                <li class="list-inline-item"><a href="tasks.php?id=<?php echo $row['id']?> "><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
                                                                             </button>
                                                                         </ul>
                                                                     </div>
@@ -240,11 +240,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by Themesbrand
+                                Design & Develop by B-Wise
                             </div>
                         </div>
                     </div>
@@ -1082,7 +1082,7 @@
                     <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
                 </div>
                 <div class="col-6">
-                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary w-100">Buy
+                    <a href="https://1.envato.market/TWJIH-admin" target="_blank" class="btn btn-primary w-100">Buy
                         Now</a>
                 </div>
             </div>

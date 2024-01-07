@@ -7,7 +7,7 @@ include('cookiecheck.php');
 <head>
 
     <meta charset="utf-8" />
-    <title>Sign In | Velzon - Admin & Dashboard Template</title>
+    <title>Sign In | TWJIH - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -65,7 +65,7 @@ include('cookiecheck.php');
                             <div class="card-body p-4">
                                 <div class="text-center mt-2">
                                     <h5 class="text-primary">Welcome Admin!</h5>
-                                    <p class="text-muted">Sign in to continue to Velzon.</p>
+                                    <p class="text-muted">Sign in to continue to TWJIH.</p>
                                 </div>
                                 <div class="p-2 mt-4">
                                     <form action="login-exec.php" method="post">
@@ -119,7 +119,7 @@ include('cookiecheck.php');
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> Velzon. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                <script>document.write(new Date().getFullYear())</script> TWJIH. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
                             </p>
                         </div>
                     </div>
