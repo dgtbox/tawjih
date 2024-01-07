@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 07 jan. 2024 à 22:33
+-- Généré le : dim. 07 jan. 2024 à 22:44
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -69,6 +69,19 @@ CREATE TABLE `ecole` (
 
 INSERT INTO `ecole` (`id`, `nom`, `adresse`) VALUES
 (1, 'kaab', 'khjkhjkhjkhj');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `ecole_cand_preiod`
+--
+
+CREATE TABLE `ecole_cand_preiod` (
+  `id_ecole` int(11) NOT NULL,
+  `tite` varchar(255) DEFAULT NULL,
+  `date_debut` date DEFAULT NULL,
+  `date_fin` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
