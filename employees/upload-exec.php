@@ -1,11 +1,9 @@
 <?php
 session_start();
 include('conn.php');
-$ide = $_POST['ide'];
-$idec = $_POST['idec'];
-$id = $_SESSION['idr'];
 $target_dir = "acuse/";
-$new_name = $ide."_".$idec."_".$id.".pdf"; // New file name
+$id = $_POST["id"];
+$new_name = $id."_acuse".".pdf"; // New file name
 $target_file = $target_dir . $new_name;
 $uploadOk = 1;
 $fileextension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -29,6 +27,8 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fl"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fl"]["name"])). " has been uploaded.";
+    $sql = "UPDATE dossier SET statut_interne = '3' where id = '$id'";
+    mysqli_query($coni, $sql);
+    header("location: dossiers-a-envoyé.php");
   }
 }

@@ -80,7 +80,10 @@
         <div class="main-content">
             <?php
             include('conn.php');
+
             $id = $_GET['id'];
+            $sq = "UPDATE dossier SET statut_interne = '3' where id = '$id'";
+            mysqli_query($coni, $sq);
             $sql = "SELECT * FROM dossier WHERE id = $id";
             $result = mysqli_query($coni, $sql);
             $row = mysqli_fetch_assoc($result);
@@ -133,12 +136,16 @@
                                 <div class="card-body">
                                     <h5 class="card-title mb-3">Attachments</h5>
                                     <div class="vstack gap-2">
-                                        <form action="upload-exec.pdf" enctype="multipart/form-data" method="post">
+                                        <form action="upload-exec.php" enctype="multipart/form-data" method="post">
                                         <div class="mt-2">
                                             <input class="form-label" for="formFile" type="file" name="fl">
                                         </div>
+                                        <input type="hidden" name="id" value="<?php
+                                        echo $id;
+                                        ?>">
+                                        
                                         <div class="mt-2 text-center">
-                                            <button type="button" class="btn btn-success">Finalisé</button>
+                                            <button type="submit" class="btn btn-success">Finalisé</button>
                                         </div>
                                         </form>
                                     </div>
