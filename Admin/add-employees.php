@@ -127,37 +127,10 @@
                                                         <input type="text" class="form-control" placeholder="CIN" name="cin" required>
                                                     </div>
                                                 </div>
-                                                <!--end col-->
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="phonenumberInput" class="form-label">Téléphone</label>
-                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="phonenumberInput" class="form-label">Ville</label>
-                                                        <input type="tel" class="form-control" placeholder="Ville" name="ville" required>
-                                                    </div>
-                                                </div>
-                                                <!--end col-->
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="emailidInput" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
-                                                    </div>
-                                                </div>
-                                                <!--end col-->
-                                                <div class="col-md-12">
-                                                    <div class="mb-3">
-                                                        <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" name="adress" required>
-                                                    </div>
-                                                </div>
+                                                
                                                 <!--
-                                                    <div class="card-header" ></div><!-- end card header -->
+                                                    <div class="card-header" ></div end card header -->
 
-                                                    -->
                                                     <!--<div class="card-body">
                                                         <div class="live-preview">
                                                             <form action="javascript:void(0);">

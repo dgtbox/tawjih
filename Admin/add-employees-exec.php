@@ -3,14 +3,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $CIN = $_POST["cin"];
-    $email = $_POST["mail"];
-    $tel = $_POST["telephone"];
-    $adresse = $_POST["adress"];
-    $ville = $_POST["ville"];
     include("conn.php");
 
-    $sql = "INSERT INTO employe(nom, prenom, CIN, email, tel, adresse, ville)
-    VALUES ('$nom','$prenom', '$CIN','$email','$tel','$adresse','$ville')";
+    $sql = "INSERT INTO employe(nom, prenom, CIN)
+    VALUES ('$nom','$prenom', '$CIN')";
     if (mysqli_query($coni, $sql)) {
 //echo("<script>window.location.replace('index.php/')</script>");
 header('location: list-employees.php');

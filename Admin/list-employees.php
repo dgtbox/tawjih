@@ -131,11 +131,6 @@
                                                                 <th class="sort" >Nom</th>
                                                                 <th class="sort" >Prénom</th>
                                                                 <th class="sort" >CIN</th>
-                                                                <th class="sort" >Téléphone</th>
-
-                                                                <th class="sort">Ville</th>
-                                                                <th class="sort" >Adresse</th>
-                                                                <th class="sort" >Email</th>
                                                                 <th class="col-2 " >Action</th>
                                                             </tr>
                                                         </thead>
@@ -175,20 +170,6 @@
                                                                 
                                                                 <td class="assignedto">
                                                                     <?php echo $row['CIN'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['tel'] ?>
-
-
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['ville'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['adresse'] ?>
-                                                                </td>
-                                                                <td class="assignedto">
-                                                                <?php echo $row['email'] ?>
                                                                 </td>
                                                                 <td>
                                                                     <div class="flex-shrink-0 ms-0">
