@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | TWJIH - Admin & Dashboard Template</title>
+    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -82,12 +82,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Ajouter des etudiants</h4>
+                                <h4 class="mb-sm-0">Ajouter des périodes des écoles</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="list-etudient.html">Etudiants</a></li>
-                                        <li class="breadcrumb-item active">Ajoute un etudiant</li>
+                                        <li class="breadcrumb-item"><a href="list-ecole-periode.php">Periodes des écoles</a></li>
+                                        <li class="breadcrumb-item active">Ajouter une période d'école</li>
                                     </ol>
                                 </div>
 
@@ -100,99 +100,35 @@
                         <div class="col-xxl-6">
                             <div class="card">
                                 <div class="card-header align-items-center d-flex">
-                                    <h4 class="card-title mb-0 flex-grow-1">Entrer les informations de l'etudiant</h4>
+                                    <h4 class="card-title mb-0 flex-grow-1">Entrer les informations de la période de l'école</h4>
                                 </div><!-- end card header -->
 
                                 <div class="card-body">
                                     <div class="live-preview">
-                                        <form action="add-etudiant-exec.php" method="POST">
+                                        <form action="add-ecole-periode-exec.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-4    ">
                                                     <div class="mb-3">
-                                                        <label for="" class="form-label">Nom</label>
+                                                        <label for="" class="form-label">Nom de l'école</label>
                                                         <input type="text" class="form-control" placeholder="Entrez le nom" name="nom" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Date de debut</label>
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datedebut" required>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Date de fin</label>
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datefin" required>
+                                                    </div>
+                                                </div>
+                                              
+
                                                 <!--end col-->
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Prénom</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le prénom" name="prenom" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">CIN</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez le niveau" name="cin" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Code massar</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez la filiere" name="massar" required>
-                                                    </div>
-                                                </div>
-                                                <!--
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Ecole</label>
-                                                        <input type="text" class="form-control" placeholder="Entrez l'ecole" name="ecole" required>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Ville</label>
-                                                        <input type="tel" class="form-control" placeholder="ville" name="ville" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Téléphone</label>
-                                                        <input type="tel" class="form-control" placeholder="+(212) 451 45123" name="telephone" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Email Address</label>
-                                                        <input type="email" class="form-control" placeholder="example@gamil.com" name="mail" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="mb-3">
-                                                        <label for="address1ControlTextarea" class="form-label">Address</label>
-                                                        <input type="text" class="form-control" placeholder="Address" name="adress" required>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="card-header" ></div>-->
-
-                                                <!--
-                                                <div class="card-body">
-                                                    <div class="live-preview">
-                                                        <form action="javascript:void(0);">
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Nom d'utilisateur</label>
-                                                                        <input type="password" class="form-control" placeholder="Address 1" id="address1ControlTextarea">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="mb-3">
-                                                                        <label for="" class="form-label">Mot de passe</label>
-                                                                        <div class="position-relative auth-pass-inputgroup mb-3">
-                                                                            <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input">
-                                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none shadow-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                -->
                                                 
                                                 <div class="col-lg-12">
                                                     <div class="text-center">
@@ -219,11 +155,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Design & Develop by B-Wise
+                                Design & Develop by Themesbrand
                             </div>
                         </div>
                     </div>
@@ -984,7 +920,7 @@
                     <button type="button" class="btn btn-light w-100" id="reset-layout">Reset</button>
                 </div>
                 <div class="col-6">
-                    <a href="https://1.envato.market/TWJIH-admin" target="_blank" class="btn btn-primary w-100">Buy Now</a>
+                    <a href="https://1.envato.market/velzon-admin" target="_blank" class="btn btn-primary w-100">Buy Now</a>
                 </div>
             </div>
         </div>

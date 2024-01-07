@@ -155,6 +155,25 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarperiode" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarperiode">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Période de candidature</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarperiode">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-ecole-periode.php" class="nav-link" data-key="t-chat"> Liste des périodes des écoles </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-ecole-periode.php" class="nav-link" data-key="t-chat">Ajouter une période d'école</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="edit-ecole-periode.php" class="nav-link" data-key="t-chat">Modifier une période d'école</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
