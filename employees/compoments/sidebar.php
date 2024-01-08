@@ -35,44 +35,20 @@
                             <a class="nav-link menu-link" href="employees.php">
                                 <i class="bx bx-home"></i> <span>Home</span>
                             </a>
-                            
                         </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="list-etudients.php">
-                                <i class="bx bx-list-ul"></i> <span>Mes etudients</span>
+                            <a class="nav-link menu-link " href="dossiers-a-envoyé.php">
+                                <i class="bx bx-file"></i> <span>Dossiers à Envoyé</span>
                             </a>
-                            
                         </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="bx bx-file"></i> <span data-key="t-apps">Mes Dossiers</span>
+                            <a class="nav-link menu-link " href="dossiers-terminé.php">
+                                <i class="bx bx-file"></i> <span>Dossiers Terminé</span>
                             </a>
-                            <div class="collapse menu-dropdown" id="sidebarApps">
-                                <ul class="nav nav-sm flex-column">
-                                    
-                                    <li class="nav-item">
-                                        <a href="dossiers-terminé.php" class="nav-link" data-key="t-chat"> Dossiers Terminé </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dossiers-a-envoyé.php" class="nav-link" data-key="t-chat"> Dossiers à Envoyé </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dossiers-en-attendent.php" class="nav-link" data-key="t-chat"> Dossiers En Attendent </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="dossiers-annulé.php" class="nav-link" data-key="t-chat"> Dossiers Annulé </a>
-                                    </li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                </ul>
-                            </div>
-                        </li>
+                        </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
-                            <a class="nav-link menu-link " href="tasks.php">
-                                <i class="bx bx-task-x"></i> <span>Mes Taskes</span>
+                            <a class="nav-link menu-link " href="dossiers-en-attendent.php">
+                                <i class="bx bx-file"></i> <span>Dossiers En Attendent</span>
                             </a>
                             
                         </li> <!-- end Dashboard Menu -->
