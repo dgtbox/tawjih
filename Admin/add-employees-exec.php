@@ -5,16 +5,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $CIN = $_POST["cin"];
     include("conn.php");
 
-    $sql = "INSERT INTO employe(nom, prenom, CIN)
-    VALUES ('$nom','$prenom', '$CIN')";
-    if (mysqli_query($coni, $sql)) {
-//echo("<script>window.location.replace('index.php/')</script>");
-header('location: list-employees.php');
-} else {
-echo "Error: " . $sql . "<br>" . mysqli_error($coni);
-}
+    // Prepare an SQL statement
+    $stmt = $coni->prepare("INSERT INTO employe(nom, prenom, CIN) VALUES (?, ?, ?)");
 
-// Close the database connection
-mysqli_close($coni);
+    // Bind parameters to the SQL statement
+    $stmt->bind_param('sss', $nom, $prenom, $CIN);
+
+    // Execute the statement
+    $stmt->execute();
+
+    $lastId = $coni->insert_id;
+    $login = $nom . $lastId;
+    $pass = password_hash($nom . $lastId, PASSWORD_DEFAULT);
+    $stat = 3;
+    $stmt = $coni->prepare("INSERT INTO logs (log, pass, idrelate, stat) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssii", $login, $pass, $lastId, $stat);
+    $stmt->execute();
+
+    // Close the statement and the database connection
+    $stmt->close();
+    $coni->close();
 }
-?>  
+?>
