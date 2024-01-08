@@ -135,7 +135,7 @@
                                                         <tbody class="list form-check-all">
                                                         <?php
                                                         include('conn.php');
-                                                            $sql = "SELECT * FROM dossier ";
+                                                            $sql = "SELECT * FROM dossier where statut_interne = 0";
                                                             $result = mysqli_query($coni, $sql);
                                                             while ($row = mysqli_fetch_assoc($result)) {
 
