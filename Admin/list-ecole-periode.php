@@ -128,7 +128,8 @@
                                                     <table class="table align-middle table-nowrap mb-0" id="tasksTable">
                                                         <thead class="table-light text-muted">
                                                             <tr>
-                                                                <th class="sort" >Nom d'école</th>
+                                                                <th class="sort" >Periode</th>
+                                                                <th class="sort">Ecole</th>
 
                                                                 <th class="sort">date de debut</th>
                                                                 <th class="sort">date de fin</th>
@@ -155,6 +156,12 @@
                                                                             
                                                                             
                                                                     </td>
+                                                                    <td class="assignedto">
+                                                                            <?php $sql1 = "SELECT * FROM ecole where id = ".$row['id_ecole'];
+                                                                            $result1 = mysqli_query($coni, $sql1);
+                                                                            $row1=mysqli_fetch_assoc($result1);
+                                                                            echo $row1['nom'] ?>
+
                                                                     <td>
                                                                         <div class="d-flex">
                                                                             <div class="flex-grow-1">

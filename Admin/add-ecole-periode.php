@@ -115,7 +115,7 @@
 
                                                         <?php include("conn.php");
                                             
-                                                                $sql = "select * from etudiant";
+                                                                $sql = "select * from ecole";
                                                                 $result = mysqli_query($coni, $sql);
                                                                 while ($row = mysqli_fetch_assoc($result))
                                                                 {
@@ -126,6 +126,13 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Titre</label>
+                                                        <input type="text" class="form-control"name="titre" required>
+                                                    </div>
+                                                </div>
+
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Date de debut</label>
