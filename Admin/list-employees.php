@@ -39,30 +39,30 @@
         <?php include('compoments/header.php') ?>
 
 
-<!-- removeNotificationModal -->
-<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mt-2 text-center">
-                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
-                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                        <h4>Are you sure ?</h4>
-                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+        <!-- removeNotificationModal -->
+        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
                     </div>
-                </div>
-                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
-                </div>
-            </div>
+                    <div class="modal-body">
+                        <div class="mt-2 text-center">
+                            <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                                <h4>Are you sure ?</h4>
+                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                        </div>
+                    </div>
 
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
         <?php include('compoments/sidebar.php') ?>
 
@@ -88,12 +88,12 @@
                                             <div class="flex-grow-1">
                                                 <h4 class="fs-20 mb-1">Liste des Employées</h4>
                                             </div>
-                                            
+
                                         </div><!-- end card header -->
                                     </div>
                                     <!--end col-->
                                 </div>
-                                
+
 
                                 <div class="row">
                                     <div class="col-xl-12">
@@ -104,14 +104,12 @@
                                                     <div class="d-flex">
                                                         <form class="app-search d-none d-md-block">
                                                             <div class="position-relative">
-                                                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
-                                                                    id="search-options" value="">
+                                                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="">
                                                                 <span class="mdi mdi-magnify search-widget-icon"></span>
-                                                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
-                                                                    id="search-close-options"></span>
+                                                                <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
                                                             </div>
-                                                            
-                                                            
+
+
                                                         </form>
                                                     </div>
                                                 </div>
@@ -120,7 +118,8 @@
                                                         <span class="avatar-title bg-primary rounded fs-3">
                                                             <i class="bx bx-plus"></i>
                                                         </span>
-                                                    </div></a>
+                                                    </div>
+                                                </a>
                                             </div><!-- end card header -->
 
                                             <div class="card-body">
@@ -128,62 +127,83 @@
                                                     <table class="table align-middle table-nowrap mb-0" id="tasksTable">
                                                         <thead class="table-light text-muted">
                                                             <tr>
-                                                                <th class="sort" >Nom</th>
-                                                                <th class="sort" >Prénom</th>
-                                                                <th class="sort" >CIN</th>
-                                                                <th class="col-2 " >Action</th>
+                                                                <th class="sort">Nom</th>
+                                                                <th class="sort">Prénom</th>
+                                                                <th class="sort">CIN</th>
+                                                                <th class="col-2 ">Modifier</th>
+                                                                <th class="ol-2">Accé </th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="list form-check-all">
-                                                        <?php
-                                                        $top = 0;
-                                                        if(isset($_GET['top']))
-                                                        {
-                                                            $top = $_GET['top'];
-                                                        }
-                                                        $sql = "SELECT * FROM employe limit $top , 20";
+                                                            <?php
+                                                            $top = 0;
+                                                            if (isset($_GET['top'])) {
+                                                                $top = $_GET['top'];
+                                                            }
+                                                            $sql = "SELECT * FROM employe limit $top , 20";
 
-                                                        $top = $top + 20;
-                                                        include('conn.php');
-                                                        $result = mysqli_query($coni, $sql);
-                                                        while ($row=mysqli_fetch_assoc($result))
-                                                        {
+                                                            $top = $top + 20;
+                                                            include('conn.php');
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
 
 
-                                                        ?>
-                                                            <tr>
+                                                            ?>
+                                                                <tr>
 
 
-                                                                <td class="assignedto">
+                                                                    <td class="assignedto">
                                                                         <?php echo $row['nom'] ?>
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1">
-                                                                            <?php echo $row['prenom'] ?>
+
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <div class="flex-grow-1">
+                                                                                <?php echo $row['prenom'] ?>
+                                                                            </div>
+
                                                                         </div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="assignedto">
-                                                                    <?php echo $row['CIN'] ?>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <li class="list-inline-item">
-                                                                                    
-                                                                            <a href="edit-employees.php">
-                                                                                <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
+                                                                    </td>
+
+                                                                    <td class="assignedto">
+                                                                        <?php echo $row['CIN'] ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex-shrink-0 ms-0">
+                                                                            <li class="list-inline-item">
+
+                                                                                <a href="edit-employees.php">
+                                                                                    <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
+                                                                                </a>
+
+                                                                            </li>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        $sql2 = "SELECT * FROM logs WHERE idrelate = " . $row['id'] . " and stat = 3";
+                                                                        $result2 = mysqli_query($coni, $sql2);
+                                                                        $row2 = mysqli_fetch_assoc($result2);
+                                                                        ?>
+                                                                            <a href="suspend-exec.php?id=<?php
+                                                                                                            echo $row2['id']; ?>&cs=<?php
+                                                                            echo $row2['acce']; ?>" class="btn btn-sm">
+                                                                                <?php
+                                                                                if ($row2['acce'] == 1) {
+                                                                                ?>
+                                                                                    <span class='badge bg-success'>Autorisé</span>
+                                                                                <?php
+                                                                                } else if ($row2['acce'] == 0) {
+                                                                                ?>
+                                                                                    <span class='badge bg-danger'>Suspendu</span>
+                                                                                <?php
+                                                                                }
+                                                                                ?>
                                                                             </a>
-                                                                        
-                                                                        </li>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        <?php } ?>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php } ?>
                                                         </tbody>
                                                     </table>
                                                     <!--end table-->
@@ -211,7 +231,7 @@
                                     </div><!-- end col -->
 
 
-                                </div>      
+                                </div>
 
                             </div> <!-- end .h-100-->
 
@@ -228,7 +248,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © TWJIH.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
@@ -443,7 +465,7 @@
                     <div id="sidebar-visibility">
                         <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">Sidebar Visibility</h6>
                         <p class="text-muted">Choose show or Hidden sidebar.</p>
-                
+
                         <div class="row">
                             <div class="col-4">
                                 <div class="form-check card-radio">
@@ -900,7 +922,7 @@
                                 <label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
                                     <img src="assets/images/sidebar/img-1.jpg" alt="" class="avatar-md w-auto object-fit-cover">
                                 </label>
-                            </div>	
+                            </div>
 
                             <div class="form-check sidebar-setting card-radio">
                                 <input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-02" value="img-2">
@@ -926,7 +948,7 @@
                     <div id="preloader-menu">
                         <h6 class="mt-4 mb-0 fw-semibold text-uppercase fs-12">Preloader</h6>
                         <p class="text-muted">Choose a preloader.</p>
-                    
+
                         <div class="row">
                             <div class="col-4">
                                 <div class="form-check sidebar-setting card-radio">
@@ -984,7 +1006,7 @@
                                 <h5 class="fs-13 text-center mt-2">Disable</h5>
                             </div>
                         </div>
-                    
+
                     </div>
                     <!-- end preloader-menu -->
 
@@ -1005,6 +1027,7 @@
     </div>
 
     <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
