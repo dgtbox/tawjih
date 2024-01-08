@@ -131,7 +131,7 @@
                                                     </div>
                                                 </div>
                                                 
-                                                <!--end col-->
+                                                <!--end col
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Nom de l'étudiant</label>
@@ -161,89 +161,27 @@
                                                                 </form>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="" class="form-label">Nom de l'école</label>
+                                                        <label for="" class="form-label">Période de candidature</label>
                                                         <select type="text" class="form-control" placeholder="Entrez le nom" name="nom2" required>
-                                                        <option selected>Selectioner l'école</option>
+                                                        <option selected>Selectioner période de candidature</option>
 
                                                         <?php include("conn.php");
                                             
-                                                                $sql = "select * from ecole";
+                                                                $sql = "select * from ecole_cand_preiod";
                                                                 $result = mysqli_query($coni, $sql);
                                                                 while ($row = mysqli_fetch_assoc($result))
                                                                 {
-                                                                    echo '<option value="'.$row["id"].'">'.$row["nom"].'</option>';
+                                                                    echo '<option value="'.$row["id"].'">'.$row["tite"].'</option>';
                                                                 }
                                                             
                                                             ?>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Choix1</label>
-                                                        <select type="text" class="form-control" placeholder="" name="choix1" required>
-                                                            <option selected>Selectioner choix1</option>
-                                                            <option >Selectioner choix1</option>
-                                                            <option >Selectioner choix1</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Choix2</label>
-                                                        <select type="text" class="form-control" placeholder="" name="choix2" required>
-                                                            <option selected>Selectioner choix2</option>
-                                                            <option >Selectioner choix2</option>
-                                                            <option >Selectioner choix2</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Choix3</label>
-                                                        <select type="text" class="form-control" placeholder="" name="choix3" required>
-                                                            <option selected>Selectioner choix3</option>
-                                                            <option >Selectioner choix3</option>
-                                                            <option >Selectioner choix3</option>
-                                                        </select>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Statut interne</label>
-                                                        <input type="text" class="form-control" placeholder="" name="statutint" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Statut externe</label>
-                                                        <input type="text" class="form-control" placeholder="" name="statutext" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Date de depot</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datedepot" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Date de reponse</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="daterepon" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="" class="form-label">Date de reponse externe</label>
-                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="datereponext" required>
-                                                    </div>
-                                                </div>
+                                                
                                                 
 
                                                 <!--end col-->
