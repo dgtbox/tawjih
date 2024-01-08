@@ -25,6 +25,11 @@ if (isset($_GET['cookie'])) {
       $_SESSION['idr'] = $GLOBALS['idr'];
       header('location: crossroads.php');
     } else {
+      setcookie("loguser", "", time() - 3600, "/");
+      setcookie("logpass", "", time() - 3600, "/");     
+      unset($_COOKIE["loguser"]);
+      unset($_COOKIE["logpass"]);
+     
       header('location: login.php?wp=10');
     }
   } else {
@@ -52,7 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
   if ($i == 1) {
     if (password_verify($pass, $hashed_password)) {
-      setcookie("loguser", $usr, time() + 86400, "", "", false, true);
+      setcookie("loguser", $usr, time() + (86400 * 30), "/"); // 86400 = 1 day
+      setcookie("logpass", $pass, time() + (86400 * 30), "/");    
       $_SESSION['id'] = $GLOBALS['id'];
       $_SESSION['stat'] = $GLOBALS['stat'];
       $_SESSION['idr'] = $GLOBALS['idr'];

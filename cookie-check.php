@@ -1,7 +1,6 @@
 <?php
 session_start();
 if (isset($_COOKIE["loguser"])&&!isset($_SESSION['id'])) {
-    $cookie_value = $_COOKIE["loguser"];
     $expiration = time() + 86400;
     if ($expiration < time()) {
         setcookie("loguser", "", time() - 3600);
@@ -14,7 +13,7 @@ if (isset($_COOKIE["loguser"])&&!isset($_SESSION['id'])) {
 }
     elseif(!isset($_COOKIE["loguser"])&&isset($_SESSION['id']))
     {
-        
+        session_destroy();
     }
     elseif(!isset($_COOKIE["loguser"])&&!isset($_SESSION['id']))
     {

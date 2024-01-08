@@ -7,7 +7,7 @@
     <title>Sign In | TWJIH - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
+    <meta content="B-Wise" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="Admin/assets/images/favicon.ico">
 
@@ -114,7 +114,7 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">&copy;
-                                <script>document.write(new Date().getFullYear())</script> TWJIH. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                <script>document.write(new Date().getFullYear())</script> TWJIH. Crafted with <i class="mdi mdi-heart text-danger"></i> by B-Wise
                             </p>
                         </div>
                     </div>
