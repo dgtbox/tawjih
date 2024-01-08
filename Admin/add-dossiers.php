@@ -27,7 +27,11 @@
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <!-- custom Css-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
-
+<style>
+    .text-left{
+        
+    }
+</style>
 
 </head>
 
@@ -124,28 +128,40 @@
                                                             
                                                             ?>
                                                         </select>
-                                                        <script>
-                                                    function filtere() {
-                                                            var input, filter, ul, li, a, i;
-                                                            input = document.getElementById("eInput");
-                                                            filter = input.value.toUpperCase();
-                                                            div = document.getElementById("eDropdown");
-                                                            a = div.getElementsByTagName(
-                                                                "label"); // get the labels instead of the inputs
-                                                            for (i = 0; i < a.length; i++) {
-                                                                txtValue = a[i].textContent || a[i].innerText;
-                                                                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                                                    a[i].style.display = "";
-                                                                } else {
-                                                                    a[i].style.display = "none";
-                                                                }
-                                                            }
-                                                        }
-                                                    </script>
-                                                    
                                                     </div>
                                                 </div>
+                                                
                                                 <!--end col-->
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Nom de l'étudiant</label>
+                                                            <button type="button" class="form-control col-xs-11 text-left" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <p class="mb-0 text-left">Veuillez sélectionne un parent</p>
+
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-md p-4">
+                                                                <form>
+                                                                    <div class="mb-2">
+                                                                        <p class="checkbox-title">Chercher par nom ou prénom</p>
+                                                                        <div class="form-custom">
+                                                                            <input type="text" id="eInput" onkeyup="filtere()" class="form-control bg-grey" placeholder="Enter Customer Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <label class="form-label" for="exampleDropdownFormPassword">Password</label>
+                                                                        <input type="password" class="form-control" id="exampleDropdownFormPassword" placeholder="Password">
+                                                                    </div>
+                                                                    <div class="mb-2">
+                                                                        <div class="form-check custom-checkbox">
+                                                                            <input type="checkbox" class="form-check-input" id="rememberdropdownCheck">
+                                                                            <label class="form-check-label" for="rememberdropdownCheck">Remember me</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                                </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label for="" class="form-label">Nom de l'école</label>
