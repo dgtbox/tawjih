@@ -69,22 +69,44 @@
 
                                         <div class="mb-3">
                                             <h6>nom d'utilisateur :</h6>
-                                            <p id="codeInput"> aa</p>   
+                                            <p> aa</p>   
                                         </div>
 
                                         <div class="mb-3">
                                             
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                            <h6>mot de passe :</h6>
-                                        <p id="codeInput">aaaaaaaaaaaa</p>
+                                                <h6>mot de passe :</h6>
+                                                <p id="textToCopy">aaaaaaaaaaaa</p>
                                             </div>
                                         </div>
 
                                         <div class="">
                                             <div class="mb-3">
-                                                <button class="btn btn-primary" type="button" onclick="copyCode()"><i class="fas fa-copy icon" onclick="copyCode"></i> Copie</button>
+                                                <button class="btn btn-primary" type="button" onclick="copyText()">  Copier  </button>
                                                 
                                             </div>
+                                            <script>
+                                                function copyText() {
+                                                    // Sélectionner l'élément contenant le texte
+                                                    var textArea = document.getElementById("textToCopy");
+
+                                                    // Créer une plage de texte sélectionné
+                                                    var range = document.createRange();
+                                                    range.selectNode(textArea);
+
+                                                    // Sélectionner le texte
+                                                    window.getSelection().removeAllRanges(); // Désélectionner tout d'abord
+                                                    window.getSelection().addRange(range);
+
+                                                    // Copier le texte dans le presse-papiers
+                                                    document.execCommand("copy");
+
+                                                    // Désélectionner le texte après la copie
+                                                    window.getSelection().removeAllRanges();
+
+                                                    // Vous pouvez également informer l'utilisateur que le texte a été copié
+                                                }
+                                            </script>
                                             <div class="mb-3">
                                             <a href="#" class="btn btn-primary">Continue</a>
                                         
@@ -139,13 +161,7 @@
     <script src="Admin/assets/js/pages/particles.app.js"></script>
     <!-- password-addon init -->
     <script src="Admin/assets/js/pages/password-addon.init.js"></script>
-    <script>
-        function copyCode() {
-            var codeInput = document.getElementById("codeInput");
-            codeInput.select();
-            document.execCommand("copy");
-        }
-</script>
+    
 </body>
 
 </html>
