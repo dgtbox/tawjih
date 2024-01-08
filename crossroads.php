@@ -16,5 +16,9 @@
     {
         header('location: admin/home.php');
     }
+    if($_SESSION["stat"]== 3)
+    {
+        header('location: employees\dossiers-a-envoyé.php');
+    }
 
  ?>
