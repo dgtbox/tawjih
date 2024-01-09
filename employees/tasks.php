@@ -151,12 +151,14 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!--end card-->
                         </div>
                         <!---end col-->
                         <div class="col-xxl-9">
                             <div class="card">
                                 <div class="card-body">
+                                <h5 class="card-title mb-3">Attachments</h5>
                                     <div class="table-card">
                                         <table class="table mb-0">
                                             <tbody>
@@ -188,6 +190,44 @@
                                 </div>
                             </div>
                             <!--end card-->
+                            <div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title mb-3">Attachments</h5>                                        
+                                <div class="vstack gap-2">
+                                        <div class="border rounded border-dashed p-2">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar-sm">
+                                                        <div class="avatar-title bg-light text-secondary rounded fs-24">
+                                                            <i class="ri-folder-zip-line"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 overflow-hidden">
+                                                    <h5 class="fs-13 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">App pages.zip</a></h5>
+                                                    <div>2.2MB</div>
+                                                </div>
+                                                <div class="flex-shrink-0 ms-2">
+                                                    <div class="d-flex gap-1">
+                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-icon text-muted btn-sm fs-18 dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="ri-more-fill"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                             <!--end card-->
                         </div>
                         <!--end col-->

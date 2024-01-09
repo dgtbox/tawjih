@@ -1,19 +1,19 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_etudiant = $_POST["nom1"];
-    $id_ecole = $_POST["nom2"];
-    $choix1 = $_POST["choix1"];
-    $choix2 = $_POST["choix2"];
-    $choix3 = $_POST["choix3"];
-    $statut_interne = $_POST["statutint"];
-    $statut_externe = $_POST["statutext"];
-    $date_depot = $_POST["datedepot"];
-    $date_reponse = $_POST["daterepon"];
-    $date_reponse_externe = $_POST["datereponext"];
+    $idcand = $_POST["nom2"];
     include("conn.php");
+    $sq = "SELECT * FROM ecole_cand_preiod WHERE id = '$idcand'";
+    $result = mysqli_query($coni, $sq);
+    $row = mysqli_fetch_array($result);
+    $id_ecole = $row['id_ecole'];
+    $statut_interne = 0;
+    $statut_externe = 0;
+    $date_reponse = null;
+    $date_reponse_externe = null;
 
-    $sql = "INSERT INTO dossier(id_etudiant, id_ecole, choix1, choix2, choix3, statut_interne, statut_externe, date_depot, date_reponse, date_reponse_externe)
-    VALUES ('$id_etudiant','$id_ecole', '$choix1','$choix2','$choix3','$statut_interne','$statut_externe','$date_depot','$date_reponse','$date_reponse_externe')";
+    $sql = "INSERT INTO dossier(id_etudiant, id_ecole, statut_interne, statut_externe, date_depot, date_reponse, date_reponse_externe,id_cand_period)
+    VALUES ('$id_etudiant','$id_ecole','$statut_interne','$statut_externe',CURDATE(),'$date_reponse','$date_reponse_externe',$idcand)";
     if (mysqli_query($coni, $sql)) {
 //echo("<script>window.location.replace('index.php/')</script>");
 header('location: list-dossiers.php');
