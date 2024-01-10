@@ -105,7 +105,7 @@
                                                     <a href="list-dossiers-non-valide.php" class="nav-link" data-key="t-chat">Dossiers non traité</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="list-dossiers-en-attendent.php" class="nav-link" data-key="t-chat">Dossiers en cour</a>
+                                                    <a href="list-dossiers-en-attente.php" class="nav-link" data-key="t-chat">Dossiers en cour</a>
                                                 </li>
                                             </ul>
                                         </div>

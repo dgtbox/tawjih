@@ -5,7 +5,8 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | TWJIH - Admin & Dashboard Template</title>
+    <title>|AL RAED| PLATEFORME EN LIGNE</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="B-Wise" name="author" />
@@ -129,13 +130,15 @@
                                                         <th class="sort" >Ecole</th>
                                                         <th class="sort" >Date depot de dossier</th>
                                                         <th class="sort" >statut_interne</th>
-                                                        <th class="sort" >Date d'inscription</th>
+                                                        <th></th>
                                                     </tr>
+
+
                                                     </thead>
                                                     <tbody class="list form-check-all">
                                                     <?php
                                                     include('conn.php');
-                                                    $sql = "SELECT * FROM dossier where statut_interne = 1";
+                                                    $sql = "SELECT * FROM dossier where statut_interne = 1 or statut_interne = 2";
                                                     $result = mysqli_query($coni, $sql);
                                                     while ($row = mysqli_fetch_assoc($result)) {
 
@@ -174,7 +177,7 @@
                                                                     echo "<span class='bg-warning'> En cours de traitement </span>";
                                                                 }
                                                                 if($row['statut_interne'] == 2) {
-                                                                    echo "<span class='bg-warning'> Probleme de dossier </span>";
+                                                                    echo "<span class='bg-danger'> Probleme de dossier </span>";
                                                                 }
                                                                 if($row['statut_interne'] == 3) {
                                                                     echo "<span class='bg-success'>Dossier traité </span>";

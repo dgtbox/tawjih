@@ -33,24 +33,25 @@
                         <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="employees.php">
-                                <i class="bx bx-home"></i> <span>Home</span>
+                                <i class="bx bx-home"></i> <span>Tableau De Bord</span>
                             </a>
                         </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link " href="dossiers-a-envoyé.php">
-                                <i class="bx bx-file"></i> <span>Dossiers à Envoyé</span>
+                                <i class="bx bx-file"></i> <span>Dossiers Non Traité</span>
                             </a>
                         </li> <!-- end Dashboard Menu -->
+                         <!-- end Dashboard Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link " href="dossiers-en-attente.php">
+                                <i class="bx bx-file"></i> <span>Dossiers En Attente</span>
+                            </a>
+                            
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link " href="dossiers-terminé.php">
                                 <i class="bx bx-file"></i> <span>Dossiers Terminé</span>
                             </a>
-                        </li> <!-- end Dashboard Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link menu-link " href="dossiers-en-attendent.php">
-                                <i class="bx bx-file"></i> <span>Dossiers En Attendent</span>
-                            </a>
-                            
                         </li> <!-- end Dashboard Menu -->
                     </ul>
                 </div>

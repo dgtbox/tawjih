@@ -20,5 +20,9 @@
     {
         header('location: employees\dossiers-a-envoyé.php');
     }
+    if($_SESSION["stat"]== 4)
+    {
+        header('location: etudients\etudient-list-ecoles.php');
+    }
 
  ?>
