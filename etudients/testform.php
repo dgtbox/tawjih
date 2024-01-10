@@ -381,11 +381,15 @@
 
 
                                             <div class="col-lg-6">
-                                                <div class="input-group">
+                                                <div class="">
+                                                    
                                                     <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <input type="text" name="fn" id="">
+                                                    <div class="class="form-control"">
+                                                        <input type="text"  name="fn" id="">
 
-                                                    <label class="input-group-text btn btn-success" for="inputGroupFile02" type="submit">Envoyer</label>
+                                                        <label class="input-group-text btn btn-success" for="inputGroupFile02" type="submit">Envoyer</label>
+                                                    </div>
+                                                    
 
                                                 </div>
                                             </div>
