@@ -15,5 +15,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $coni->prepare("INSERT INTO logs (log, pass, idrelate, stat) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssii", $login, $pass, $lastId, $stat);
     $stmt->execute();
-    header("location: list-employees.php");
+    header("location: ../success.php");
 }

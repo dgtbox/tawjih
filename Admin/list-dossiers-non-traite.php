@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg"
+    data-sidebar-image="none" data-preloader="disable">
 
 <head>
 
@@ -39,31 +40,33 @@
 
         <?php include('compoments/header.php') ?>
 
-
-<!-- removeNotificationModal -->
-<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mt-2 text-center">
-                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
-                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                        <h4>Are you sure ?</h4>
-                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+        <!-- removeNotificationModal -->
+        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            id="NotificationModalbtn-close"></button>
                     </div>
-                </div>
-                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
-                </div>
-            </div>
+                    <div class="modal-body">
+                        <div class="mt-2 text-center">
+                            <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
+                                colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                                <h4>Are you sure ?</h4>
+                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete
+                                It!</button>
+                        </div>
+                    </div>
 
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
         <?php include('compoments/sidebar.php') ?>
 
@@ -87,7 +90,7 @@
                                     <div class="col-12">
                                         <div class="d-flex align-items-lg-center flex-lg-row flex-column">
                                             <div class="flex-grow-1">
-                                                <h4 class="fs-20 mb-1">Liste des dossiers non validé</h4>
+                                                <h4 class="fs-20 mb-1">Liste des dossiers non traité</h4>
                                             </div>
                                             
                                         </div><!-- end card header -->
@@ -100,7 +103,7 @@
                                     <div class="col-xl-12">
                                         <div class="card">
                                             <div class="card-header border-0 align-items-center d-flex">
-                                                <h4 class="card-title mb-0  col-4">Liste</h4>
+                                                <h4 class="card-title mb-0  col-4">Liste des dossiers</h4>
                                                 <div class="col-4">
                                                     <div class="d-flex">
                                                         <form class="app-search d-none d-md-block">
@@ -120,93 +123,80 @@
 
                                             <div class="card-body">
                                                 <div class="table-responsive table-card mb-4">
-                                                    <table class="table align-middle table-nowrap mb-0" id="tasksTable">
+                                                    <table class="table align-middle table-striped table-nowrap mb-0" id="tasksTable">
                                                         <thead class="table-light text-muted">
                                                             <tr>
-                                                                <th scope="col" style="width: 40px;">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" id="checkAll" value="option">
-                                                                    </div>
-                                                                </th>
-                                                                <th class="sort" >ID</th>
-                                                                <th class="sort" >Nom d'etudient</th>
-
-                                                                <th class="sort">Etat de dossier</th>
-                                                                <th class="sort" >Date d'inscription</th>
-                                                                <th class="col-2 " >Action</th>
+                                                                <th class="sort" >Etudiant</th>
+                                                                <th class="sort" >Ecole</th>
+                                                                <th class="sort" >Date depot de dossier</th>
+                                                                <th class="sort" >statut_interne</th>
+                                                                <th  ></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="list form-check-all">
+                                                        <?php
+                                                        include('conn.php');
+                                                            $sql = "SELECT * FROM dossier where statut_interne = 0";
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
+
+
+                                                        ?>
                                                             <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
+                                                                <td>
+                                                                    <?php
+                                                                        $sql1 = "SELECT * FROM etudiant WHERE id = ".$row['id_etudiant'];
+                                                                        $result1 = mysqli_query($coni, $sql1);
+                                                                        while ($row1 = mysqli_fetch_assoc($result1)) {
+                                                                            echo $row1['nom']." ".$row1['prenom'];
+                                                                        }
+                                                                    ?>
                                                                 </td>
                                                                 <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1">Pas encore terminé</div>
-                                                                        
-                                                                    </div>
+                                                                    <?php
+                                                                        $sql2 = "SELECT * FROM ecole WHERE id = ".$row['id_ecole'];
+                                                                        $result2 = mysqli_query($coni, $sql2);
+                                                                        while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                                            echo $row2['nom'];
+                                                                        }
+                                                                    ?>
                                                                 </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
                                                                 <td>
+                                                                    <?php
+                                                                        echo $row['date_depot'];
+                                                                    ?>
+                                                                </td>
+                                                                <td>
+                                                                    <?php
+                                                                       if($row['statut_interne'] == 0) {
+                                                                           echo "<span class='bg-danger'> Jamais traité </span>";
+                                                                       }
+                                                                          if($row['statut_interne'] == 1) {
+                                                                             echo "<span class='bg-warning'> En cours de traitement </span>";
+                                                                            }
+                                                                            if($row['statut_interne'] == 2) {
+                                                                             echo "<span class='bg-warning'> Probleme de dossier </span>";
+                                                                            }
+                                                                            if($row['statut_interne'] == 3) {
+                                                                             echo "<span class='bg-success'>Dossier traité </span>";
+                                                                            }
+
+                                                                    ?>
+                                                                </td>
+                                                                  <td>
+
                                                                     <div class="flex-shrink-0 ms-0">
-                                                                        <li class="list-inline-item">
-                                                                                    
-                                                                            <a href="edit-dossiers.html">
-                                                                                <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                            </a>
-                                                                        
-                                                                        </li>
+                                                                        <ul class="list-inline tasks-list-menu mb-0">
+                                                                            <button class="btn btn-success">
+                                                                                <li class="list-inline-item"><a href="tasks.php?id=<?php echo $row['id']?> "><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
+                                                                            </button>
+                                                                        </ul>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <th scope="row">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1">
-                                                                    </div>
-                                                                </th>
-                                                                <td class="id"><a href="dossier-etudient.html" class="fw-medium link-primary">#VLZ501</a></td>
-                                                                
-                                                                <td class="assignedto">
-                                                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
-                                                                        </a>Robert Mcmahon
-                                                                        
-                                                                        
-                                                                </td>
-                                                                <td>
-                                                                    <div class="d-flex">
-                                                                        <div class="flex-grow-1 ">Pas encore terminé</div>
-                                                                        
-                                                                    </div>
-                                                                </td>
-                                                                
-                                                                <td class="due_date">25 Jan, 2022</td>
-                                                                <td>
-                                                                    <div class="flex-shrink-0 ms-0">
-                                                                        <li class="list-inline-item">
-                                                                                    
-                                                                            <a href="edit-dossiers.html">
-                                                                                <i class="ri-edit-fill align-bottom me-2 text-muted"></i>
-                                                                            </a>
-                                                                        
-                                                                        </li>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
+                                                        <?php
+                                                            }
+                                                        ?>
                                                         </tbody>
                                                     </table>
                                                     <!--end table-->
@@ -277,15 +267,16 @@
 
     <!--preloader-->
     <div id="preloader">
-        <div id="status">
-            <div class="spinner-border text-primary avatar-sm" role="status">
+        <div id="statut_interne">
+            <div class="spinner-border text-primary avatar-sm" role="statut_interne">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
     </div>
 
     <div class="customizer-setting d-none d-md-block">
-        <div class="btn-info rounded-pill shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+        <div class="btn-info rounded-pill shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
+            data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
             <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
         </div>
     </div>
