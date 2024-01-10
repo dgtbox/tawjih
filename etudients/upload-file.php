@@ -1,4 +1,7 @@
 
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
 
@@ -383,12 +386,12 @@
                                             <div class="col-lg-6">
                                                 <div class="">
                                                     
-                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                    <input type="file"  name="fl" class="form-control" id="inputGroupFile02">
                                                     <br>
 
-                                                    <input type="text" class="form-control"  name="fn" id="">
+                                                    <input type="text" placeholder="De quel document sagit il ?" class="form-control"  name="fn" id="">
                                                     <br>
-                                                    <input type="hidden" value="">
+                                                    <input type="hidden" name="id" value="<?php echo $_SESSION['idr'] ?>">
 
                                                     <input class="input-group-text btn btn-success" for="inputGroupFile02" type="submit" value="envoyer">
 
