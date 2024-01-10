@@ -45,6 +45,6 @@ if ($uploadOk == 0) {
     } else {
       echo "Error: " . $sql1 . "<br>" . mysqli_error($coni);
     }
-    header("location: dossiers-a-envoyé.php");
+    header("location: home.php");
   }
 }
