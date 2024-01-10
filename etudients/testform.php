@@ -377,16 +377,13 @@
                                     <div class="card-body border border-dashed border-end-0 border-start-0">
                                     
                                         <form class="d-flex" action="upload-exec.php" enctype="multipart/form-data" method="post">
-                                            <input type="file" name="fl" required >
-                                            <input type="text" name="fn" id="">
-                                            <input type="hidden" name="id" value="1">
-                                            <input class="btn btn-success" type="submit"> 
+                                            
 
 
                                             <div class="col-lg-6">
                                                 <div class="input-group">
                                                     <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                    <label class="input-group-text" for="inputGroupFile02">Envoyer</label>
                                                 </div>
                                             </div>
                                         </form>

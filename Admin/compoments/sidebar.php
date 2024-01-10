@@ -69,6 +69,22 @@
                             </div>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebaradmin" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaradmin">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Admin</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebaradmin">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-admin.php" class="nav-link" data-key="t-chat">Liste des admins</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-admin.php" class="nav-link" data-key="t-chat">ajouter un admin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarecoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarecoles">
                                 <i class="bx bx-file"></i> <span data-key="t-apps">Ecoles</span>
                             </a>
