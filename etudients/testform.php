@@ -384,12 +384,12 @@
                                                 <div class="">
                                                     
                                                     <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <div class="class="form-control"">
-                                                        <input type="text"  name="fn" id="">
+                                                    <br>
 
-                                                        <label class="input-group-text btn btn-success" for="inputGroupFile02" type="submit">Envoyer</label>
-                                                    </div>
-                                                    
+                                                    <input type="text" class="form-control"  name="fn" id="">
+                                                    <br>
+
+                                                    <label class="input-group-text btn btn-success" for="inputGroupFile02" type="submit">Envoyer</label>
 
                                                 </div>
                                             </div>
