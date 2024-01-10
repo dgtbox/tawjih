@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
 
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-
+    
 
     <!-- Begin page -->
     <div id="layout-wrapper">
@@ -40,20 +40,20 @@
                 <div class="navbar-header">
                     <div class="d-flex">
                         <!-- LOGO -->
-
-
+                        
+        
                         <a href="Etudient-list-ecoles.html" class="logo">
-
+                            
                             <span class="logo">
                                 <img src="assets/images/logo-dark.png" alt="" height="17">
                             </span>
                         </a>
-
+        
                         <!-- App Search-->
 
                     </div>
-
-                    <!--                     <div class="d-flex align-items-center">
+        
+                    <div class="d-flex align-items-center">
                         <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                                 <i class='bx bx-bell fs-22'></i>
@@ -317,360 +317,244 @@
                                 </div>
                             </div>
                         </div>
-         -->
-                    <div class="dropdown ms-sm-3 header-item topbar-user">
-                        <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="d-flex align-items-center">
-                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                                <span class="text-start ms-xl-2">
-                                    <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna Adame</span>
-                                    <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+        
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="d-flex align-items-center">
+                                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                                    <span class="text-start ms-xl-2">
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna Adame</span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+                                    </span>
                                 </span>
-                            </span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end">
-
-                            <a class="dropdown-item" href="../logout.php"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Welcome Anna!</h6>
+                                <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                                <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+                                                               <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="pages-profile-settings.html"><span class="badge bg-success-subtle text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                                <a class="dropdown-item" href="Etudient-login.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-    </header>
+        </header>
 
-    <!-- removeNotificationModal -->
+<!-- removeNotificationModal -->
 
+        
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
 
-    <!-- Left Sidebar End -->
-    <!-- Vertical Overlay-->
-    <div class="vertical-overlay"></div>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
 
-    <!-- ============================================================== -->
-    <!-- Start right Content here -->
-    <!-- ============================================================== -->
-    <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
 
-        <div class="page-content">
-            <div class="container-fluid">
+                    <!-- start page title -->
+                  
+                    <!-- end page title -->
 
-                <!-- start page title -->
-
-                <!-- end page title -->
-
-                <div class="row">
-                    <div class="col-xxl-3">
-
-                        <!--end card-->
-
-                        <!--end card-->
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex mb-3">
-                                    <h6 class="card-title mb-0 flex-grow-1">Dossiers imcomplet</h6>
-                                    <div class="flex-shrink-0">
-                                        <a href="list-ecoles-envoyées.html">
-                                            <button type="button" onclick="window.location.href='upload-file.php'" class="btn btn-soft-danger btn-sm shadow-none">Ajouter des documents</button>
-                                        </a>
+                    <div class="row">
+                        <div class="col-xxl-3">
+                            
+                            <!--end card-->
+                           
+                            <!--end card-->
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <h6 class="card-title mb-0 flex-grow-1">Upload de fichier</h6>
+                                        
                                     </div>
-                                </div>
-                                <div class="card-bo dy border border-dashed border-end-0 border-start-0">
+                                    <div class="card-body border border-dashed border-end-0 border-start-0">
+                                    
+                                        <form class="d-flex" action="upload-exec.php" enctype="multipart/form-data" method="post">
+                                            
 
-                                    <table class="table align-middle">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th>École</th>
-                                                <th>Manquant</th>
-                                                <th>Upload</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="list form-check-all">
-                                            <?php
-                                            include('conn.php');
-                                            $sql = "SELECT * FROM dossier WHERE statut_interne = 2 and id_etudiant = " . $_SESSION['idr'] . "";
-                                            $result = mysqli_query($coni, $sql);
-                                            while ($row = mysqli_fetch_assoc($result)) {
-                                            ?>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
 
-                                                            <div class="flex-grow-1 ms-2 name"><?php
-                                                                                                $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
-                                                                                                $result1 = mysqli_query($coni, $sql1);
-                                                                                                $row1 = mysqli_fetch_assoc($result1);
-                                                                                                echo $row1['nom'];
-                                                                                                ?></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="etat-dossier"><?php echo $row['com'] ?> </td>
-                                                    <td>
-                                                        <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                                                            <a href="file-upload.php"><i class="ri-file-fill align-bottom text-muted"></i></a>
-                                                        </li>
-                                                    </td>
-                                                </tr>
-                                            <?php
-                                            }
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <br>
-                                <div class="d-flex mb-3">
-                                    <h6 class="card-title mb-0 flex-grow-1">Candidature envoyées</h6>
-                                    <div class="flex-shrink-0">
-                                        <a href="list-ecoles-encours.html">
-                                            <button type="button" class="btn btn-soft-danger btn-sm shadow-none">voir Toute la liste</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-body border border-dashed border-end-0 border-start-0">
-
-                                    <table class="table align-middle">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th>École</th>
-                                                <th>Reponse de l'ecole</th>
-                                                <th>Accusé</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="list form-check-all">
-                                            <?php
-                                            include('conn.php');
-                                            $sql = "SELECT * FROM dossier WHERE statut_interne = 3 and id_etudiant = " . $_SESSION['idr'] . " ORDER BY id DESC LIMIT 5";
-                                            $result = mysqli_query($coni, $sql);
-                                            while ($row = mysqli_fetch_assoc($result)) {
-                                            ?>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="flex-shrink-0">
-                                                                <img src="assets/images/users/avatar-10.jpg" alt="" class="avatar-xxs rounded-circle image_src object-fit-cover">
-                                                            </div>
-                                                            <div class="flex-grow-1 ms-2 name"><?php
-                                                                                                $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
-                                                                                                $result1 = mysqli_query($coni, $sql1);
-                                                                                                $row1 = mysqli_fetch_assoc($result1);
-                                                                                                echo $row1['nom'];
-                                                                                                ?></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="etat-dossier">aucune</td>
-                                                    <td class="remarque"><li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                                                            <a href="../employees/acuse/<?php echo $row['id']?>_acuse.pdf"><i class="ri-download-fill align-bottom text-muted"></i></a>
-                                                        </li></td>
-                                                   
-                                                </tr>
-                                            <?php } ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <br>
-                                <div class="d-flex mb-3">
-                                    <h6 class="card-title mb-0 flex-grow-1">Ouverture prochaine</h6>
-                                    <div class="flex-shrink-0">
-                                        <a href="list-ecoles-non-envoyées.html">
-                                            <button type="button" class="btn btn-soft-danger btn-sm shadow-none">voir Toute la liste</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-body border border-dashed border-end-0 border-start-0">
-
-                                    <table class="table align-middle">
-                                        <thead class="table-light">
-                                            <tr>
-                                                <th>École</th>
-                                                <th>État du Dossier</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="list form-check-all">
-                                            <?php
-                                            include('conn.php');
-                                            $sql = "SELECT *  FROM ecole_cand_preiod WHERE date_debut > CURDATE()
-                                            ORDER BY id DESC LIMIT 5";
-                                            $result = mysqli_query($coni, $sql);
-                                            while ($row = mysqli_fetch_assoc($result)) {
-                                            ?>
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            
-                                                            <div class="flex-grow-1 ms-2 name"><?php
-                                                                                                $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
-                                                                                                $result1 = mysqli_query($coni, $sql1);
-                                                                                                $row1 = mysqli_fetch_assoc($result1);
-                                                                                                echo $row1['nom'];
-                                                                                                ?> </div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="etat-dossier"><?php echo $row['date_debut']?></td>
+                                            <div class="col-lg-6">
+                                                <div class="">
                                                     
-                                                </tr>
-                                            <?php } ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                    <br>
 
-                            </div>
-                        </div>
-                        <!--end card-->
+                                                    <input type="text" class="form-control"  name="fn" id="">
+                                                    <br>
+                                                    <input type="hidden" value="">
 
-                    </div>
-                </div>
-                <!--end row-->
+                                                    <input class="input-group-text btn btn-success" for="inputGroupFile02" type="submit" value="envoyer">
 
-                <div class="modal fade" id="inviteMembersModal" tabindex="-1" aria-labelledby="inviteMembersModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border-0">
-                            <div class="modal-header p-3 ps-4 bg-success-subtle">
-                                <h5 class="modal-title" id="inviteMembersModalLabel">Team Members</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body p-4">
-                                <div class="search-box mb-3">
-                                    <input type="text" class="form-control bg-light border-light" placeholder="Search here...">
-                                    <i class="ri-search-line search-icon"></i>
-                                </div>
-
-                                <div class="mb-4 d-flex align-items-center">
-                                    <div class="me-2">
-                                        <h5 class="mb-0 fs-13">Members :</h5>
-                                    </div>
-                                    <div class="avatar-group justify-content-center">
-                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Tonya Noble">
-                                            <div class="avatar-xs">
-                                                <img src="assets/images/users/avatar-10.jpg" alt="" class="rounded-circle img-fluid">
-                                            </div>
-                                        </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Thomas Taylor">
-                                            <div class="avatar-xs">
-                                                <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle img-fluid">
-                                            </div>
-                                        </a>
-                                        <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Nancy Martino">
-                                            <div class="avatar-xs">
-                                                <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle img-fluid">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="mx-n4 px-4" data-simplebar="" style="max-height: 225px;">
-                                    <div class="vstack gap-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-2.jpg" alt="" class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Nancy Martino</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <div class="avatar-title bg-danger-subtle text-danger rounded-circle">
-                                                    HB
                                                 </div>
                                             </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Henry Baird</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Frank Hook</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-4.jpg" alt="" class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Jennifer Carter</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <div class="avatar-title bg-success-subtle text-success rounded-circle">
-                                                    AC
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Alexis Clarke</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-xs flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-7.jpg" alt="" class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Joseph Parker</a></h5>
-                                            </div>
-                                            <div class="flex-shrink-0">
-                                                <button type="button" class="btn btn-light btn-sm">Add</button>
-                                            </div>
-                                        </div>
-                                        <!-- end member item -->
+                                        </form>
                                     </div>
-                                    <!-- end list -->
+                                    
+                                    
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light w-xs" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success w-xs">Assigned</button>
-                            </div>
+                            <!--end card-->
+                           
                         </div>
-                        <!-- end modal-content -->
                     </div>
-                    <!-- modal-dialog -->
-                </div>
-                <!-- end modal -->
+                    <!--end row-->
 
+                    <div class="modal fade" id="inviteMembersModal" tabindex="-1" aria-labelledby="inviteMembersModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content border-0">
+                                <div class="modal-header p-3 ps-4 bg-success-subtle">
+                                    <h5 class="modal-title" id="inviteMembersModalLabel">Team Members</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-4">
+                                    <div class="search-box mb-3">
+                                        <input type="text" class="form-control bg-light border-light" placeholder="Search here...">
+                                        <i class="ri-search-line search-icon"></i>
+                                    </div>
+
+                                    <div class="mb-4 d-flex align-items-center">
+                                        <div class="me-2">
+                                            <h5 class="mb-0 fs-13">Members :</h5>
+                                        </div>
+                                        <div class="avatar-group justify-content-center">
+                                            <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Tonya Noble">
+                                                <div class="avatar-xs">
+                                                    <img src="assets/images/users/avatar-10.jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Thomas Taylor">
+                                                <div class="avatar-xs">
+                                                    <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </a>
+                                            <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Nancy Martino">
+                                                <div class="avatar-xs">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle img-fluid">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mx-n4 px-4" data-simplebar="" style="max-height: 225px;">
+                                        <div class="vstack gap-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <img src="assets/images/users/avatar-2.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Nancy Martino</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <div class="avatar-title bg-danger-subtle text-danger rounded-circle">
+                                                        HB
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Henry Baird</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <img src="assets/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Frank Hook</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <img src="assets/images/users/avatar-4.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Jennifer Carter</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <div class="avatar-title bg-success-subtle text-success rounded-circle">
+                                                        AC
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Alexis Clarke</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-xs flex-shrink-0 me-3">
+                                                    <img src="assets/images/users/avatar-7.jpg" alt="" class="img-fluid rounded-circle">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Joseph Parker</a></h5>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-light btn-sm">Add</button>
+                                                </div>
+                                            </div>
+                                            <!-- end member item -->
+                                        </div>
+                                        <!-- end list -->
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light w-xs" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success w-xs">Assigned</button>
+                                </div>
+                            </div>
+                            <!-- end modal-content -->
+                        </div>
+                        <!-- modal-dialog -->
+                    </div>
+                    <!-- end modal -->
+
+                </div>
+                <!-- container-fluid -->
             </div>
-            <!-- container-fluid -->
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by B-Wise
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- End Page-content -->
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> © TWJIH.
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-sm-end d-none d-sm-block">
-                            Design & Develop by B-Wise
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!-- end main content-->
+        <!-- end main content-->
 
     </div>
     <!-- END layout-wrapper -->
@@ -678,16 +562,16 @@
 
 
     <!--start back-to-top-->
-
+   
     <!--end back-to-top-->
 
     <!--preloader-->
+    
 
-
-
+    
 
     <!-- Theme Settings -->
-
+    
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
