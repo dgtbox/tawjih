@@ -22,6 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt->close();
     $coni->close();
-    header('location: list-etudient.php');
+    header('location: ../success.php');
 }
 ?>

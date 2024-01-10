@@ -109,19 +109,18 @@
                                     
                                     <li class="nav-item">
                                         <a class="nav-link" href="#sidebardossiersetat" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebardossiersetat">
-                                            Dossiers
-                                        </a>
+                                        Fonctionnalité employe                                        </a>
                                         <div class="collapse menu-dropdown" id="sidebardossiersetat">
                                             <ul class="nav nav-sm flex-column">
                                                 
                                                 <li class="nav-item">
-                                                    <a href="list-dossiers-valide.php" class="nav-link" data-key="t-chat"> dossiers traité</a>
+                                                    <a href="list-dossiers-non-traite.php" class="nav-link" data-key="t-chat"> Dossiers non Traité</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="list-dossiers-non-valide.php" class="nav-link" data-key="t-chat">Dossiers non traité</a>
+                                                    <a href="list-dossiers-en-attente.php" class="nav-link" data-key="t-chat">Dossiers En attente</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a href="list-dossiers-en-attente.php" class="nav-link" data-key="t-chat">Dossiers en cour</a>
+                                                    <a href="list-dossiers-temine.php" class="nav-link" data-key="t-chat">Dossiers Terminé</a>
                                                 </li>
                                             </ul>
                                         </div>
