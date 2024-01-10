@@ -5,7 +5,8 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | TWJIH - Admin & Dashboard Template</title>
+    <title>|AL RAED| PLATEFORME EN LIGNE</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="B-Wise" name="author" />
@@ -129,7 +130,7 @@
                                                                 <th class="sort" >Ecole</th>
                                                                 <th class="sort" >Date depot de dossier</th>
                                                                 <th class="sort" >statut_interne</th>
-                                                                <th class="sort" >Date d'inscription</th>
+                                                                <th  ></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody class="list form-check-all">
