@@ -383,7 +383,10 @@
                                             <div class="col-lg-6">
                                                 <div class="input-group">
                                                     <input type="file" class="form-control" id="inputGroupFile02">
-                                                    <label class="input-group-text" for="inputGroupFile02">Envoyer</label>
+                                                    <input type="text" name="fn" id="">
+
+                                                    <label class="input-group-text btn btn-success" for="inputGroupFile02" type="submit">Envoyer</label>
+
                                                 </div>
                                             </div>
                                         </form>
