@@ -68,7 +68,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebaradmin" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaradmin">
                                 <i class="bx bx-file"></i> <span data-key="t-apps">Admin</span>
                             </a>
@@ -83,7 +83,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarecoles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarecoles">
                                 <i class="bx bx-file"></i> <span data-key="t-apps">Ecoles</span>

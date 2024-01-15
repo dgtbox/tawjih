@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>|AL RAED| PLATEFORME EN LIGNE</title>
+    <title>|Al Raid| PLATEFORME EN LIGNE</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
@@ -49,8 +49,8 @@
                 <div class="mt-2 text-center">
                     <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
                     <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                        <h4>Are you sure ?</h4>
-                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                        <h4>T'es sure ?</h4>
+                        <p class="text-muted mx-4 mb-0">Etes-vous sûr de vouloir supprimer cette notification ?</p>
                     </div>
                 </div>
                 <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
@@ -84,7 +84,7 @@
                                     <div class="col-12">
                                         <div class="d-flex align-items-lg-center flex-lg-row flex-column">
                                             <div class="flex-grow-1">
-                                                <h4 class="fs-16 mb-1">Salut, Anna!</h4>
+                                                <h4 class="fs-16 mb-1">Salut, Admin!</h4>
                                                 <p class="text-muted mb-0">Voici votre task d'Aujourd'hui.</p>
                                             </div>
                                             <div class="mt-3 mt-lg-0">
@@ -175,8 +175,7 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
-DOSSIERS EN ATTENTE</p>
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">DOSSIERS EN ATTENTE</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
