@@ -10,10 +10,13 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8baff; /* Updated background color */
+            
+                background: linear-gradient(to top, rgba(94,44,127,0.9136904761904762), rgba(222,190,217,1));
+                width: 100%;
+                height: 100vh;
         }
         .navbar {
-            background-color: #f8f9fa;
+            background-color: #debed9;
         }
         .card {
             margin-bottom: 20px;
@@ -39,19 +42,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
   </div>
 </nav>
     <div class="container mx-auto p-4">
@@ -86,7 +76,7 @@
             </div>
         </div>
     </div>
-    <nav class="fixed-bottom">
+    <nav class="fixed-bottom" style="border-radius:10px 10px 0px 0; height : 50px; margin-top: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col">
