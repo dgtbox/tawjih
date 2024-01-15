@@ -22,7 +22,7 @@
             margin-bottom: 20px;
         }
         .fixed-bottom {
-            background-color: #343a40;
+            background-color: #371a4a;
             color: #fff;
         }
         .fixed-bottom a {
@@ -32,6 +32,9 @@
         .fixed-bottom a i {
             margin-bottom: 5px;
         }
+
+        .row {
+            margin-top: 6px;}
     </style>
 </head>
 
