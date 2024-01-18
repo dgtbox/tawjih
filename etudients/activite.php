@@ -68,73 +68,76 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex mb-3">
-                            <h6 class="card-title mb-0 flex-grow-1">Liste des dossiers imcomplet</h6>
+                            <img src="assets/images/small/img-1" class="card-img-top" alt="Description de l'image">
+                    
+                        </div>
+                        
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <h6 class="card-title mb-0 flex-grow-1">Dossiers imcomplet</h6>
                             <div class="flex-shrink-0">
-                               
+                                <a href="list-ecoles-imcomplet.php">
+                                    <button type="button" onclick="window.location.href='upload-file.php'" class="btn btn-primary btn-sm">voir Toute la liste</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto p-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <h6 class="card-title mb-0 flex-grow-1">Candidature envoyées</h6>
+                            <div class="flex-shrink-0">
+                                <a href="list-ecoles-envoyees.php">
+                                    <button type="button" class="btn btn-primary btn-sm">voir Toute la liste</button>
+                                </a>
                             </div>
                         </div>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>École</th>
-                                    <th>manquant</th>
-                                    <th>Upload</th>
+                                    <th>Reponse de l'ecole</th>
+                                    <th>Accusé</th>
                                 </tr>
                             </thead>
                             <tbody class="list form-check-all">
                                 <?php
                                 include('conn.php');
-                                $sql = "SELECT * FROM dossier WHERE statut_interne = 2 ";
+                                $sql = "SELECT * FROM dossier WHERE statut_interne = 3 ORDER BY id DESC LIMIT 3";
                                 $result = mysqli_query($coni, $sql);
                                 while ($row = mysqli_fetch_assoc($result)) {
                                 ?>
                                     <tr>
                                         <td>
                                             <div class="d-flex align-items-center">
-
                                                 <div class="flex-grow-1 ms-2 name">
-                                                <a href="detail-ecole.php" class="liens"><?php
+                                                <a href="detail-ecole.php" class="liens">
+                                                                                        <?php
                                                                                     $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
                                                                                     $result1 = mysqli_query($coni, $sql1);
                                                                                     $row1 = mysqli_fetch_assoc($result1);
-                                                                                    echo $row1['nom'];
+                                                                                   
+                                                                                
+                                                                                    echo $row1['nom']; 
                                                                                     ?></a></div>
                                             </div>
                                         </td>
-                                        <td class="etat-dossier"><?php echo $row['statut_interne'] ?> </td>
-                                        <td>
-                                            <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                                            <a href="upload.php">
-                                                <button type="button" class="btn btn-danger">Upload</button>
-                                            </a>
-                                            </li>
-                                        </td>
+                                        <td class="etat-dossier">aucune</td>
+                                        <td class="remarque"><li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                                <a href="../employees/acuse/<?php echo $row['id']?>_acuse.pdf"><i class="ri-download-fill align-bottom text-muted"></i></a>
+                                            </li></td>
+                                        
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-
-                                                <div class="flex-grow-1 ms-2 name">
-                                                <a href="detail-ecole.php" class="liens"><?php
-                                                                                    $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
-                                                                                    $result1 = mysqli_query($coni, $sql1);
-                                                                                    $row1 = mysqli_fetch_assoc($result1);
-                                                                                    echo $row1['nom'];
-                                                                                    ?></a></div>
-                                            </div>
-                                        </td>
-                                        <td class="etat-dossier"><?php echo $row['statut_interne'] ?> </td>
-                                        <td>
-                                            <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
-                                            <a href="upload.php">
-                                                <button type="button" class="btn btn-danger">Upload</button>
-                                            </a>
-                                            </li>
-                                        </td>
-                                    </tr>
-                                <?php   
-                                }
-                                ?>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
@@ -142,7 +145,59 @@
             </div>
         </div>
     </div>
-    
+    <div class="container mx-auto p-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <h6 class="card-title mb-0 flex-grow-1">Ouverture prochaine</h6>
+                            <div class="flex-shrink-0">
+                                <a href="list-ecoles-ouverture-prochaine.php">
+                                    <button type="button" class="btn btn-primary btn-sm">voir Toute la liste</button>
+                                </a>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>École</th>
+                                    <th>État du Dossier</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                include('conn.php');
+                                $sql = "SELECT *  FROM ecole_cand_preiod WHERE date_debut > CURDATE()
+                                ORDER BY id DESC LIMIT 3";
+                                $result = mysqli_query($coni, $sql);
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                
+                                                <div class="flex-grow-1 ms-2 name">
+                                                <a href="detail-ecole.php" class="liens"><?php
+                                                                                    $sql1 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'] . "";
+                                                                                    $result1 = mysqli_query($coni, $sql1);
+                                                                                    $row1 = mysqli_fetch_assoc($result1);
+                                                                                    echo $row1['nom'];
+                                                                                    ?></a> </div>
+                                            </div>
+                                        </td>
+                                        <td class="etat-dossier"><?php echo $row['date_debut']?></td>
+                                        
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="fixed-bottom" style="border-radius:10px 10px 0px 0; height : 50px; margin-top: 20px;">
         <div class="container">
             <div class="row">
