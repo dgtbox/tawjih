@@ -76,7 +76,7 @@
             <div class="col-md-4">
                 <div class="card-body">
                     <div class="d-flex">
-                        <h3 class="card-title mb-0 flex-grow-1">Les nouveaux activités</h3>
+                        <h3 class="card-title mb-0 flex-grow-1">Detail de l'activité</h3>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,8 @@
                         <div class="card-body">
                             
                             <h4 class="card-title mb-0 flex-grow-1 color-bleu">titre d'activité</h4>
-                                
+                            <h6 class="card-title flex-grow-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat obcaecati voluptatum facere possimus illum ipsum quibusdam velit, explicabo perferendis facilis maiores quis delectus nam accusantium atque incidunt suscipit ipsam odio.</h6>
+
                         </div>
                     </div>
                 </a>
@@ -135,3 +136,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
+
+                                
+                            
+                            
