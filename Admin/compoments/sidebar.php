@@ -148,6 +148,38 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebararticles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebararticles">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Articles</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebararticles">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-article.php" class="nav-link" data-key="t-chat"> Liste des articles </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-article.php" class="nav-link" data-key="t-chat">Ajouter un article</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarannonce" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarannonce">
+                                <i class="bx bx-file"></i> <span data-key="t-apps">Annonce</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarannonce">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="list-annonce.php" class="nav-link" data-key="t-chat"> Liste des annonces </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="add-annonce.php" class="nav-link" data-key="t-chat">Ajouter une annonce</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
