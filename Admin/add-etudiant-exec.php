@@ -4,11 +4,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prenom = $_POST["prenom"];
     $CIN = $_POST["cin"];
     $massar = $_POST["massar"];
-
+    $emp = $_POST["emp"];
     include("conn.php");
 
-    $stmt = $coni->prepare("INSERT INTO etudiant(nom, prenom, CIN, massar) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param('ssss', $nom, $prenom, $CIN, $massar);
+    $stmt = $coni->prepare("INSERT INTO etudiant(nom, prenom, CIN, massar,emp_id) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param('ssssi', $nom, $prenom, $CIN, $massar,$emp);
     $stmt->execute();
 
     $lastId = $coni->insert_id;
@@ -22,6 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt->close();
     $coni->close();
-    header('location: ../success.php');
+    header("location: ../success.php?log=$login");
 }
 ?>

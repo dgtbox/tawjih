@@ -69,14 +69,14 @@
 
                                         <div class="mb-3">
                                             <h6>nom d'utilisateur :</h6>
-                                            <p> aa</p>   
+                                            <p> <?php echo $_GET['log']?> </p>   
                                         </div>
 
                                         <div class="mb-3">
                                             
                                             <div class="position-relative auth-pass-inputgroup mb-3">
                                                 <h6>mot de passe :</h6>
-                                                <p id="textToCopy">aaaaaaaaaaaa</p>
+                                                <p id="textToCopy"><?php echo $_GET['log']?></p>
                                             </div>
                                         </div>
 
@@ -108,7 +108,7 @@
                                                 }
                                             </script>
                                             <div class="mb-3">
-                                            <a href="#" class="btn btn-primary">Continue</a>
+                                            <a href="admin/" class="btn btn-primary">Continue</a>
                                         
                                         </div>
 

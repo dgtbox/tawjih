@@ -133,6 +133,25 @@
                                                         <input type="text" class="form-control" placeholder="Entrez la filiere" name="massar" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4    ">
+                                                    <div class="mb-3">
+                                                        <label for="" class="form-label">Employé assigné</label>
+                                                        <select type="text" class="form-control" name="emp" required>
+                                                        <option value="0">Selectioner un employe</option>
+
+                                                        <?php include("conn.php");
+                                            
+                                                                $sql = "select * from employe";
+                                                                $result = mysqli_query($coni, $sql);
+                                                                while ($row = mysqli_fetch_assoc($result))
+                                                                {
+                                                                    echo '<option value="'.$row["id"].'">'.$row["nom"]." ".$row['prenom'].'</option>';
+                                                                }
+                                                            
+                                                            ?>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                                 <!--
                                                 <div class="col-md-4">
                                                     <div class="mb-3">

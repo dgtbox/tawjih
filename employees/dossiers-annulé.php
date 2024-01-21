@@ -168,7 +168,7 @@
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <ul class="list-inline tasks-list-menu mb-0">
                                                                             <button class="btn btn-success">
-                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
+                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Fiche de traitement</a></li>
                                                                             </button>
                                                                         </ul>
                                                                     </div>
@@ -201,7 +201,7 @@
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <ul class="list-inline tasks-list-menu mb-0">
                                                                             <button class="btn btn-success">
-                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
+                                                                                <li class="list-inline-item"><a href="dossier-etudient.html"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Fiche de traitement</a></li>
                                                                             </button>
                                                                         </ul>
                                                                     </div>

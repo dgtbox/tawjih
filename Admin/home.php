@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
 <head>
 
     <meta charset="utf-8" />
@@ -38,6 +39,7 @@
 
         <?php include('compoments/Header.php') ?>
 
+<<<<<<< Updated upstream
 <!-- removeNotificationModal -->
 <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -51,17 +53,32 @@
                     <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
                         <h4>T'es sure ?</h4>
                         <p class="text-muted mx-4 mb-0">Etes-vous sûr de vouloir supprimer cette notification ?</p>
+=======
+        <!-- removeNotificationModal -->
+        <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
                     </div>
-                </div>
-                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
-                </div>
-            </div>
+                    <div class="modal-body">
+                        <div class="mt-2 text-center">
+                            <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                            <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                                <h4>Are you sure ?</h4>
+                                <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                            <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                        </div>
+>>>>>>> Stashed changes
+                    </div>
 
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
         <?php include('compoments/sidebar.php') ?>
         <!-- Left Sidebar End -->
@@ -76,10 +93,11 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                <div class="row">
+                    <div class="row">
                         <div class="col">
 
                             <div class="h-100">
+<<<<<<< Updated upstream
                                 <div class="row mb-3 pb-1">
                                     <div class="col-12">
                                         <div class="d-flex align-items-lg-center flex-lg-row flex-column">
@@ -107,6 +125,8 @@
                                     </div>
                                     <!--end col-->
                                 </div>
+=======
+>>>>>>> Stashed changes
                                 <!--end row-->
                                 <div class="row">
                                     <div class="col-xl-4 col-md-6">
@@ -121,11 +141,11 @@
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
                                                     <div>
                                                         <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="<?php
-                                                        $sql = "SELECT count(*) as total FROM dossier where statut_interne = 3";
-                                                        $result = mysqli_query($coni, $sql);
-                                                        $row = mysqli_fetch_assoc($result);
-                                                        echo $row['total'];
-                                                        ?>">0</span> </h4>
+                                                                                                                                                    $sql = "SELECT count(*) as total FROM dossier where statut_interne = 3";
+                                                                                                                                                    $result = mysqli_query($coni, $sql);
+                                                                                                                                                    $row = mysqli_fetch_assoc($result);
+                                                                                                                                                    echo $row['total'];
+                                                                                                                                                    ?>">0</span> </h4>
                                                         <a href="" class="text-decoration-underline">Voir toute la liste</a>
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
@@ -175,17 +195,22 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
+<<<<<<< Updated upstream
                                                         <p class="text-uppercase fw-medium text-muted text-truncate mb-0">DOSSIERS EN ATTENTE</p>
+=======
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
+                                                            DOSSIERS EN ATTENTE</p>
+>>>>>>> Stashed changes
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
                                                     <div>
                                                         <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="<?php
-                                                        $sql = "SELECT count(*) as total FROM dossier where statut_interne = 1 or statut_interne = 2";
-                                                        $result = mysqli_query($coni, $sql);
-                                                        $row = mysqli_fetch_assoc($result);
-                                                        echo $row['total'];
-                                                        ?>">0</span> </h4>
+                                                                                                                                                    $sql = "SELECT count(*) as total FROM dossier where statut_interne = 1 or statut_interne = 2";
+                                                                                                                                                    $result = mysqli_query($coni, $sql);
+                                                                                                                                                    $row = mysqli_fetch_assoc($result);
+                                                                                                                                                    echo $row['total'];
+                                                                                                                                                    ?>">0</span> </h4>
                                                         <a href="" class="text-decoration-underline">Voir toute la liste</a>
                                                     </div>
                                                     <div class="avatar-sm flex-shrink-0">
@@ -199,6 +224,7 @@
                                     </div><!-- end col -->
 
                                 </div> <!-- end row-->
+                                
 
 
                                 <div class="row">
@@ -213,61 +239,61 @@
                                             <div class="card-body">
                                                 <div class="table-responsive table-card">
                                                     <table class="table table-hover table-centered align-middle table-nowrap mb-0">
-                                                    <tbody class="list form-check-all">
-                                                    <?php
-                                                    include('conn.php');
-                                                    $sql = "SELECT * FROM dossier";
-                                                    $result = mysqli_query($coni, $sql);
-                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        <tbody class="list form-check-all">
+                                                            <?php
+                                                            include('conn.php');
+                                                            $sql = "SELECT * FROM dossier limit 10";
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
 
 
-                                                        ?>
-                                                        <tr>
-                                                            <td>
-                                                                <?php
-                                                                $sql1 = "SELECT * FROM etudiant WHERE id = ".$row['id_etudiant'];
-                                                                $result1 = mysqli_query($coni, $sql1);
-                                                                while ($row1 = mysqli_fetch_assoc($result1)) {
-                                                                    echo $row1['nom']." ".$row1['prenom'];
-                                                                }
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                $sql2 = "SELECT * FROM ecole WHERE id = ".$row['id_ecole'];
-                                                                $result2 = mysqli_query($coni, $sql2);
-                                                                while ($row2 = mysqli_fetch_assoc($result2)) {
-                                                                    echo $row2['nom'];
-                                                                }
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                echo $row['date_depot'];
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                if($row['statut_interne'] == 0) {
-                                                                    echo "<span class='bg-danger'> Jamais traité </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 1) {
-                                                                    echo "<span class='bg-warning'> En cours de traitement </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 2) {
-                                                                    echo "<span class='bg-warning'> Probleme de dossier </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 3) {
-                                                                    echo "<span class='bg-success'>Dossier traité </span>";
-                                                                }
+                                                            ?>
+                                                                <tr>
+                                                                    <td>
+                                                                        <?php
+                                                                        $sql1 = "SELECT * FROM etudiant WHERE id = " . $row['id_etudiant'];
+                                                                        $result1 = mysqli_query($coni, $sql1);
+                                                                        while ($row1 = mysqli_fetch_assoc($result1)) {
+                                                                            echo $row1['nom'] . " " . $row1['prenom'];
+                                                                        }
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        $sql2 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'];
+                                                                        $result2 = mysqli_query($coni, $sql2);
+                                                                        while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                                            echo $row2['nom'];
+                                                                        }
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        echo $row['date_depot'];
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        if ($row['statut_interne'] == 0) {
+                                                                            echo "<span class='bg-danger'> Jamais traité </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 1) {
+                                                                            echo "<span class='bg-warning'> En cours de traitement </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 2) {
+                                                                            echo "<span class='bg-warning'> Probleme de dossier </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 3) {
+                                                                            echo "<span class='bg-success'>Dossier traité </span>";
+                                                                        }
 
-                                                                ?>
-                                                            </td>
-                                                        </tr>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                    </tbody>
+                                                                        ?>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </tbody>
                                                     </table>
                                                 </div>
 
@@ -313,62 +339,62 @@
                                             <div class="card-body">
                                                 <div class="table-responsive table-card">
                                                     <table class="table table-centered table-hover align-middle table-nowrap mb-0">
-                                                    <tbody class="list form-check-all">
-                                                    <?php
-                                                    include('conn.php');
-                                                    $sql = "SELECT * FROM dossier where statut_interne = 0";
-                                                    $result = mysqli_query($coni, $sql);
-                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        <tbody class="list form-check-all">
+                                                            <?php
+                                                            include('conn.php');
+                                                            $sql = "SELECT * FROM dossier where statut_interne = 0 limit 10";
+                                                            $result = mysqli_query($coni, $sql);
+                                                            while ($row = mysqli_fetch_assoc($result)) {
 
 
-                                                        ?>
-                                                        <tr>
-                                                            <td>
-                                                                <?php
-                                                                $sql1 = "SELECT * FROM etudiant WHERE id = ".$row['id_etudiant'];
-                                                                $result1 = mysqli_query($coni, $sql1);
-                                                                while ($row1 = mysqli_fetch_assoc($result1)) {
-                                                                    echo $row1['nom']." ".$row1['prenom'];
-                                                                }
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                $sql2 = "SELECT * FROM ecole WHERE id = ".$row['id_ecole'];
-                                                                $result2 = mysqli_query($coni, $sql2);
-                                                                while ($row2 = mysqli_fetch_assoc($result2)) {
-                                                                    echo $row2['nom'];
-                                                                }
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                echo $row['date_depot'];
-                                                                ?>
-                                                            </td>
-                                                            <td>
-                                                                <?php
-                                                                if($row['statut_interne'] == 0) {
-                                                                    echo "<span class='bg-danger'> Jamais traité </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 1) {
-                                                                    echo "<span class='bg-warning'> En cours de traitement </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 2) {
-                                                                    echo "<span class='bg-warning'> Probleme de dossier </span>";
-                                                                }
-                                                                if($row['statut_interne'] == 3) {
-                                                                    echo "<span class='bg-success'>Dossier traité </span>";
-                                                                }
+                                                            ?>
+                                                                <tr>
+                                                                    <td>
+                                                                        <?php
+                                                                        $sql1 = "SELECT * FROM etudiant WHERE id = " . $row['id_etudiant'];
+                                                                        $result1 = mysqli_query($coni, $sql1);
+                                                                        while ($row1 = mysqli_fetch_assoc($result1)) {
+                                                                            echo $row1['nom'] . " " . $row1['prenom'];
+                                                                        }
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        $sql2 = "SELECT * FROM ecole WHERE id = " . $row['id_ecole'];
+                                                                        $result2 = mysqli_query($coni, $sql2);
+                                                                        while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                                            echo $row2['nom'];
+                                                                        }
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        echo $row['date_depot'];
+                                                                        ?>
+                                                                    </td>
+                                                                    <td>
+                                                                        <?php
+                                                                        if ($row['statut_interne'] == 0) {
+                                                                            echo "<span class='bg-danger'> Jamais traité </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 1) {
+                                                                            echo "<span class='bg-warning'> En cours de traitement </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 2) {
+                                                                            echo "<span class='bg-warning'> Probleme de dossier </span>";
+                                                                        }
+                                                                        if ($row['statut_interne'] == 3) {
+                                                                            echo "<span class='bg-success'>Dossier traité </span>";
+                                                                        }
 
-                                                                ?>
-                                                            </td>
-                                                            
-                                                        </tr>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                    </tbody>
+                                                                        ?>
+                                                                    </td>
+
+                                                                </tr>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </tbody>
                                                     </table><!-- end table -->
                                                 </div>
 
@@ -420,7 +446,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © TWJIH.
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © TWJIH.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">

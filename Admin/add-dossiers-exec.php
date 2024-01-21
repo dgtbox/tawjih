@@ -15,13 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO dossier(id_etudiant, id_ecole, statut_interne, statut_externe, date_depot, date_reponse, date_reponse_externe,id_cand_period)
     VALUES ('$id_etudiant','$id_ecole','$statut_interne','$statut_externe',CURDATE(),'$date_reponse','$date_reponse_externe',$idcand)";
     if (mysqli_query($coni, $sql)) {
-//echo("<script>window.location.replace('index.php/')</script>");
-header('location: list-dossiers.php');
+header('location: list-dossiers-non-traite.php');
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($coni);
 }
 
-// Close the database connection
 mysqli_close($coni);
 }
 ?>  

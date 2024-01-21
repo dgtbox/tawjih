@@ -130,7 +130,8 @@
                                                         <th class="sort" >Ecole</th>
                                                         <th class="sort" >Date depot de dossier</th>
                                                         <th class="sort" >statut_interne</th>
-                                                        <th></th>
+                                                        <th class="sort"></th>
+                                                        <th class="sort">Accusé</th>
                                                     </tr>
 
 
@@ -190,11 +191,22 @@
                                                                 <div class="flex-shrink-0 ms-0">
                                                                     <ul class="list-inline tasks-list-menu mb-0">
                                                                         <button class="btn btn-success">
-                                                                            <li class="list-inline-item"><a href="tasks.php?id=<?php echo $row['id']?> "><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Entré a ce dossier</a></li>
+                                                                            <li class="list-inline-item"><a href="tasks.php?id=<?php echo $row['id']?> "><i class="ri-eye-fill align-bottom me-2 text-muted"></i>Fiche de traitement</a></li>
                                                                         </button>
                                                                     </ul>
                                                                 </div>
                                                             </td>
+                                                            <td>
+                                                                    <div class="flex-shrink-0 ms-0">
+                                                                        <li class="list-inline-item">
+                                                                                    
+                                                                            <a target="_blank" href="../employees/acuse/<?php echo $row['id']?>_acuse.<?php echo $row['acuse']?>">
+                                                                                <i class="ri-eye-fill align-bottom me-2 text-muted"></i>
+                                                                            </a>
+                                                                        
+                                                                        </li>
+                                                                    </div>
+                                                                </td>
                                                         </tr>
                                                         <?php
                                                     }
