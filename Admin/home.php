@@ -39,21 +39,6 @@
 
         <?php include('compoments/Header.php') ?>
 
-<<<<<<< Updated upstream
-<!-- removeNotificationModal -->
-<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mt-2 text-center">
-                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
-                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
-                        <h4>T'es sure ?</h4>
-                        <p class="text-muted mx-4 mb-0">Etes-vous sûr de vouloir supprimer cette notification ?</p>
-=======
         <!-- removeNotificationModal -->
         <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -73,7 +58,6 @@
                             <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
                         </div>
->>>>>>> Stashed changes
                     </div>
 
                 </div><!-- /.modal-content -->
@@ -97,36 +81,6 @@
                         <div class="col">
 
                             <div class="h-100">
-<<<<<<< Updated upstream
-                                <div class="row mb-3 pb-1">
-                                    <div class="col-12">
-                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
-                                            <div class="flex-grow-1">
-                                                <h4 class="fs-16 mb-1">Salut, Admin!</h4>
-                                                <p class="text-muted mb-0">Voici votre task d'Aujourd'hui.</p>
-                                            </div>
-                                            <div class="mt-3 mt-lg-0">
-                                                <form action="javascript:void(0);">
-                                                    <div class="row g-3 mb-0 align-items-center">
-                                                        <div class="col-sm-auto">
-                                                            <div class="input-group">
-                                                                <input type="text" class="form-control border-0 dash-filter-picker shadow" data-provider="flatpickr" data-range-date="true" data-date-format="d M, Y" data-deafult-date="01 Jan 2022 to 31 Jan 2022">
-                                                                <div class="input-group-text bg-primary border-primary text-white">
-                                                                    <i class="ri-calendar-2-line"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end col-->
-                                                    </div>
-                                                    <!--end row-->
-                                                </form>
-                                            </div>
-                                        </div><!-- end card header -->
-                                    </div>
-                                    <!--end col-->
-                                </div>
-=======
->>>>>>> Stashed changes
                                 <!--end row-->
                                 <div class="row">
                                     <div class="col-xl-4 col-md-6">
@@ -195,12 +149,8 @@
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-grow-1 overflow-hidden">
-<<<<<<< Updated upstream
-                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">DOSSIERS EN ATTENTE</p>
-=======
                                                         <p class="text-uppercase fw-medium text-muted text-truncate mb-0">
                                                             DOSSIERS EN ATTENTE</p>
->>>>>>> Stashed changes
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
