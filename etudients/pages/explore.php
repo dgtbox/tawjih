@@ -80,14 +80,20 @@
           ?>
         <!-- item-1 -->
         <div class="place-card mix popular frequent">
-          <a href="vacation-details.html">
+          <a href="vacation-details.php?id=<?php echo $row['id']?>">
             <div class="image position-relative">
                 <?php
                 if($row['image'] == 1){
-
+                    ?>
+                    <img src="../assets/images/post/<?php echo $row['id']?>.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+                    <?php
+                }
+                else{
+                    ?>
+                    <img src="../assets/images/post/dafault.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+                    <?php
                 }
                 ?>
-              <img src="../assets/images/home/item-2.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
             </div>
             <div class="content">
                 <h4><?php
