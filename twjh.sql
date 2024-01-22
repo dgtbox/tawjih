@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 22 jan. 2024 à 15:41
+-- Généré le : lun. 22 jan. 2024 à 19:11
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -41,7 +41,7 @@ CREATE TABLE `annonces` (
 --
 
 INSERT INTO `annonces` (`id`, `title`, `sub`, `content`, `created_at`, `image`) VALUES
-(1, 'annonce 1', NULL, 'waaaaaa awaaaaaaaaaa waaaaaaaaaaa', '2024-01-21 21:01:33', 0),
+(1, 'annonce 1test', NULL, 'waaaaaa awaaaaaaaaaa waaaaaaaaaaa', '2024-01-21 21:01:33', 0),
 (2, 'annonce 1', NULL, 'waaaaaa awaaaaaaaaaa waaaaaaaaaaa', '2024-01-21 21:01:33', 0),
 (3, 'annonce 1', NULL, 'waaaaaa awaaaaaaaaaa waaaaaaaaaaa', '2024-01-21 21:01:33', 0);
 

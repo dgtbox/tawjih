@@ -37,7 +37,7 @@
   <main class="explore">
     <!-- search start -->
     <section class="search py-12">
-      <form action="explore.php" method="post">
+      <form action="annonces.php" method="post">
         <div class="form-inner w-100 d-flex align-items-center gap-8 radius-24">
           <img src="../assets/svg/search.svg" alt="search" class="shrink-0">
           <input type="search" class="input-search input-field" name="srch" placeholder="Search...">
@@ -60,28 +60,28 @@
           if($_SERVER['REQUEST_METHOD']=='POST'){
             if(isset($_POST['srch']))
             {
-              $sql = "SELECT * FROM post WHERE title LIKE '%".$_POST['srch']."%' OR sub LIKE '%".$_POST['srch']."%'";
+              $sql = "SELECT * FROM annonces WHERE title LIKE '%".$_POST['srch']."%' OR sub LIKE '%".$_POST['srch']."%'";
             }
           }
           else{
-            $sql = "SELECT * FROM post";
+            $sql = "SELECT * FROM annonces";
           }
           $result = mysqli_query($coni, $sql);
           while ($row = mysqli_fetch_array($result)) {
           ?>
         <!-- item-1 -->
         <div class="place-card mix popular frequent">
-          <a href="article.php?id=<?php echo $row['id']?>">
+          <a href="annonce.php?id=<?php echo $row['id']?>">
             <div class="image position-relative">
                 <?php
                 if($row['image'] == 1){
                     ?>
-                    <img src="../assets/images/post/<?php echo $row['id']?>.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+                    <img src="../assets/images/annonce/<?php echo $row['id']?>.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
                     <?php
                 }
                 else{
                     ?>
-                    <img src="../assets/images/post/dafault.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+                    <img src="../assets/images/annonce/dafault.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
                     <?php
                 }
                 ?>
@@ -117,24 +117,24 @@
 
   <!-- bottom navigation start -->
   <footer class="bottom-nav">
-        <ul class="d-flex align-items-center justify-content-around w-100 h-100">
-            <li>
-                <a href="home.php">
-                    <img src="../assets/svg/bottom-nav/home-active.svg" alt="home">
-                </a>
-            </li>
-            <li>
-                <a href="explore.php">
-                    <img src="../assets/svg/bottom-nav/category.svg" alt="category">
-                </a>
-            </li>
-            <li>
-                <a href="annonces.php">
-                    <img src="../assets/svg/bottom-nav/ticket.svg" alt="heart">
-                </a>
-            </li>
-        </ul>
-    </footer>
+    <ul class="d-flex align-items-center justify-content-around w-100 h-100">
+      <li>
+        <a href="home.php">
+          <img src="../assets/svg/bottom-nav/home.svg" alt="home">
+        </a>
+      </li>
+      <li>
+        <a href="explore.php">
+          <img src="../assets/svg/bottom-nav/category.svg" alt="category">
+        </a>
+      </li>
+      <li>
+        <a href="annonces.php">
+          <img src="../assets/svg/bottom-nav/ticket-active.svg" alt="heart">
+        </a>
+      </li>
+    </ul>
+  </footer>
   <!-- bottom navigation end -->
 
   <!-- filter modal start -->

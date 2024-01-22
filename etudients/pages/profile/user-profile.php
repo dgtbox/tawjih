@@ -1,5 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+  <?php
+  include('../isloged.php');
+  ?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,11 +70,15 @@
           <img src="../../assets/images/profile/avatar.png" alt="avatar" class="img-fluid w-100 h-100 object-fit-cover">
         </div>
         <div>
-          <h3>Andy Lexsian</h3>
-          <p class="d-flex align-items-center gap-04 location mt-04">
-            <img src="../../assets/svg/map-marker.svg" alt="icon">
-            Uttar Pradesh, India 
-          </p>
+          <h3>
+            <?php
+             include ("../conn.php");
+             $sq = "SELECT * FROM etudiant WHERE id = " . $_SESSION['idr'];
+             $resultx = mysqli_query($coni, $sq);
+             $rowx = mysqli_fetch_array($resultx);
+             echo ($rowx['prenom']." ".$rowx['nom']);
+            ?>
+          </h3>
         </div>
       </div>
 
@@ -84,41 +91,16 @@
     <!-- user-personal start -->
     <section class="user-personal">
       <!-- Personal Info -->
-      <div class="mt-32">
-        <h4 class="mb-16">Personal Info</h4>
-        <ul class="setting-list">
-          <li>
-            <a href="user-address.html" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/location.svg" alt="icon">
-                <p>My Address</p>
-              </div>
-  
-              <img src="../../assets/svg/chevron-right.svg" alt="Icon">
-            </a>
-          </li>
-          <li>
-            <a href="user-payment.html" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/work.svg" alt="icon">
-                <p>Payment Method</p>
-              </div>
-  
-              <img src="../../assets/svg/chevron-right.svg" alt="Icon">
-            </a>
-          </li>
-        </ul>
-      </div>
 
       <!-- Security -->
       <div class="mt-32">
-        <h4 class="mb-16">Security</h4>
+        <h4 class="mb-16">Securité</h4>
         <ul class="setting-list">
           <li>
             <a href="change-password.html" class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center gap-12 shrink-0">
                 <img src="../../assets/svg/lock-close.svg" alt="icon">
-                <p>Change Password</p>
+                <p>Changé le Mot de passe</p>
               </div>
   
               <img src="../../assets/svg/chevron-right.svg" alt="Icon">
@@ -128,27 +110,7 @@
             <a href="forgot-password.html" class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center gap-12 shrink-0">
                 <img src="../../assets/svg/lock-open.svg" alt="icon">
-                <p>Forgot Password</p>
-              </div>
-  
-              <img src="../../assets/svg/chevron-right.svg" alt="Icon">
-            </a>
-          </li>
-          <li>
-            <a href="security.html" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/shield.svg" alt="icon">
-                <p>Security</p>
-              </div>
-  
-              <img src="../../assets/svg/chevron-right.svg" alt="Icon">
-            </a>
-          </li>
-          <li>
-            <a href="notifications.html" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/bell-black.svg" alt="icon">
-                <p>Notifications</p>
+                <p>Mot de passe oublié</p>
               </div>
   
               <img src="../../assets/svg/chevron-right.svg" alt="Icon">
@@ -158,41 +120,16 @@
       </div>
 
       <!-- General -->
-      <div class="mt-32">
-        <h4 class="mb-16">General</h4>
-        <ul class="setting-list">
-          <li>
-            <a href="user-language.html" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/globe.svg" alt="icon">
-                <p>Language</p>
-              </div>
-  
-              <img src="../../assets/svg/chevron-right.svg" alt="Icon">
-            </a>
-          </li>
-          <li>
-            <a href="#" class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/trash.svg" alt="icon">
-                <p>Clear Cache</p>
-              </div>
-  
-              <small>88 MB</small>
-            </a>
-          </li>
-        </ul>
-      </div>
 
       <!-- About -->
       <div class="mt-32">
-        <h4 class="mb-16">About</h4>
+        <h4 class="mb-16">Général</h4>
         <ul class="setting-list">
           <li>
             <a href="legal-policy.html" class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center gap-12 shrink-0">
                 <img src="../../assets/svg/shield-round.svg" alt="icon">
-                <p>Legal and Policies</p>
+                <p>Ajouter un fichié</p>
               </div>
   
               <img src="../../assets/svg/chevron-right.svg" alt="Icon">
@@ -202,24 +139,11 @@
             <a href="help-support.html" class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center gap-12 shrink-0">
                 <img src="../../assets/svg/question.svg" alt="icon">
-                <p>Help & Support</p>
+                <p>Envoyé un message</p>
               </div>
   
               <img src="../../assets/svg/chevron-right.svg" alt="Icon">
             </a>
-          </li>
-          <li>
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-12 shrink-0">
-                <img src="../../assets/svg/activity.svg" alt="icon">
-                <p class="mode-text">Dark Mode</p>
-              </div>
-  
-              <label class="toggle-switch">
-                <input type="checkbox" class="mode-switch" id="check-mode">
-                <span class="slider"></span>
-              </label>
-            </div>
           </li>
         </ul>
       </div>
@@ -235,34 +159,24 @@
 
   <!-- bottom navigation start -->
   <footer class="bottom-nav">
-    <ul class="d-flex align-items-center justify-content-around w-100 h-100">
-      <li>
-        <a href="../home.html">
-          <img src="../../assets/svg/bottom-nav/home.svg" alt="home">
-        </a>
-      </li>
-      <li>
-        <a href="../explore.html">
-          <img src="../../assets/svg/bottom-nav/category.svg" alt="category">
-        </a>
-      </li>
-      <li>
-        <a href="../ticket-booked.html">
-          <img src="../../assets/svg/bottom-nav/ticket.svg" alt="ticket">
-        </a>
-      </li>
-      <li>
-        <a href="../wishlist.html">
-          <img src="../../assets/svg/bottom-nav/heart.svg" alt="heart">
-        </a>
-      </li>
-      <li>
-        <a href="user-profile.html">
-          <img src="../../assets/svg/bottom-nav/profile-active.svg" alt="profile">
-        </a>
-      </li>
-    </ul>
-  </footer>
+        <ul class="d-flex align-items-center justify-content-around w-100 h-100">
+            <li>
+                <a href="../home.php">
+                    <img src="../../assets/svg/bottom-nav/home.svg" alt="home">
+                </a>
+            </li>
+            <li>
+                <a href="../explore.php">
+                    <img src="../../assets/svg/bottom-nav/category.svg" alt="category">
+                </a>
+            </li>
+            <li>
+                <a href="../annonces.php">
+                    <img src="../../assets/svg/bottom-nav/ticket.svg" alt="heart">
+                </a>
+            </li>
+        </ul>
+    </footer>
   <!-- bottom navigation end -->
 
   <!-- edit-profile modal start -->

@@ -142,7 +142,7 @@ include("isloged.php");
             ?>
                     <!-- item-1 -->
                     <div class="swiper-slide place-card">
-                        <a href="vacation-details.php?id=<?php echo $row['id'] ?>">
+                        <a href="article.php?id=<?php echo $row['id'] ?>">
                             <div class="image h-100 position-relative">
                                 <?php
                   if($row['image'] == 1){
@@ -195,7 +195,7 @@ include("isloged.php");
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
             ?>
-                <a href="vacation-details.php?id=<?php echo $row['id'] ?>" class="d-flex gap-16 item w-fit shrink-0">
+                <a href="annonce.php?id=<?php echo $row['id'] ?>" class="d-flex gap-16 item w-fit shrink-0">
                     <div class="image position-relative shrink-0">
                         <?php
                   if ($row['image'] == 1) {
@@ -244,7 +244,7 @@ include("isloged.php");
             <!-- title -->
             <div class="title d-flex align-items-center justify-content-between">
                 <h2 class="shrink-0">On Budget Tour</h2>
-                <a href="hotels.html" class="shrink-0 d-inline-block">See All</a>
+                <a href="annonces.php" class="shrink-0 d-inline-block">See All</a>
             </div>
 
             <ul>
@@ -279,7 +279,9 @@ include("isloged.php");
                                     ?>
                                 </h4>
                                 <h5>
-                                    
+                                    <?php
+                                    echo "a";
+                                    ?>
                                 </h5>
                                 <p class="d-flex align-items-center gap-8 location">
                                     <img src="../assets/svg/map-marker.svg" alt="icon">
@@ -305,7 +307,7 @@ include("isloged.php");
     <footer class="bottom-nav">
         <ul class="d-flex align-items-center justify-content-around w-100 h-100">
             <li>
-                <a href="home.html">
+                <a href="home.php">
                     <img src="../assets/svg/bottom-nav/home-active.svg" alt="home">
                 </a>
             </li>
@@ -315,8 +317,8 @@ include("isloged.php");
                 </a>
             </li>
             <li>
-                <a href="hotels.html">
-                    <img src="../assets/svg/bottom-nav/heart.svg" alt="heart">
+                <a href="annonces.php">
+                    <img src="../assets/svg/bottom-nav/ticket.svg" alt="heart">
                 </a>
             </li>
         </ul>

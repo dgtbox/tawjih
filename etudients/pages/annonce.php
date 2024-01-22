@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -67,7 +67,7 @@
   if (isset($_GET['id'])) {
     include("conn.php");
     $id = $_GET['id'];
-    $sql = "SELECT * FROM post WHERE id = '$id'";
+    $sql = "SELECT * FROM annonces WHERE id = '$id'";
     $result = mysqli_query($coni, $sql);
     $row = mysqli_fetch_array($result);
 
@@ -79,11 +79,11 @@
         <?php
         if ($row['image'] == 1) {
         ?>
-          <img src="../assets/images/post/<?php echo $row['id'] ?>.jpg" alt="desert" class="w-100 img-fluid">
+          <img src="../assets/images/annonce/<?php echo $row['id'] ?>.jpg" alt="desert" class="w-100 img-fluid">
         <?php
         } else {
         ?>
-          <img src="../assets/images/post/dafault.jpg" alt="desert" class="w-100 img-fluid">
+          <img src="../assets/images/annonce/dafault.jpg" alt="desert" class="w-100 img-fluid">
         <?php
         }
         ?>
@@ -144,20 +144,20 @@
             <!-- item 1 -->
             <?php
             include("conn.php");
-            $sql = "SELECT * FROM post where id != '$id'";
+            $sql = "SELECT * FROM annonces where id != '$id'";
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
             ?>
-              <a href="vacation-details.php?id=<?php echo $row['id'] ?>" class="d-flex gap-16 item w-fit shrink-0">
+              <a href="annonce.php?id=<?php echo $row['id'] ?>" class="d-flex gap-16 item w-fit shrink-0">
                 <div class="image position-relative shrink-0">
                   <?php
                   if ($row['image'] == 1) {
                   ?>
-                    <img src="../assets/images/post/<?php echo $row['id'] ?>.jpg" alt="desert" class="guide-img object-fit-cover img-fluid radius-12">
+                    <img src="../assets/images/annonce/<?php echo $row['id'] ?>.jpg" alt="desert" class="guide-img object-fit-cover img-fluid radius-12">
                   <?php
                   } else {
                   ?>
-                    <img src="../assets/images/post/dafault.jpg" alt="desert" class="guide-img object-fit-cover img-fluid radius-12">
+                    <img src="../assets/images/annonce/dafault.jpg" alt="desert" class="guide-img object-fit-cover img-fluid radius-12">
                   <?php
                   }
                   ?>
@@ -205,6 +205,25 @@
         </section>
         <!-- details-footer end -->
     </main>
+    <footer class="bottom-nav">
+        <ul class="d-flex align-items-center justify-content-around w-100 h-100">
+            <li>
+                <a href="home.php">
+                    <img src="../assets/svg/bottom-nav/home.svg" alt="home">
+                </a>
+            </li>
+            <li>
+                <a href="explore.php">
+                    <img src="../assets/svg/bottom-nav/category.svg" alt="category">
+                </a>
+            </li>
+            <li>
+                <a href="annonces.php">
+                    <img src="../assets/svg/bottom-nav/ticket.svg" alt="heart">
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <!-- jquery -->
     <script src="../assets/js/jquery-3.6.1.min.js"></script>
