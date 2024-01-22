@@ -60,7 +60,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .ticket-tab .nav-tabs .nav-link.active {
   color: white;
-  background: var(--primary);
+  background: #8943b2;
 }
 
 /* 1.1: ticket-card */
@@ -137,11 +137,11 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .ticket-card .card-footer button {
   display: inline-block;
   padding: 8px 40px;
-  color: var(--primary);
+  color: #8943b2;
   font-size: 14px;
   font-weight: 600;
   border-radius: 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid #8943b2;
   text-align: center;
 }
 
@@ -152,7 +152,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .ticket-card.history .card-footer .rating {
   color: white;
-  background: var(--primary);
+  background: #8943b2;
 }
 
 /* 1.2: review Modal */
@@ -182,7 +182,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   width: 100%;
   height: 132px;
   border-radius: 24px;
-  border: 1px solid var(--primary);
+  border: 1px solid #8943b2;
   padding: 16px;
   font-size: 16px;
   font-weight: 500;

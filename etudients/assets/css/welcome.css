@@ -16,7 +16,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 01: splash-screen CSS
 =============================================================*/
 .spalsh-screen {
-  background: var(--primary);
+  background: #8943b2;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -175,7 +175,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .onboarding .content h6 a {
-  color: var(--primary);
+  color: #8943b2;
 }
 
 .onboarding .btn-primary {

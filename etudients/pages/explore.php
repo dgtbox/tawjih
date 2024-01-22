@@ -105,7 +105,11 @@
                   ?>
               </p>
               <div class="price d-flex align-items-center justify-content-between">
-                <h3>$235</h3>
+                <h3>
+                  <?php
+                  echo $row['created_at'];
+                  ?>
+                </h3>
               </div>
             </div>
           </a>

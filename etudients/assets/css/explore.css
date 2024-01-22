@@ -42,9 +42,9 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .all-place .tab-list .active button {
-  background: var(--primary);
+  background: #8943b2;
   color: white;
-  border-color: var(--primary);
+  border-color: #8943b2;
 }
 
 .recommended .grid,
@@ -94,7 +94,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .recommended .title a {
   font-size: 14px;
   font-weight: 500;
-  color: var(--primary);
+  color: #8943b2;
 }
 
 /*===========================================================
@@ -154,7 +154,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .selectLocationModal .modal-body .grid button {
   line-height: 52px;
   color: white;
-  background: var(--primary);
+  background: #8943b2;
   width: 100%;
   font-size: 14px;
   font-weight: 500;

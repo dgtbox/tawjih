@@ -1,564 +1,359 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<?php
+include("isloged.php");
+?>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Al Raed</title>
+    <title>Al Raed</title>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 
-  <!-- swiper -->
-  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
 
-  <!-- datepicker -->
-  <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.css">
 
-  <!-- jquery ui -->
-  <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
 
-  <!-- common -->
-  <link rel="stylesheet" href="../assets/css/common.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../assets/css/common.css">
 
-  <!-- animations -->
-  <link rel="stylesheet" href="../assets/css/animations.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="../assets/css/animations.css">
 
-  <!-- welcome -->
-  <link rel="stylesheet" href="../assets/css/welcome.css">
+    <!-- welcome -->
+    <link rel="stylesheet" href="../assets/css/welcome.css">
 
-  <!-- home -->
-  <link rel="stylesheet" href="../assets/css/home.css">
+    <!-- home -->
+    <link rel="stylesheet" href="../assets/css/home.css">
 </head>
+
 <body class="scrollbar-hidden">
-  <!-- splash-screen start -->
-  <section id="preloader" class="spalsh-screen">
-    <div class="circle text-center">
-      <div>
-        <h1>Al Raed</h1>
-        <p></p>
-      </div>
-    </div>
-    <div class="loader-spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
-  <!-- splash-screen end -->
-
-  <main class="home">
-    <!-- menu, side-menu start -->
-    <section class="wrapper dz-mode">
-      <!-- menu -->
-      <div class="menu">
-        <button class="toggle-btn">
-          <img src="#" alt="" class="icon">
-        </button>
-        <div class="btn-grp d-flex align-items-center gap-16">
-          <label for="mode-change" class="mode-change d-flex align-items-center justify-content-center">
-            <input type="checkbox" id="mode-change">
-            <img src="../assets/svg/menu/sun-white.svg" alt="icon" class="sun">
-            <img src="../assets/svg/menu/moon-white.svg" alt="icon" class="moon">
-          </label>
-          <a href="profile/user-profile.html">
-            <img src="../assets/svg/menu/profile-white.svg" alt="icon">
-          </a>
+    <!-- splash-screen start -->
+    <section id="preloader" class="spalsh-screen">
+        <div class="circle text-center">
+            <div>
+                <h1>Al Raed</h1>
+                <p></p>
+            </div>
         </div>
-      </div>
+        <div class="loader-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
-    <!-- menu, side-menu end -->
+    <!-- splash-screen end -->
 
-    <!-- info start -->
-    <section class="info d-flex align-items-start justify-content-between pb-12">
-      <div class="d-flex align-items-center justify-content-between gap-14">
-        <div class="image shrink-0 rounded-full overflow-hidden">
-          <img src="../assets/images/home/avatar.png" alt="avatar" class="w-100 h-100 object-fit-cover">
-        </div>
-        <div>
-          <h3>Hi, Andy</h3>
-          <p class="d-flex align-items-center gap-04">
-            <img src="../assets/svg/map-marker.svg" alt="icon">
-            Netherlands
-          </p>
-        </div>
-      </div>
+    <main class="home">
+        <!-- menu, side-menu start -->
+        <section class="wrapper dz-mode">
+            <!-- menu -->
+            <div class="menu">
+                <button class="toggle-btn">
+                    <img src="#" alt="" class="icon">
+                </button>
+                <div class="btn-grp d-flex align-items-center gap-16">
+                    <label for="mode-change" class="mode-change d-flex align-items-center justify-content-center">
+                        <input type="checkbox" id="mode-change">
+                        <img src="../assets/svg/menu/sun-white.svg" alt="icon" class="sun">
+                        <img src="../assets/svg/menu/moon-white.svg" alt="icon" class="moon">
+                    </label>
+                    <a href="profile/user-profile.php">
+                        <img src="../assets/svg/menu/profile-white.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- menu, side-menu end -->
 
-      <ul class="d-flex align-items-center gap-16">
-        <li>
-          <a href="notification.html" class="d-flex align-items-center justify-content-center rounded-full position-relative">
-            <img src="../assets/svg/bell-black.svg" alt="icon">
-            <span class="dot"></span>
-          </a>
-        </li>
-        <li>
-          <a href="chat/message.html" class="d-flex align-items-center justify-content-center rounded-full position-relative">
-            <img src="../assets/svg/message-square-dots.svg" alt="icon">
-            <span class="dot"></span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- info end -->
+        <!-- info start -->
+        <section class="info d-flex align-items-start justify-content-between pb-12">
+            <div class="d-flex align-items-center justify-content-between gap-14">
+                <div class="image shrink-0 rounded-full overflow-hidden">
+                    <img src="../assets/images/home/avatar.png" alt="avatar" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div>
+                    <h3>Hi,
+                        <?php
+                        include ("conn.php");
+                        $sq = "SELECT * FROM etudiant WHERE id = " . $_SESSION['idr'];
+                        $resultx = mysqli_query($coni, $sq);
+                        $rowx = mysqli_fetch_array($resultx);
+                        echo $rowx['prenom'];
+                        ?>
+                    </h3>
+                </div>
+            </div>
 
-    <!-- visited start -->
-    <section class="visited py-12">
-      <!-- title -->
-      <div class="title d-flex align-items-center justify-content-between">
-        <h2 class="shrink-0">Nouvelles annonces</h2>
-        <div class="custom-pagination visited-pagination"></div>
-      </div>
+            <ul class="d-flex align-items-center gap-16">
+                <li>
+                    <a href="notification.html"
+                        class="d-flex align-items-center justify-content-center rounded-full position-relative">
+                        <img src="../assets/svg/bell-black.svg" alt="icon">
+                        <span class="dot"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat/message.html"
+                        class="d-flex align-items-center justify-content-center rounded-full position-relative">
+                        <img src="../assets/svg/message-square-dots.svg" alt="icon">
+                        <span class="dot"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- info end -->
 
-      <div class="swiper visited-swiper">
-        <div class="swiper-wrapper">
-            <?php
+        <!-- visited start -->
+        <section class="visited py-12">
+            <!-- title -->
+            <div class="title d-flex align-items-center justify-content-between">
+                <h2 class="shrink-0">Nouvaux Articles</h2>
+                <div class="custom-pagination visited-pagination"></div>
+            </div>
+
+            <div class="swiper visited-swiper">
+                <div class="swiper-wrapper">
+                    <?php
 
             include("conn.php");
-            $sql = "SELECT * FROM post";
+            $sql = "SELECT * FROM post order by id desc";
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
             ?>
-          <!-- item-1 -->
-          <div class="swiper-slide place-card">
-            <a href="vacation-details.html">
-              <div class="image h-100 position-relative">
-                  <?php
+                    <!-- item-1 -->
+                    <div class="swiper-slide place-card">
+                        <a href="vacation-details.php?id=<?php echo $row['id'] ?>">
+                            <div class="image h-100 position-relative">
+                                <?php
                   if($row['image'] == 1){
                         ?>
-                        <img src="../assets/images/post/<?php echo $row['id']?>.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
-                        <?php
+                                <img src="../assets/images/post/<?php echo $row['id']?>.jpg" alt="desert"
+                                    class="img-fluid w-100 overflow-hidden radius-8">
+                                <?php
                   }
                     else{
                         ?>
-                        <img src="../assets/images/post/dafault.jpg" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
-                        <?php
+                                <img src="../assets/images/post/dafault.jpg" alt="desert"
+                                    class="img-fluid w-100 overflow-hidden radius-8">
+                                <?php
                     }
                   ?>
-              </div>
-              <div class="content">
-                <h4><?php echo $row['title']?></h4>
-                <p class="d-flex align-items-center gap-04 location">
-                  <?php
-                  echo $row['sub'];
+                            </div>
+                            <div class="content">
+                                <h4><?php echo $row['title']?></h4>
+                                <p class="d-flex align-items-center gap-04 location">
+                                    <?php
+                  echo $row['created_at'];
                   ?>
-                </p>
-              </div>
-            </a>
-          </div>
-<?php
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <?php
             } ?>
-          <!-- item-2 -->
+                    <!-- item-2 -->
 
-        </div>
-      </div>
-    </section>
-    <!-- visited end -->
-
-    <!-- guide start -->
-    <section class="guide py-12">
-      <!-- title -->
-      <div class="title d-flex align-items-center justify-content-between">
-        <h2 class="shrink-0">Tour des ecoles disponible</h2>
-        <a href="tour-guide.html" class="shrink-0 d-inline-block">See All</a>
-      </div>
-
-      <!-- cards -->
-      <div class="d-flex gap-24 all-cards scrollbar-hidden">
-        <!-- item 1 -->
-        <a href="profile/guide-profile.html" class="d-flex gap-16 item w-fit shrink-0">
-          <div class="image position-relative shrink-0">
-            <img src="../assets/images/home/guide-1.png" alt="guide" class="guide-img object-fit-cover img-fluid radius-12">
-            <div class="rating d-flex align-items-center gap-04 w-fit">
-              <img src="../assets/svg/star-yellow.svg" alt="Star">
-              <span class="d-inline-block">4.0</span>
+                </div>
             </div>
-          </div>
+        </section>
+        <!-- visited end -->
 
-          <div class="content">
-            <h4>Emilia Ricardo</h4>
-            <h5>$25 (1 Day)</h5>
-            <p class="d-flex align-items-center gap-8 location">
-              <img src="../assets/svg/map-black.svg" alt="icon">
-              Polynesia, French 
-            </p>
-          </div>
-        </a>
-
-        <!-- item 2 -->
-        <a href="profile/guide-profile.html" class="d-flex gap-16 item w-fit shrink-0">
-          <div class="image position-relative shrink-0">
-            <img src="../assets/images/home/guide-2.png" alt="guide" class="guide-img object-fit-cover img-fluid radius-12">
-            <div class="rating d-flex align-items-center gap-04 w-fit">
-              <img src="../assets/svg/star-yellow.svg" alt="Star">
-              <span class="d-inline-block">4.0</span>
+        <!-- guide start -->
+        <section class="guide py-12">
+            <!-- title -->
+            <div class="title d-flex align-items-center justify-content-between">
+                <h2 class="shrink-0">Annonces</h2>
+                <a href="tour-guide.php" class="shrink-0 d-inline-block">Tout voir</a>
             </div>
-          </div>
 
-          <div class="content">
-            <h4>Jonsky Alexia</h4>
-            <h5>$30 (1 Day)</h5>
-            <p class="d-flex align-items-center gap-8 location">
-              <img src="../assets/svg/map-black.svg" alt="icon">
-              South America 
-            </p>
-          </div>
-        </a>
+            <!-- cards -->
+            <div class="d-flex gap-24 all-cards scrollbar-hidden">
+                <!-- item 1 -->
+                <?php
+            include("conn.php");
+            $sql = "SELECT * FROM annonces";
+            $result = mysqli_query($coni, $sql);
+            while ($row = mysqli_fetch_array($result)) {
+            ?>
+                <a href="vacation-details.php?id=<?php echo $row['id'] ?>" class="d-flex gap-16 item w-fit shrink-0">
+                    <div class="image position-relative shrink-0">
+                        <?php
+                  if ($row['image'] == 1) {
+                  ?>
+                        <img src="../assets/images/annonce/<?php echo $row['id'] ?>.jpg" alt="desert"
+                            class="guide-img object-fit-cover img-fluid radius-12">
+                        <?php
+                  } else {
+                  ?>
+                        <img src="../assets/images/annonce/dafault.jpg" alt="desert"
+                            class="guide-img object-fit-cover img-fluid radius-12">
+                        <?php
+                  }
+                  ?>
+                    </div>
 
-      </div>
-    </section>
-    <!-- guide end -->
+                    <div class="content">
+                        <h4>
+                            <?php
+                    echo $row['title'];
+                    ?>
+                        </h4>
+                        <h5>
+                            <?php
+                    echo $row['sub'];
+                    ?>
+                        </h5>
+                        <p class="d-flex align-items-center gap-8 location">
 
-    <!-- budget start -->
-    <section class="budget pt-12">
-      <!-- title -->
-      <div class="title d-flex align-items-center justify-content-between">
-        <h2 class="shrink-0">On Budget Tour</h2>
-        <a href="hotels.html" class="shrink-0 d-inline-block">See All</a>
-      </div>
+                            <?php
+                    echo $row['created_at'];
+                    ?>
+                        </p>
+                    </div>
+                </a>
+                <?php } ?>
 
-      <ul>
-        <!-- item 1 -->
-          <?php
+                <!-- item 2 -->
+
+            </div>
+        </section>
+        <!-- guide end -->
+
+        <!-- budget start -->
+        <section class="budget pt-12">
+            <!-- title -->
+            <div class="title d-flex align-items-center justify-content-between">
+                <h2 class="shrink-0">On Budget Tour</h2>
+                <a href="hotels.html" class="shrink-0 d-inline-block">See All</a>
+            </div>
+
+            <ul>
+                <!-- item 1 -->
+                <?php
 
             include("conn.php");
-            $sql = "SELECT * FROM post";
+            $sql = "SELECT * FROM dossier WHERE statut_interne = 3 and id_etudiant = " . $_SESSION['idr'] . " ORDER BY id DESC LIMIT 5";
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
           ?>
-        <li>
-          <a href="hotel-details.html" class="d-flex align-items-center gap-12">
-            <div class="image shrink-0 overflow-hidden radius-8">
-              <img src="../assets/images/home/budget-1.png" alt="Place" class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
+                <li>
+                    <a href="hotel-details.html" class="d-flex align-items-center gap-12">
+                        <div class="image shrink-0 overflow-hidden radius-8">
+                            <img src="../assets/images/ecole/default.jpg" alt="Place"
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
 
-            <div class="content shrink-0 d-flex align-items-center gap-12 justify-content-between flex-grow">
-              <div>
-                <h4>Ledadu Beach</h4>
-                <h5>3 days 2 nights</h5>
-                <p class="d-flex align-items-center gap-8 location">
-                  <img src="../assets/svg/map-marker.svg" alt="icon">
-                  Australia 
-                </p>
-              </div>
-              <p class="price"><span>$20</span>/Person</p>
-            </div>
-          </a>
-        </li>
-          <?php
+                        <div
+                            class="content shrink-0 d-flex align-items-center gap-12 justify-content-between flex-grow">
+                            <div>
+                                <h4 style="overflow-wrap: break-word;" >
+                                    <?php
+                                    $sql1="select * from ecole where id =".$row['id_ecole'];
+                                    $result1 = mysqli_query($coni,$sql1);
+                                    $row1 = mysqli_fetch_array($result1);
+                                    $nom = $row1['nom'];
+                                    if(strlen($nom) > 20) {
+                                        $nom = wordwrap($nom, 20, "<br />\n");
+                                    }
+                                    echo $nom;
+                                    ?>
+                                </h4>
+                                <h5>
+                                    
+                                </h5>
+                                <p class="d-flex align-items-center gap-8 location">
+                                    <img src="../assets/svg/map-marker.svg" alt="icon">
+                                    <?php
+                                    echo $row1['adresse'];
+                                    ?>
+                                </p>
+                            </div>
+                            <p class="price"><span>$20</span>/Person</p>
+                        </div>
+                    </a>
+                </li>
+                <?php
             } ?>
 
-        <!-- item 2 -->
-        <li>
-          <a href="hotel-details.html" class="d-flex align-items-center gap-12">
-            <div class="image shrink-0 overflow-hidden radius-8">
-              <img src="../assets/images/home/budget-2.png" alt="Place" class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-  
-            <div class="content shrink-0 d-flex align-items-center gap-12 justify-content-between flex-grow">
-              <div>
-                <h4>Endigada Beach</h4>
-                <h5>5 days 4 nights</h5>
-                <p class="d-flex align-items-center gap-8 location">
-                  <img src="../assets/svg/map-marker.svg" alt="icon">
-                  Australia 
-                </p>
-              </div>
-              <p class="price"><span>$25</span>/Person</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- budget end -->
-  </main>
-
-  <!-- bottom navigation start -->
-  <footer class="bottom-nav">
-    <ul class="d-flex align-items-center justify-content-around w-100 h-100">
-      <li>
-        <a href="home.html">
-          <img src="../assets/svg/bottom-nav/home-active.svg" alt="home">
-        </a>
-      </li>
-      <li>
-        <a href="explore.html">
-          <img src="../assets/svg/bottom-nav/category.svg" alt="category">
-        </a>
-      </li>
-      <li>
-        <a href="hotels.html">
-          <img src="../assets/svg/bottom-nav/heart.svg" alt="heart">
-        </a>
-      </li>
-    </ul>
-  </footer>
-  <!-- bottom navigation end -->
-
-  <!-- service modal start -->
-  <div class="modal fade serviceModal bottomModal modalBg" id="serviceModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="modal-close rounded-full" data-bs-dismiss="modal" aria-label="Close">
-            <img src="../assets/svg/close-black.svg" alt="Close">
-          </button>
-          <h1 class="modal-title">All Services</h1>
-        </div>
-        <div class="modal-body">
-          <!-- item 1 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/airport.png" alt="airport" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Airport</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 2 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/car.png" alt="car" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Taxi</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 3 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/hotel.png" alt="hotel" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Hotel</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 4 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/villa.png" alt="airport" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Villa</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 5 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/cafe.png" alt="car" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Cafe</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 6 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/luggage.png" alt="hotel" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Luggage</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 7 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/boat.png" alt="car" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Ship</figcaption>
-            </figure>
-          </a>
-
-          <!-- item 8 -->
-          <a href="service-location.html">
-            <figure class="item text-center">
-              <div class="image rounded-full d-flex align-items-center justify-content-center m-auto">
-                <img src="../assets/images/home/camera.png" alt="hotel" class="img-fluid backface-hidden">
-              </div>
-              <figcaption>Camera </figcaption>
-            </figure>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- service modal end -->
-
-  <!-- filter modal start -->
-  <div class="modal fade filterModal bottomModal" id="filterModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="modal-close rounded-full" data-bs-dismiss="modal" aria-label="Close">
-            <img src="../assets/svg/close-black.svg" alt="Close">
-          </button>
-          <h1 class="modal-title">Filter</h1>
-        </div>
-        <div class="modal-body">
-          <!-- price range -->
-          <div class="pb-12">
-            <h4 class="content-title">Price Range</h4>
-            <div class="filter-range">
-              <div id="price-slider-range"></div>
-              <div class="price-range w-100 d-flex align-items-center justify-content-between">
-                <input type="text" id="amount1">
-                <input type="text" id="amount2">
-              </div>
-            </div>
-          </div>
-
-          <!-- popular filters -->
-          <div class="py-12">
-            <h4 class="content-title">Popular Filters</h4>
-            <ul class="popular-filters">
-              <li>
-                <label for="hotel" class="filter-label">
-                  <input type="checkbox" id="hotel">
-                  Hotels (340)
-                </label>
-              </li>
-              <li>
-                <label for="pool" class="filter-label">
-                  <input type="checkbox" id="pool" checked="">
-                  Swimming Pool (340)
-                </label>
-              </li>
-              <li>
-                <label for="stars" class="filter-label">
-                  <input type="checkbox" id="stars">
-                  5 stars (100)
-                </label>
-              </li>
-              <li>
-                <label for="bathroom" class="filter-label">
-                  <input type="checkbox" id="bathroom">
-                  Private Bathroom (200)
-                </label>
-              </li>
-              <li>
-                <label for="breakfast" class="filter-label">
-                  <input type="checkbox" id="breakfast">
-                  Breakfast Included (115)
-                </label>
-              </li>
-              <li>
-                <label for="kitchen" class="filter-label">
-                  <input type="checkbox" id="kitchen">
-                  Kitchen (10)
-                </label>
-              </li>
+                <!-- item 2 -->
             </ul>
-          </div>
+        </section>
+        <!-- budget end -->
+    </main>
 
-          <!-- star rating -->
-          <div class="py-12">
-            <h4 class="content-title">Star Rating</h4>
-            <ul class="star-rating">
-              <li>
-                <label for="star1" class="filter-label">
-                  <input type="radio" name="star" id="star1">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                </label>
-              </li>
-              <li>
-                <label for="star2" class="filter-label">
-                  <input type="radio" name="star" id="star2">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                </label>
-              </li>
-              <li>
-                <label for="star3" class="filter-label">
-                  <input type="radio" name="star" id="star3">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                </label>
-              </li>
-              <li>
-                <label for="star4" class="filter-label">
-                  <input type="radio" name="star" id="star4" checked="">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                </label>
-              </li>
-              <li>
-                <label for="star5" class="filter-label">
-                  <input type="radio" name="star" id="star5">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                  <img src="../assets/svg/star-yellow.svg" alt="star">
-                </label>
-              </li>
-            </ul>
-          </div>
+    <!-- bottom navigation start -->
+    <footer class="bottom-nav">
+        <ul class="d-flex align-items-center justify-content-around w-100 h-100">
+            <li>
+                <a href="home.html">
+                    <img src="../assets/svg/bottom-nav/home-active.svg" alt="home">
+                </a>
+            </li>
+            <li>
+                <a href="explore.php">
+                    <img src="../assets/svg/bottom-nav/category.svg" alt="category">
+                </a>
+            </li>
+            <li>
+                <a href="hotels.html">
+                    <img src="../assets/svg/bottom-nav/heart.svg" alt="heart">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- bottom navigation end -->
 
-          <!-- apply-filter -->
-          <div class="py-12">
-            <a href="search-result.html" class="btn-primary apply-filter-btn">Apply Filter</a>
-          </div>
 
-          <!-- clear-all -->
-          <div class="pt-12">
-            <button type="button" class="clear-all-btn" data-bs-dismiss="modal" aria-label="Close">Clear All</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- filter modal end -->
-  
-  <!-- jquery -->
-  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
-  <!-- bootstrap -->
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
-  <!-- jquery ui -->
-  <script src="../assets/js/jquery-ui.js"></script>
+    <!-- jquery ui -->
+    <script src="../assets/js/jquery-ui.js"></script>
 
-  <!-- mixitup -->
-  <script src="../assets/js/mixitup.min.js"></script>
+    <!-- mixitup -->
+    <script src="../assets/js/mixitup.min.js"></script>
 
-  <!-- gasp -->
-  <script src="../../../../ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <!-- gasp -->
+    <script src="../../../../ajax/libs/gsap/3.12.3/gsap.min.js"></script>
 
-  <!-- draggable -->
-  <script src="../../../../ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
+    <!-- draggable -->
+    <script src="../../../../ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
 
-  <!-- swiper -->
-  <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
 
-  <!-- datepicker -->
-  <script src="../assets/js/jquery.datetimepicker.full.js"></script>
+    <!-- datepicker -->
+    <script src="../assets/js/jquery.datetimepicker.full.js"></script>
 
-  <!-- google-map api -->
-  <script src="../../../../maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap" type="text/javascript"></script>
+    <!-- google-map api -->
+    <script src="../../../../maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap"
+        type="text/javascript"></script>
 
-  <!-- script -->
-  <script src="../assets/js/script.js"></script>
+    <!-- script -->
+    <script src="../assets/js/script.js"></script>
 </body>
+
 </html>

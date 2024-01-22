@@ -74,7 +74,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .message .single-chat span {
   height: 24px;
   width: 24px;
-  background: var(--primary);
+  background: #8943b2;
   font-size: 10px;
   line-height: 24px;
   font-weight: 600;
@@ -146,7 +146,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .chat .dropdown-menu li:last-child .dropdown-item {
-  color: var(--primary);
+  color: #8943b2;
 }
 
 /*===========================================================
@@ -172,7 +172,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   width: 8px;
   height: 8px;
   border: 1px solid white;
-  background: var(--primary);
+  background: #8943b2;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -194,7 +194,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .inbox .right .text .msg {
-  background: var(--primary);
+  background: #8943b2;
   border-radius: 24px 24px 0 24px;
   color: white;
   text-align: right;
@@ -255,7 +255,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .type-msg button {
   height: 42px;
   width: 42px;
-  background: var(--primary);
+  background: #8943b2;
 }
 
 /*===========================================================
@@ -415,7 +415,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .dark-mode .inbox .right .text .msg {
-  background: var(--primary);
+  background: #8943b2;
 }
 
 .dark-mode .chat .page-title .more-btn img,

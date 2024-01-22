@@ -157,7 +157,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .order-info .promo-code button {
   line-height: 30px;
   border-radius: 32px;
-  background: var(--primary);
+  background: #8943b2;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -184,7 +184,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .payment-method .pay-card-container:has(input:checked) {
-  border-color: var(--primary);
+  border-color: #8943b2;
 }
 
 .payment-method .pay-card-container input {
@@ -206,8 +206,8 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .payment-method .pay-card-container input:checked~.checkmark {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: #8943b2;
+  border-color: #8943b2;
 }
 
 .payment-method .checkmark:after {

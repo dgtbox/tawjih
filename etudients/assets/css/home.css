@@ -38,7 +38,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .home .title a {
   font-size: 14px;
   font-weight: 500;
-  color: var(--primary);
+  color: #8943b2;
 }
 
 /*===========================================================
@@ -73,7 +73,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   height: 11px;
   width: 11px;
   border-radius: 50%;
-  background: var(--primary);
+  background: #8943b2;
   position: absolute;
   top: 11px;
   right: 11px;
@@ -234,7 +234,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .locationModal2 .btn-list a.active {
-  background: var(--primary);
+  background: #8943b2;
 }
 
 .locationModal2 .btn-list a.active img {

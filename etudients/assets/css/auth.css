@@ -21,7 +21,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .auth.signin {
-  background: var(--primary);
+  background: #8943b2;
 }
 
 .auth .heading {
@@ -111,7 +111,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .auth .auth-form .input-field-checkbox {
-  accent-color: var(--primary);
+  accent-color: #8943b2;
 }
 
 .auth .auth-form .forgot-pass {
@@ -162,7 +162,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .auth h6 button,
 .auth h6 a {
-  color: var(--primary);
+  color: #8943b2;
   font-weight: 600;
 }
 
@@ -175,13 +175,13 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .auth .digit-group input {
   width: 56px;
   height: 56px;
-  border: 1px solid var(--primary);
+  border: 1px solid #8943b2;
   border-radius: 24px;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-text);
-  caret-color: var(--primary);
+  caret-color: #8943b2;
 }
 
 .auth.enter-otp .auth-form .btn-primary {
@@ -253,7 +253,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .languageModal .lang-container:has(input:checked) {
-  border-color: var(--primary);
+  border-color: #8943b2;
 }
 
 .languageModal .lang-container input {
@@ -274,8 +274,8 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .languageModal .lang-container input:checked~.checkmark {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: #8943b2;
+  border-color: #8943b2;
 }
 
 .languageModal .checkmark:after {

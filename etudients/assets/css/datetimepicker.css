@@ -144,7 +144,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current {
-  background: var(--primary);
+  background: #8943b2;
   box-shadow: none;
   color: white;
   font-weight: 400;
@@ -153,21 +153,21 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .xdsoft_datetimepicker .xdsoft_calendar td:hover {
   color: white !important;
-  background: var(--primary) !important;
+  background: #8943b2 !important;
   box-shadow: none !important;
   border-radius: 8px;
 }
 
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid #8943b2;
+  color: #8943b2;
   box-shadow: none;
   background: rgba(4, 90, 181, 0.1);
   font-weight: 400;
 }
 
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
-  color: var(--primary) !important;
+  color: #8943b2 !important;
   background: rgba(4, 90, 181, 0.1) !important;
   box-shadow: none !important;
 }
@@ -190,7 +190,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   border-top: 0;
-  color: var(--primary);
+  color: #8943b2;
   font-size: 14px;
   border-collapse: collapse;
   cursor: pointer;
@@ -232,5 +232,5 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 
 .dark-mode .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, 
 .dark-mode .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current{
-  background: var(--primary);
+  background: #8943b2;
 }

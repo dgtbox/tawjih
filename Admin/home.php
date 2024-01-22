@@ -37,7 +37,8 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        <?php include('compoments/Header.php') ?>
+        <?php include('compoments/Header.php');
+        include('conn.php') ?>
 
         <!-- removeNotificationModal -->
         <div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
@@ -94,7 +95,8 @@
                                                 </div>
                                                 <div class="d-flex align-items-end justify-content-between mt-4">
                                                     <div>
-                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="<?php
+                                                        <h4 class="fs-22 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="
+                                                        <?php
                                                                                                                                                     $sql = "SELECT count(*) as total FROM dossier where statut_interne = 3";
                                                                                                                                                     $result = mysqli_query($coni, $sql);
                                                                                                                                                     $row = mysqli_fetch_assoc($result);

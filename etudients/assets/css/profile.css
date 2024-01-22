@@ -120,7 +120,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .profile-info .msg-btn {
   width: 100%;
   color: white;
-  background: var(--primary);
+  background: #8943b2;
 }
 
 /* 2.4: summary */
@@ -134,7 +134,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .summary h5 {
   font-size: 16px;
   font-weight: 700;
-  color: var(--primary);
+  color: #8943b2;
 }
 
 .summary h5 span {
@@ -198,8 +198,8 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 }
 
 .custom-check-container input:checked~.checkmark {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: #8943b2;
+  border-color: #8943b2;
 }
 
 .custom-check-container .checkmark:after {
@@ -282,7 +282,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .profile-image .image button {
   height: 32px;
   width: 32px;
-  background: var(--primary);
+  background: #8943b2;
   border: 3px solid white;
   position: absolute;
   bottom: 0;
@@ -303,7 +303,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   width: 100%;
   border-radius: 24px;
   height: 50px;
-  border: 1px solid var(--primary);
+  border: 1px solid #8943b2;
   padding: 0 16px;
   font-size: 16px;
   font-weight: 500;
@@ -337,7 +337,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .user-info .gender-container {
   padding: 12px 16px 12px 56px;
   color: var(--primary-text);
-  border: 1px solid var(--primary);
+  border: 1px solid #8943b2;
   border-radius: 24px;
 }
 
@@ -432,8 +432,8 @@ Author url: https://themeforest.net/user/website_stock/portfolio
 .user-address .change-add {
   display: inline-block;
   padding: 4px 16px;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid #8943b2;
+  color: #8943b2;
   font-size: 12px;
   font-weight: 600;
   border-radius: 12px;
@@ -711,7 +711,7 @@ Author url: https://themeforest.net/user/website_stock/portfolio
   width: 180px;
   padding: 12px 0;
   border-radius: 20px;
-  background: var(--primary);
+  background: #8943b2;
   color: white;
   font-size: 14px;
   font-weight: 600;

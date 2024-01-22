@@ -22,7 +22,7 @@
     }
     if($_SESSION["stat"]== 4)
     {
-        header('location: etudients\etudient-list-ecoles.php');
+        header('location: etudients\pages/home.php');
     }
 
  ?>
