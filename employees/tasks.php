@@ -243,7 +243,7 @@
 
                                                     <div class="flex-shrink-0 ms-2">
                                                         <div class="d-flex gap-1">
-                                                            <button onclick="window.open('../etudients/fichier_etudiant/<?php echo $row5['id_etudiant'] ?>_etufile_<?php echo $i ?>.pdf');" type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                            <button onclick="window.open('../etudients/fichier_etudiant/<?php echo $row5['id_etudiant'] ?>_etufile_<?php echo $i ?>.<?php echo $row['ext'] ?>');" type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
                                                             <div class="dropdown">
                                                             </div>
                                                         </div>

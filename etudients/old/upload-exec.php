@@ -8,11 +8,11 @@ $count = $row['total']+1;
 $target_dir = "fichier_etudiant/";
 $id = $_POST["id"];
 $fn = $_POST["fn"];
-
-$new_name = $id."_etufile_".$count.".pdf"; // New file name
+$fileextension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$new_name = $id."_etufile_".$count.".".$fileextension; // New file name
 $target_file = $target_dir . $new_name;
 $uploadOk = 1;
-$fileextension = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
 
 
 // Check file size

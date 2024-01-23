@@ -140,7 +140,7 @@
           </div>
 
           <!-- cards -->
-          <div class="d-flex gap-24 all-cards scrollbar-hidden">
+          <div class="d-flex gap-24 mb-5 all-cards scrollbar-hidden">
             <!-- item 1 -->
             <?php
             include("conn.php");
@@ -199,10 +199,6 @@
         <!-- details-body end -->
 
         <!-- details-footer start -->
-        <section class="details-footer d-flex align-items-center justify-content-between gap-8 w-100">
-          <p><span></span></p>
-          <a href="#">Ajouter aux Favoris</a>
-        </section>
         <!-- details-footer end -->
     </main>
     <footer class="bottom-nav">

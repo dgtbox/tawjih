@@ -474,3 +474,10 @@ $(function(){
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var backButton = document.querySelector('.back-btn');
+  backButton.addEventListener('click', function() {
+      window.history.back();
+  });
+});

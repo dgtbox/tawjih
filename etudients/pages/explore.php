@@ -120,12 +120,12 @@
         <ul class="d-flex align-items-center justify-content-around w-100 h-100">
             <li>
                 <a href="home.php">
-                    <img src="../assets/svg/bottom-nav/home-active.svg" alt="home">
+                    <img src="../assets/svg/bottom-nav/home.svg" alt="home">
                 </a>
             </li>
             <li>
                 <a href="explore.php">
-                    <img src="../assets/svg/bottom-nav/category.svg" alt="category">
+                    <img src="../assets/svg/bottom-nav/category-active.svg" alt="category">
                 </a>
             </li>
             <li>

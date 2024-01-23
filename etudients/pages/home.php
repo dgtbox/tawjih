@@ -43,7 +43,6 @@ include("isloged.php");
         <div class="circle text-center">
             <div>
                 <h1>Al Raed</h1>
-                <p></p>
             </div>
         </div>
         <div class="loader-spinner">
@@ -69,7 +68,7 @@ include("isloged.php");
             <!-- menu -->
             <div class="menu">
                 <button class="toggle-btn">
-                    <img src="#" alt="" class="icon">
+                    <img src="assets\images\logo.png" alt="" class="icon">
                 </button>
                 <div class="btn-grp d-flex align-items-center gap-16">
                     <label for="mode-change" class="mode-change d-flex align-items-center justify-content-center">
@@ -105,15 +104,15 @@ include("isloged.php");
             </div>
 
             <ul class="d-flex align-items-center gap-16">
-                <li>
-                    <a href="notification.html"
+                <!-- <li>
+                    <a href="notification.php"
                         class="d-flex align-items-center justify-content-center rounded-full position-relative">
                         <img src="../assets/svg/bell-black.svg" alt="icon">
                         <span class="dot"></span>
                     </a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="chat/message.html"
+                    <a href="chat/message.php"
                         class="d-flex align-items-center justify-content-center rounded-full position-relative">
                         <img src="../assets/svg/message-square-dots.svg" alt="icon">
                         <span class="dot"></span>
@@ -136,7 +135,7 @@ include("isloged.php");
                     <?php
 
             include("conn.php");
-            $sql = "SELECT * FROM post order by id desc";
+            $sql = "SELECT * FROM post order by id desc limit 5";
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
             ?>
@@ -191,7 +190,7 @@ include("isloged.php");
                 <!-- item 1 -->
                 <?php
             include("conn.php");
-            $sql = "SELECT * FROM annonces";
+            $sql = "SELECT * FROM annonces order by id desc limit 5";
             $result = mysqli_query($coni, $sql);
             while ($row = mysqli_fetch_array($result)) {
             ?>
@@ -243,8 +242,8 @@ include("isloged.php");
         <section class="budget pt-12">
             <!-- title -->
             <div class="title d-flex align-items-center justify-content-between">
-                <h2 class="shrink-0">On Budget Tour</h2>
-                <a href="annonces.php" class="shrink-0 d-inline-block">See All</a>
+                <h2 class="shrink-0">Candidature deposé</h2>
+                <a href="hotels.php" class="shrink-0 d-inline-block">Tout voir</a>
             </div>
 
             <ul>
@@ -257,7 +256,7 @@ include("isloged.php");
             while ($row = mysqli_fetch_array($result)) {
           ?>
                 <li>
-                    <a href="hotel-details.html" class="d-flex align-items-center gap-12">
+                    <div href="hotel-details.php" class="d-flex align-items-center gap-12">
                         <div class="image shrink-0 overflow-hidden radius-8">
                             <img src="../assets/images/ecole/default.jpg" alt="Place"
                                 class="img-fluid w-100 h-100 object-fit-cover">
@@ -273,14 +272,14 @@ include("isloged.php");
                                     $row1 = mysqli_fetch_array($result1);
                                     $nom = $row1['nom'];
                                     if(strlen($nom) > 20) {
-                                        $nom = wordwrap($nom, 20, "<br />\n");
+                                        $nom = wordwrap($nom, 25, "<br />\n");
                                     }
                                     echo $nom;
                                     ?>
                                 </h4>
                                 <h5>
                                     <?php
-                                    echo "a";
+                                    echo "date de depot : ".$row['date_depot'];
                                     ?>
                                 </h5>
                                 <p class="d-flex align-items-center gap-8 location">
@@ -290,12 +289,27 @@ include("isloged.php");
                                     ?>
                                 </p>
                             </div>
-                            <p class="price"><span>$20</span>/Person</p>
+                            <?php
+                            if($row['statut_externe'] == 0){
+                                ?>
+                            <p class="price" style="color: #ffcb00"><span></span>En attente de reponse</p>
+                            <?php
+                            }
+                            if($row['statut_externe'] == 1){
+                                ?>
+                            <p class="price" style="color: #00ff00"><span></span>Accepter</p>
+                            <?php
+                            }
+                             if($row['statut_externe'] == 2){
+                                ?>
+                            <p class="price" style="color: #ff0000"><span></span>Refuser</p>
+                            <?php
+                            }}
+                            ?>
                         </div>
-                    </a>
+                          </div>
                 </li>
-                <?php
-            } ?>
+
 
                 <!-- item 2 -->
             </ul>

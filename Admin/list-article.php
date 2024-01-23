@@ -132,7 +132,6 @@
 
                                                                 <th class="sort" >Nom d'article</th>
                                                                 <th class="sort" >date de publication</th>
-                                                                <th class="col-2 " >Action</th>
                                                                 <th class="col-2 " >Modifier</th>
                                                             </tr>
                                                         </thead>
@@ -143,7 +142,7 @@
                                                         {
                                                             $top = $_GET['top'];
                                                         }
-                                                        $sql = "SELECT * FROM etudiant limit $top , 20";
+                                                        $sql = "SELECT * FROM post limit $top , 20";
 
                                                         $top = $top + 20;
                                                         include('conn.php');
@@ -157,24 +156,19 @@
 
 
                                                                 <td class="assignedto">
-                                                                        <?php echo $row['nom'] ?>
+                                                                        <?php echo $row['title'] ?>
                                                                         
                                                                         
                                                                 </td>
                                                                 <td>
                                                                     <div class="d-flex">
                                                                         <div class="flex-grow-1">
-                                                                            <?php echo $row['prenom'] ?>
+                                                                            <?php echo $row['created_at'] ?>
                                                                         </div>
                                                                         
                                                                     </div>
                                                                 </td>
                                                                 
-                                                                <td class="assignedto">
-                                                                    <?php echo $row['cin'] ?>
-
-
-                                                                </td>
                                                                 <td>
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <li class="list-inline-item">

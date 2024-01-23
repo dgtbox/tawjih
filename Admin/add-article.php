@@ -88,73 +88,32 @@
 
                             <div class="card-body">
                                 <div class="live-preview">
-                                    <form action="add-dossiers-exec.php" method="POST">
+                                    <form action="add-article-exec.php" enctype="multipart/form-data" method="POST">
                                         <div class="row">
                                             <div class="col-md-4    ">
                                                 <div class="mb-3">
                                                     <label for="" class="form-label">Titre d'article</label>
-                                                    <input type="text" class="form-control" placeholder="Entrez le titre" name="nom1" required>
+                                                    <input required type="text" class="form-control" placeholder="Entrez le titre" name="tit" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-4    ">
                                                 <div class="mb-3">
                                                     <label for="" class="form-label">Sous titre d'article</label>
-                                                    <input type="text" class="form-control" placeholder="Entrez le sous titre" name="nom1" required>
+                                                    <input type="text" class="form-control" placeholder="Entrez le sous titre" name="sub" >
                                                 </div>
                                             </div>
-
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title mb-3">Photo de titre</h5>
-                                                    <div class="vstack gap-2">
-                                                        <form action="upload-exec.php" enctype="multipart/form-data" method="post">
-                                                            <div class="mt-2">
-                                                                <input required="" class="form-label" for="formFile" type="file" name="fl">
-                                                            </div>
-                                                            <input type="hidden" name="id" value="17">
-
-                                                            <div class="mt-2 text-center">
-                                                                <button type="submit" class="btn btn-success">Finalisé</button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
+                                            <div class="col-md-4    ">
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Image</label>
+                                                    <input type="file" class="form-control" placeholder="image" name="fl" >
                                                 </div>
                                             </div>
-
-                                            <div class="row mt-2">
-                                                <div class="col-lg-12">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h4 class="card-title mb-0">Text D'article</h4>
-                                                        </div><!-- end card header -->
-
-                                                        <div class="card-body">
-                                                            <div class="snow-editor" style="height: 300px;">
-                                                                <h3><span class="ql-size-large">Bonjour le monde !</span></h3>
-                                                                <p><br></p>
-                                                                <h3>Ceci est une zone de texte modifiable simple.</h3>
-                                                                <p><br></p>
-                                                                <ul>
-                                                                    <li>
-                                                                        Sélectionnez un texte pour afficher la barre d'outils.
-                                                                    </li>
-                                                                    <li>
-                                                                        Modifiez le document riche à la volée, c'est élastique !
-                                                                    </li>
-                                                                </ul>
-                                                                <p><br></p>
-                                                                <p>
-                                                                    Fin de la zone de texte simple.
-                                                                </p>
-
-                                                            </div> <!-- end Snow-editor-->
-                                                        </div><!-- end card-body -->
-                                                    </div><!-- end card -->
-
+                                            <div class="col-12-md-4    ">
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Contenu</label>
+                                                    <textarea type="text" class="form-control" placeholder="Entrez le sous titre" name="cont" ></textarea>
                                                 </div>
-                                                <!-- end col -->
                                             </div>
-                                            <!-- end row -->
 
                                             <!--end col-->
                                             <div class="col-lg-12">

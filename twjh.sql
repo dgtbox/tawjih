@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 22 jan. 2024 à 19:11
+-- Généré le : mar. 23 jan. 2024 à 01:07
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -90,7 +90,7 @@ INSERT INTO `dossier` (`id`, `id_etudiant`, `id_ecole`, `choix1`, `choix2`, `cho
 (28, 51, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-17', '0000-00-00', '0000-00-00', 15, NULL),
 (29, 52, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-17', '0000-00-00', '0000-00-00', 15, NULL),
 (30, 53, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-17', '0000-00-00', '0000-00-00', 15, NULL),
-(31, 54, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-17', '0000-00-00', '0000-00-00', 15, NULL),
+(31, 54, 2, NULL, NULL, NULL, '2', NULL, '0', '2024-01-17', '0000-00-00', '0000-00-00', 15, 'probleme de dossier severe \r\nbesoin du bac'),
 (32, 48, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-19', '0000-00-00', '0000-00-00', 16, NULL),
 (33, 49, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-19', '0000-00-00', '0000-00-00', 16, NULL),
 (34, 50, 2, NULL, NULL, NULL, '0', NULL, '0', '2024-01-19', '0000-00-00', '0000-00-00', 16, NULL),
@@ -109,15 +109,16 @@ INSERT INTO `dossier` (`id`, `id_etudiant`, `id_ecole`, `choix1`, `choix2`, `cho
 CREATE TABLE `ecole` (
   `id` int(11) NOT NULL,
   `nom` text NOT NULL,
-  `adresse` text NOT NULL
+  `adresse` text NOT NULL,
+  `image` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `ecole`
 --
 
-INSERT INTO `ecole` (`id`, `nom`, `adresse`) VALUES
-(2, 'Faculté de Médecine et de Pharmacie d\'Agadir', 'Agadir 80000');
+INSERT INTO `ecole` (`id`, `nom`, `adresse`, `image`) VALUES
+(2, 'Faculté de Médecine et de Pharmacie d\'Agadir', 'Agadir 80000', 0);
 
 -- --------------------------------------------------------
 
@@ -221,8 +222,20 @@ CREATE TABLE `fichier_etudiant` (
   `id` int(11) NOT NULL,
   `nom_fichier_etudiant` varchar(255) NOT NULL,
   `date_fichier_etudiant` date NOT NULL,
-  `id_etudiant` int(11) NOT NULL
+  `id_etudiant` int(11) NOT NULL,
+  `ext` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `fichier_etudiant`
+--
+
+INSERT INTO `fichier_etudiant` (`id`, `nom_fichier_etudiant`, `date_fichier_etudiant`, `id_etudiant`, `ext`) VALUES
+(3, 'bo', '2024-01-23', 76, 0),
+(4, 'bo', '2024-01-23', 76, 0),
+(5, 'bo', '2024-01-23', 76, 0),
+(6, 'zeazedqsdqs', '2024-01-23', 76, 0),
+(7, 'zeazedqsdqs', '2024-01-23', 54, 0);
 
 -- --------------------------------------------------------
 
@@ -407,7 +420,7 @@ ALTER TABLE `etudiant`
 -- AUTO_INCREMENT pour la table `fichier_etudiant`
 --
 ALTER TABLE `fichier_etudiant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `logs`

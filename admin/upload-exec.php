@@ -20,6 +20,7 @@ if($fileextension != "pdf" && $fileextension != "jpg") {
 
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
+  header('home.php');
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fl"]["tmp_name"], $target_file)) {

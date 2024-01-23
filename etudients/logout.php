@@ -8,5 +8,5 @@
  unset($_COOKIE["logpass"]);
 
 
- header("Location: login.php");
+ header("Location: index.php");
 ?>

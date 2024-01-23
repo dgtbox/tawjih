@@ -40,7 +40,30 @@
         <?php include('compoments/header.php') ?>
 
 
+<!-- removeNotificationModal -->
+<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mt-2 text-center">
+                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                        <h4>Are you sure ?</h4>
+                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                </div>
+            </div>
 
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
         <!-- ========== App Menu ========== -->
         <?php include('compoments/sidebar.php') ?>
 
@@ -64,7 +87,7 @@
                                     <div class="col-12">
                                         <div class="d-flex align-items-lg-center flex-lg-row flex-column">
                                             <div class="flex-grow-1">
-                                                <h4 class="fs-20 mb-1">Liste des annonces</h4>
+                                                <h4 class="fs-20 mb-1">Liste des articles</h4>
                                             </div>
                                             
                                         </div><!-- end card header -->
@@ -107,9 +130,8 @@
                                                         <thead class="table-light text-muted">
                                                             <tr>
 
-                                                                <th class="sort" >Nom d'annonce</th>
+                                                                <th class="sort" >Nom d'article</th>
                                                                 <th class="sort" >date de publication</th>
-                                                                <th class="col-2 " >Action</th>
                                                                 <th class="col-2 " >Modifier</th>
                                                             </tr>
                                                         </thead>
@@ -120,7 +142,7 @@
                                                         {
                                                             $top = $_GET['top'];
                                                         }
-                                                        $sql = "SELECT * FROM etudiant limit $top , 20";
+                                                        $sql = "SELECT * FROM annonces limit $top , 20";
 
                                                         $top = $top + 20;
                                                         include('conn.php');
@@ -134,24 +156,19 @@
 
 
                                                                 <td class="assignedto">
-                                                                        <?php echo $row['nom'] ?>
+                                                                        <?php echo $row['title'] ?>
                                                                         
                                                                         
                                                                 </td>
                                                                 <td>
                                                                     <div class="d-flex">
                                                                         <div class="flex-grow-1">
-                                                                            <?php echo $row['prenom'] ?>
+                                                                            <?php echo $row['created_at'] ?>
                                                                         </div>
                                                                         
                                                                     </div>
                                                                 </td>
                                                                 
-                                                                <td class="assignedto">
-                                                                    <?php echo $row['cin'] ?>
-
-
-                                                                </td>
                                                                 <td>
                                                                     <div class="flex-shrink-0 ms-0">
                                                                         <li class="list-inline-item">

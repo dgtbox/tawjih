@@ -195,7 +195,7 @@
               <button type="button" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
             </li>
             <li>
-              <button type="button" onclick="window.location.href='../../../logout.php';" class="log-out" data-bs-dismiss="modal" aria-label="Close">Log Out</button>
+              <button type="button" onclick="window.location.href='../../logout.php';" class="log-out" data-bs-dismiss="modal" aria-label="Close">Log Out</button>
             </li>
           </ul>
         </div>
